@@ -1,0 +1,24 @@
+@import "styles/colors";
+
+.button {
+  text-align: center;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  width: auto;
+  height: 55px;
+  border: 1px solid $grey_dark;
+  border-radius: 6.5px;
+  background-color: transparent;
+  color: rgba(28, 145, 254, 0.56);
+
+  &:hover{
+    border: 2px solid #601d8c;
+  }
+
+  &.span {
+    color: #e5e5e5;
+    text-decoration: none;
+  }
+}
