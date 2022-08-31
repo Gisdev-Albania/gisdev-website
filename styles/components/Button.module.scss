@@ -8,17 +8,35 @@
   cursor: pointer;
   width: auto;
   height: 55px;
-  border: 1px solid $grey_dark;
-  border-radius: 6.5px;
-  background-color: transparent;
-  color: rgba(28, 145, 254, 0.56);
+  border: none;
+  border-radius: 6px;
+  background-color: $primary_blue;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: 2px solid #fff;
+  overflow: hidden;
+  transition: color 1s;
 
-  &:hover{
-    border: 2px solid #601d8c;
+  &:hover {
+    color: #ffffff;
   }
 
-  &.span {
-    color: #e5e5e5;
-    text-decoration: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    color: #ffffff;
+    background-color: #31460c;
+    transform: skewX(35deg);
+    z-index: 1;
+    transition: width 1s;
+  }
+
+  &:hover::before {
+    width: 150%;
   }
 }

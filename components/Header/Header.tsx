@@ -20,8 +20,8 @@ export const Header = () => {
               <Image
                 src={"/GIS-DEV_logo_final-01.png"}
                 alt="Logo of the company"
-                width={280}
-                height={80}
+                width={200}
+                height={50}
               />
             </div>
             <div className={styles.header__navigation}>
