@@ -8,7 +8,6 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FiDribbble } from "react-icons/fi";
 import { BiTime } from "react-icons/bi";
-
 import { TbMessageCircle2 } from "react-icons/tb";
 
 export const Footer = () => {

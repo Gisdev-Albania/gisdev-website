@@ -6,6 +6,7 @@ import { BsFacebook, BsFillTelephoneFill, BsTwitter } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { GrLinkedinOption } from "react-icons/gr";
 import { Footer } from "../components/Footer";
+import { MainLayout } from "../components/MainLayout";
 const Home: NextPage = () => {
   return (
     <>
@@ -46,8 +47,42 @@ const Home: NextPage = () => {
 
           <Header />
         </div>
-        <main className={styles.main}></main>
-
+        {/* Main Layout Start */}
+        <div>
+          <MainLayout />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        {/* Main Layout End */}
         <Footer />
       </div>
     </>
