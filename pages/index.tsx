@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.navbar}>
+        {/* <div className={styles.navbar}>
           <div className={styles.topbar__nav}>
             <div className={styles.topbar__content}>
               <div className={styles.topbar__left}>
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           </div>
 
           <Header />
-        </div>
+        </div> */}
         {/* Main Layout Start */}
         <div>
           <MainLayout />

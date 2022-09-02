@@ -1,23 +1,44 @@
-import React from "react";
-import styles from "../../styles/components/MainLayout.module.scss";
-import Image from "next/image";
-import { BottomLeftDots, TopRightDots } from "../Dots";
+import React from 'react';
+import styles from '../../styles/components/MainLayout.module.scss';
+import Image from 'next/image';
+
+import { BottomLeftDots, TopRightDots } from '../Dots';
+import { Header } from '../Header';
 
 export const MainLayout = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.layout}>
-        <div className={styles.main__layout__wrapper}>
-          <div className={styles.left__layout}>
-            <div className={styles.banner__image}>
-              <div className={styles.image__border}>
-                <Image src={"/banner1.png"} height={700} width={720} />
-              </div>
-              <TopRightDots />
-              <BottomLeftDots />
-            </div>
+      <div className={styles.header}>
+        <Header />
+      </div>
+      <div className={styles.header__description}>
+        <div className={styles.header__img}>
+          <div className={styles.image__frame}>
+            <Image
+              src={'/codding.png'}
+              alt="Logo of the company"
+              height={500}
+              width={500}
+            />
           </div>
-          <div className={styles.right__layout}>div3</div>
+        </div>
+        <div className={styles.header__text__section}>
+          <h1 className={styles.header__text}>
+            TAILORED <span className={styles.header__text__first}>IT</span>{' '}
+            STRATEGY
+            <br />
+            TO SOLVE BUSSINES NEEDS
+          </h1>
+
+          <p className={styles.header__paragraph}>
+            A Tirana Agency specializing in web design,
+            <br /> eCommerce development, and product branding
+          </p>
+
+          <button className={styles.header__button}>
+            Contact manager{' '}
+            <Image src={'/headerArrow.png'} alt="arrow" width={41} height={0} />
+          </button>
         </div>
       </div>
     </div>

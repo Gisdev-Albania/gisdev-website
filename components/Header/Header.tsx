@@ -26,19 +26,19 @@ export const Header = () => {
             </div>
             <div className={styles.header__navigation}>
               <Link href={"#"}>
-                <a className={styles.active}>Home</a>
+                <a className={styles.active}>HOME</a>
               </Link>
               <Link href={"#1"}>
-                <a>About Us</a>
+                <a>ABOUT US</a>
               </Link>
               <Link href={"#2"}>
-                <a>Our Services</a>
+                <a>OUR SERVICES</a>
               </Link>
               <Link href={"#3"}>
-                <a>Work Process</a>
+                <a>WORK PROCESS</a>
               </Link>
               <Link href={"#4"}>
-                <a>Careers</a>
+                <a>CAREERS</a>
               </Link>
             </div>
             <Button className={styles.header__navbar}>

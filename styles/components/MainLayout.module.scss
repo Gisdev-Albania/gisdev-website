@@ -1,61 +1,68 @@
-@import "../colors";
-
+@import '../colors';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap');
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  height: 100vh;
+  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
-  background: $primary_color;
-  .layout {
-    height: 100vh;
-    width: 90%;
-    justify-content: center;
+  background-image: url(../../public/backgroundImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header {
+    padding-top: 3rem;
+  }
+
+  .header__description {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+    width: 65vw;
+    height: 700px;
 
-    .main__layout__wrapper {
-      display: flex;
-      flex: 0 0 auto;
-      justify-content: space-between;
+    .header__img {
+      padding-right: 2rem;
+      .image__frame {
+        border: 16px solid #0e1a2a;
+      }
+    }
+    .header__text__section {
+      .header__text {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 101.52%;
+        letter-spacing: 0.045em;
+        color: #ffffff;
 
-      .left__layout {
-        padding-left: 50px;
-        flex: 0.53;
-        .banner__image {
-          z-index: -1;
-
-          .image__border {
-            height: 700px;
-            width: 720px;
-            border: 10px solid #020b0e;
-            img {
-              opacity: inherit;
-              overflow: hidden;
-              border: 10px solid #ea4335;
-            }
-          }
-
-          svg {
-            &:nth-child(2) {
-              position: absolute;
-              top: 190px;
-              left: 675px;
-              z-index: 2;
-            }
-            &:nth-child(3) {
-              position: absolute;
-              bottom: 100px;
-              left: 110px;
-              z-index: 1;
-            }
-          }
+        .header__text__first {
+          color: #0286ff;
         }
       }
+      .header__paragraph {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -0.05em;
+        color: #cecece;
+      }
 
-      .right__layout {
-        flex: 0 0 auto;
+      .header__button {
+        width: 207px;
+        height: 41px;
+        background: none;
+        color: white;
+        border: 1px solid white;
+      }
+
+      .header__button:hover {
+        border-top: 1px solid #0286ff;
+        transition: ease-in 0.3s;
       }
     }
   }
