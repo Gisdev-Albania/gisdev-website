@@ -57,12 +57,32 @@
         height: 41px;
         background: none;
         color: white;
-        border: 1px solid white;
+        border: 2px solid white;
       }
 
       .header__button:hover {
-        border-top: 1px solid #0286ff;
-        transition: ease-in 0.3s;
+        animation: buttonAnim 5s ease-in;
+      }
+      @keyframes buttonAnim {
+        0% {
+          border-top: 2px solid #0286ff;
+        }
+
+        20% {
+          border-top: 2px solid #0286ff;
+          border-right: 2px solid #0286ff;
+        }
+        80% {
+          border-top: 2px solid #0286ff;
+          border-right: 2px solid #0286ff;
+          border-bottom: 2px solid #0286ff;
+        }
+        100% {
+          border-top: 2px solid #0286ff;
+          border-right: 2px solid #0286ff;
+          border-bottom: 2px solid #0286ff;
+          border-left: 2px solid #0286ff;
+        }
       }
     }
   }

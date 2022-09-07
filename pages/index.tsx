@@ -1,12 +1,13 @@
-import type { NextPage } from "next";
-import styles from "../styles/Home.module.scss";
-import { Header } from "../components/Header";
-import { IoLocationSharp } from "react-icons/io5";
-import { BsFacebook, BsFillTelephoneFill, BsTwitter } from "react-icons/bs";
-import { MdMail } from "react-icons/md";
-import { GrLinkedinOption } from "react-icons/gr";
-import { Footer } from "../components/Footer";
-import { MainLayout } from "../components/MainLayout";
+import type { NextPage } from 'next';
+import styles from '../styles/Home.module.scss';
+import { Header } from '../components/Header';
+import { IoLocationSharp } from 'react-icons/io5';
+import { BsFacebook, BsFillTelephoneFill, BsTwitter } from 'react-icons/bs';
+import { MdMail } from 'react-icons/md';
+import { GrLinkedinOption } from 'react-icons/gr';
+import { Footer } from '../components/Footer';
+import { MainLayout } from '../components/MainLayout';
+import { Services } from '../components/Services';
 const Home: NextPage = () => {
   return (
     <>
@@ -48,40 +49,11 @@ const Home: NextPage = () => {
           <Header />
         </div> */}
         {/* Main Layout Start */}
-        <div>
-          <MainLayout />
+
+        <MainLayout />
+        <div className={styles.main__layout}>
+          <Services />
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         {/* Main Layout End */}
         <Footer />
       </div>
