@@ -1,5 +1,5 @@
-import React, { SyntheticEvent } from "react";
-import styles from "../../styles/components/Button.module.scss";
+import React, { SyntheticEvent } from 'react';
+import styles from '../../styles/components/Button.module.scss';
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ interface ButtonProps {
   className?: string;
 }
 
-export const Button: React.FunctionComponent<ButtonProps> = (props) => {
+export const Button: React.FunctionComponent<ButtonProps> = props => {
   const { children, onClick, className } = props;
   return (
     <button onClick={onClick} className={`${styles.button} ${className} `}>

@@ -1,0 +1,85 @@
+.latest__work__main {
+  width: 65vw;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .latest__work__title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 90.52%;
+    letter-spacing: -0.02em;
+    color: rgba(2, 134, 255, 0.5);
+    filter: blur(4px);
+  }
+
+  .latest__work__cards {
+    display: flex;
+    gap: 21px;
+    .latest__work__title_card {
+      width: 483px;
+      height: 420px;
+      background: rgba(247, 247, 248, 0.9);
+      .latest__work__card__title {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 53px;
+        line-height: 103.02%;
+        letter-spacing: 0.035em;
+        color: #0e1a2a;
+        padding-left: 19px;
+      }
+      .latest__work__card__paragraph {
+        width: 286px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 99.02%;
+        letter-spacing: -0.05em;
+        color: #0e1a2a;
+        padding-left: 19px;
+      }
+    }
+    .latest__work__slider {
+      width: 722px;
+      height: 420px;
+      background: #1a304d;
+      position: relative;
+
+      .slider__buttons {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        button {
+          width: 39px;
+          height: 39px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:nth-child(1) {
+            background: #0e1a2a;
+          }
+          &:nth-child(2) {
+            background: #0574da;
+            .right_img {
+              border: 2px solid red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

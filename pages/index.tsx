@@ -8,6 +8,7 @@ import { GrLinkedinOption } from 'react-icons/gr';
 import { Footer } from '../components/Footer';
 import { MainLayout } from '../components/MainLayout';
 import { Services } from '../components/Services';
+import { LatestWork } from '../components/LatestWork';
 const Home: NextPage = () => {
   return (
     <>
@@ -53,6 +54,7 @@ const Home: NextPage = () => {
         <MainLayout />
         <div className={styles.main__layout}>
           <Services />
+          <LatestWork />
         </div>
         {/* Main Layout End */}
         <Footer />
