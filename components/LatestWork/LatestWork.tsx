@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../../styles/components/LatestWork.module.scss';
-import image from '../../public/left.png';
 import Image from 'next/image';
 import Button from '../Button';
+import Icon, { IconType } from '../Icon/Icon';
 
 export const LatestWork = () => {
   const services = [
@@ -60,6 +60,12 @@ export const LatestWork = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.{' '}
           </p>
+          <div>
+            <Button>
+              Our Work
+              <Icon icon={'arrow'} type={IconType.Fill} />
+            </Button>
+          </div>
         </div>
         <div className={styles.latest__work__slider}>
           <div className={styles.slider__buttons}>

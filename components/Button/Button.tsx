@@ -10,8 +10,12 @@ interface ButtonProps {
 export const Button: React.FunctionComponent<ButtonProps> = props => {
   const { children, onClick, className } = props;
   return (
-    <button onClick={onClick} className={`${styles.button} ${className} `}>
-      <span>{children}</span>
-    </button>
+    <a onClick={onClick} className={styles.btn}>
+      <span>
+        <span>
+          <span>Hover Me</span>
+        </span>
+      </span>
+    </a>
   );
 };

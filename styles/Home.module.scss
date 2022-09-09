@@ -5,7 +5,7 @@
   background-color: #0e1a2a;
 }
 .main__layout {
-  width: 100vw;
+  //width: 100vw;
   height: auto;
   display: flex;
   padding-bottom: 100rem;
@@ -16,7 +16,6 @@
 .navbar {
   width: 100%;
   height: auto;
-  background: $primary_color;
 
   .topbar__nav {
     display: flex;

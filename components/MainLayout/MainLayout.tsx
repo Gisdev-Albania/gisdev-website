@@ -2,15 +2,11 @@ import React from 'react';
 import styles from '../../styles/components/MainLayout.module.scss';
 import Image from 'next/image';
 
-import { BottomLeftDots, TopRightDots } from '../Dots';
-import { Header } from '../Header';
+import Button from '../Button';
 
 export const MainLayout = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.header}>
-        <Header />
-      </div>
       <div className={styles.header__description}>
         <div className={styles.header__img}>
           <div className={styles.image__frame}>
@@ -35,10 +31,13 @@ export const MainLayout = () => {
             <br /> eCommerce development, and product branding
           </p>
 
-          <button className={styles.header__button}>
+          <Button
+            className={styles.header__button}
+            onClick={() => console.log('clickeddd')}
+          >
             Contact manager{' '}
             <Image src={'/headerArrow.png'} alt="arrow" width={41} height={0} />
-          </button>
+          </Button>
         </div>
       </div>
     </div>
