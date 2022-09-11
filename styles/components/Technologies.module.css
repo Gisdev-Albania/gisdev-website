@@ -1,0 +1,53 @@
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.technologies .technologies__main {
+  display: flex;
+  padding: 10px;
+  width: 85%;
+  height: 100%;
+}
+.technologies .technologies__main .technologies__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.technologies .technologies__main .technologies__container .technologies__top {
+  display: flex;
+  font-family: "Outfit", "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 90.52%;
+  letter-spacing: -0.02em;
+  color: rgba(2, 134, 255, 0.5);
+}
+.technologies .technologies__main .technologies__container .technologies__top h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 90.52%;
+  letter-spacing: -0.02em;
+  color: rgba(2, 134, 255, 0.5);
+}
+.technologies .technologies__main .technologies__container .technologies__bottom {
+  display: flex;
+  flex: 1;
+}
+.technologies .technologies__main .technologies__container .technologies__bottom .technologies__left {
+  display: flex;
+  flex: 0.7;
+  width: 100%;
+}
+.technologies .technologies__main .technologies__container .technologies__bottom .technologies__right {
+  display: flex;
+  flex: 0.3;
+  width: 1000px;
+}
+
+/*# sourceMappingURL=Technologies.module.css.map */

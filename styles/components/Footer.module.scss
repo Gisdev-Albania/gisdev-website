@@ -1,4 +1,4 @@
-@import "styles/colors";
+@import "../colors";
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 
 .footer_section {
@@ -27,7 +27,12 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
+
+          .footer__top__left {
+            display: flex;
+            margin-bottom: 50px;
+          }
 
           .ul {
             display: flex;

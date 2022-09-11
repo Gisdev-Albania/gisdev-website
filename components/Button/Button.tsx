@@ -13,7 +13,7 @@ export const Button: React.FunctionComponent<ButtonProps> = props => {
     <a onClick={onClick} className={styles.btn}>
       <span>
         <span>
-          <span>Hover Me</span>
+          <span>{children}</span>
         </span>
       </span>
     </a>

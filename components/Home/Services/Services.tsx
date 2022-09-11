@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/components/Services.module.scss';
+import styles from '../../../styles/components/Services.module.scss';
 
 export const Services = () => {
   const services = [

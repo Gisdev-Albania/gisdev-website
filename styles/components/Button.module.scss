@@ -1,5 +1,4 @@
-@import 'styles/colors';
-
+@import "../colors";
 @mixin btn-border-slide($color, $hoverColor, $borderWidth, $time) {
   $easing: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -131,9 +130,10 @@
 }
 
 .btn {
-  //font-size: 1.5em;
-  //text-transform: uppercase;
-  //letter-spacing: 0.1em;
-  //text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $primary_white;
+  text-decoration: none;
   @include btn-border-slide(#ffffff, #168dff, 2px, 0.8s);
+
 }

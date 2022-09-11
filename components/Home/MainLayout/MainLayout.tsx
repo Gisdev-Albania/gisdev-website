@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../../styles/components/MainLayout.module.scss';
+import styles from '../../../styles/components/MainLayout.module.scss';
 import Image from 'next/image';
 
-import Button from '../Button';
+import Button from '../../Button';
 
 export const MainLayout = () => {
   return (

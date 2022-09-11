@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap");
+.main {
+  height: 100vh;
+  overflow: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../public/backgroundImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .header {
+  padding-top: 3rem;
+}
+.main .header__description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 65vw;
+  height: 700px;
+}
+.main .header__description .header__img {
+  padding-right: 2rem;
+}
+.main .header__description .header__img .image__frame {
+  border: 16px solid #0e1a2a;
+}
+.main .header__description .header__text__section .header__text {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 101.52%;
+  letter-spacing: 0.045em;
+  color: #ffffff;
+}
+.main .header__description .header__text__section .header__text .header__text__first {
+  color: #0286ff;
+}
+.main .header__description .header__text__section .header__paragraph {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  color: #cecece;
+}
+.main .header__description .header__text__section .header__button {
+  width: 207px;
+  height: 41px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+.main .header__description .header__text__section .header__button:hover {
+  animation: buttonAnim 5s ease-in;
+}
+@keyframes buttonAnim {
+  0% {
+    border-top: 2px solid #0286ff;
+  }
+  20% {
+    border-top: 2px solid #0286ff;
+    border-right: 2px solid #0286ff;
+  }
+  80% {
+    border-top: 2px solid #0286ff;
+    border-right: 2px solid #0286ff;
+    border-bottom: 2px solid #0286ff;
+  }
+  100% {
+    border-top: 2px solid #0286ff;
+    border-right: 2px solid #0286ff;
+    border-bottom: 2px solid #0286ff;
+    border-left: 2px solid #0286ff;
+  }
+}
+
+/*# sourceMappingURL=MainLayout.module.css.map */

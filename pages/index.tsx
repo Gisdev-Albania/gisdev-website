@@ -6,9 +6,11 @@ import { BsFacebook, BsFillTelephoneFill, BsTwitter } from 'react-icons/bs';
 import { MdMail } from 'react-icons/md';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { Footer } from '../components/Footer';
-import { MainLayout } from '../components/MainLayout';
-import { Services } from '../components/Services';
-import { LatestWork } from '../components/LatestWork';
+import { MainLayout } from '../components/Home/MainLayout';
+import { Services } from '../components/Home/Services';
+import { LatestWork } from '../components/Home/LatestWork';
+import { Technologies } from '../components/Home/Techologies';
+import { Clients } from '../components/Home/Clients';
 const Home: NextPage = () => {
   return (
     <>
@@ -49,11 +51,12 @@ const Home: NextPage = () => {
           <Header />
         </div>
         {/* Main Layout Start */}
-
         <MainLayout />
         <div className={styles.main__layout}>
           <Services />
           <LatestWork />
+          <Technologies />
+          <Clients />
         </div>
         {/* Main Layout End */}
         <Footer />

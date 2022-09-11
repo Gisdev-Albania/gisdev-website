@@ -1,0 +1,99 @@
+.clients__main__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
+}
+.clients__main__container .clients__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.clients__main__container .clients__container .clients__top__container {
+  display: flex;
+  justify-content: flex-end;
+}
+.clients__main__container .clients__container .clients__top__container .client__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clients__main__container .clients__container .clients__top__container .client__main h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 90.52%;
+  letter-spacing: -0.02em;
+  color: rgba(2, 134, 255, 0.5);
+  margin: 0;
+}
+.clients__main__container .clients__container .latest__work__bottom__container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.clients__main__container .clients__container .latest__work__bottom__container .latest__work__cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+.clients__main__container .clients__container .latest__work__bottom__container .latest__work__cards .latest__work__title_card {
+  display: flex;
+  flex-direction: column;
+  width: 483px;
+  height: 420px;
+  background: rgba(247, 247, 248, 0.9);
+}
+.clients__main__container .clients__container .latest__work__bottom__container .latest__work__cards .latest__work__title_card .latest__work__card__title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 103.02%;
+  letter-spacing: 0.035em;
+  color: #0e1a2a;
+  padding-left: 19px;
+}
+.clients__main__container .clients__container .latest__work__bottom__container .latest__work__cards .latest__work__title_card .latest__work__card__paragraph {
+  width: 286px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 99.02%;
+  letter-spacing: -0.05em;
+  color: #0e1a2a;
+  padding-left: 19px;
+}
+.clients__main__container .clients__container .latest__work__bottom__container .latest__work__cards .latest__work__slider {
+  display: flex;
+  width: 483px;
+  height: 420px;
+  flex-grow: 0.5;
+  background: #1a304d;
+  position: relative;
+}
+.clients__main__container .clients__container .latest__work__bottom__container .latest__work__cards .latest__work__slider .latest__work__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients__main__container .clients__container .latest__work__bottom__container .bottom__side__card {
+  display: flex;
+  width: 95%;
+  align-content: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=Clients.module.css.map */

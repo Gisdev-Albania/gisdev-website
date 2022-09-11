@@ -1,11 +1,13 @@
-import React from "react";
-import styles from "../../styles/components/Header.module.scss";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Button from "../Button";
+import React from 'react';
+import styles from '../../styles/components/Header.module.scss';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export const Header = () => {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -18,32 +20,33 @@ export const Header = () => {
           <div className={styles.header}>
             <div className={styles.header__logo}>
               <Image
-                src={"/GIS-DEV_logo_final-01.png"}
+                src={'/GIS-DEV_logo_final-01.png'}
                 alt="Logo of the company"
                 width={200}
                 height={50}
               />
             </div>
+
             <div className={styles.header__navigation}>
-              <Link href={"#"}>
+              <Link href={'#'}>
                 <a className={styles.active}>HOME</a>
               </Link>
-              <Link href={"#1"}>
+              <Link href={'#1'}>
                 <a>ABOUT US</a>
               </Link>
-              <Link href={"#2"}>
+              <Link href={'#2'}>
                 <a>OUR SERVICES</a>
               </Link>
-              <Link href={"#3"}>
+              <Link href={'#3'}>
                 <a>WORK PROCESS</a>
               </Link>
-              <Link href={"#4"}>
+              <Link href={'#4'}>
                 <a>CAREERS</a>
               </Link>
             </div>
-            <Button className={styles.header__navbar}>
+            <div className={styles.header__navbar}>
               <h4>CONTACT US</h4>
-            </Button>
+            </div>
           </div>
         </div>
       </main>

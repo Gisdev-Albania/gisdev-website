@@ -1,0 +1,32 @@
+.card__right__container {
+  //display: flex;
+  box-sizing: border-box;
+  //gap: 21px;
+  .latest__work__title_card {
+    //width: 483px;
+    //height: 420px;
+    background: rgba(247, 247, 248, 0.9);
+    .latest__work__card__title {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 53px;
+      line-height: 103.02%;
+      letter-spacing: 0.035em;
+      color: #0e1a2a;
+      padding-left: 19px;
+    }
+    .card__paragraph {
+      width: 286px;
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 99.02%;
+      letter-spacing: -0.05em;
+      color: #0e1a2a;
+      padding-left: 19px;
+    }
+  }
+
+}
