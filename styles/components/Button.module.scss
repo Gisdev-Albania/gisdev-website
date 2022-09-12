@@ -134,6 +134,6 @@
   letter-spacing: 0.1em;
   color: $primary_white;
   text-decoration: none;
-  @include btn-border-slide(#ffffff, #168dff, 2px, 0.8s);
+  @include btn-border-slide(#ffffff, #168dff, 2px, 0.9s);
 
 }

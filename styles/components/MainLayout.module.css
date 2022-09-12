@@ -1,36 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap");
 .main {
-  height: 100vh;
-  overflow: auto;
-  overflow: hidden;
   display: flex;
+  height: 100vh;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   background-image: url(../../public/backgroundImage.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main .header {
-  padding-top: 3rem;
-}
 .main .header__description {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 65vw;
   height: 700px;
 }
 .main .header__description .header__img {
-  padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main .header__description .header__img .image__frame {
-  border: 16px solid #0e1a2a;
+  position: relative;
+  left: -55px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid #1A304C;
+}
+.main .header__description .header__text__section {
+  position: relative;
+  left: -195px;
 }
 .main .header__description .header__text__section .header__text {
+  width: 80%;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 101.52%;
   letter-spacing: 0.045em;
   color: #ffffff;
@@ -75,6 +83,12 @@
     border-bottom: 2px solid #0286ff;
     border-left: 2px solid #0286ff;
   }
+}
+.main .header__description .banner__image {
+  overflow: hidden;
+  position: absolute;
+  right: 50px;
+  z-index: 9;
 }
 
 /*# sourceMappingURL=MainLayout.module.css.map */

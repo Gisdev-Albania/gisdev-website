@@ -36,8 +36,10 @@ export const MainLayout = () => {
             onClick={() => console.log('clickeddd')}
           >
             Contact manager{' '}
-            <Image src={'/headerArrow.png'} alt="arrow" width={41} height={0} />
           </Button>
+        </div>
+        <div className={styles.banner__image}>
+          <Image src={'/banner-bg-text.png'} width={450} height={500} />
         </div>
       </div>
     </div>

@@ -1,0 +1,30 @@
+.join__main__container {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #1A304C;
+}
+.join__main__container .join__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+}
+.join__main__container .join__section .join__top__section {
+  border-bottom: 4px solid #fff;
+}
+.join__main__container .join__section .join__top__section h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 103.02%;
+  letter-spacing: 0.035em;
+  color: #f7f7f8;
+}
+
+/*# sourceMappingURL=JoinTeam.module.css.map */

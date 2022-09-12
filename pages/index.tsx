@@ -11,6 +11,8 @@ import { Services } from '../components/Home/Services';
 import { LatestWork } from '../components/Home/LatestWork';
 import { Technologies } from '../components/Home/Techologies';
 import { Clients } from '../components/Home/Clients';
+import { Testimonials } from '../components/Home/Testimonials';
+import { JoinTeam } from '../components/Home/JoinTeam';
 const Home: NextPage = () => {
   return (
     <>
@@ -57,6 +59,8 @@ const Home: NextPage = () => {
           <LatestWork />
           <Technologies />
           <Clients />
+          <Testimonials />
+          <JoinTeam />
         </div>
         {/* Main Layout End */}
         <Footer />
