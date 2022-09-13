@@ -1,6 +1,9 @@
+@import '../colors';
+
 .latest__main__container {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
@@ -11,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: 85%;
     height: 100%;
 
     .latest__work__top__container {
@@ -29,7 +33,7 @@
           font-size: 96px;
           line-height: 90.52%;
           letter-spacing: -0.02em;
-          color: rgba(2, 134, 255, 0.5);
+          color: $primary_text;
         }
       }
     }
@@ -38,50 +42,25 @@
       display: flex;
       width: 100%;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
 
       .latest__work__cards {
-        display: flex;
+        height: 35em;
         width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        flex: 1;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        gap: 1.8rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding-block: 2rem;
+        margin: 0;
 
         .latest__work__title_card {
-          display: flex;
-          flex-direction: column;
-          width: 483px;
-          height: 420px;
-
-          background: rgba(247, 247, 248, 0.9);
-          .latest__work__card__title {
-            font-family: 'Outfit';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 53px;
-            line-height: 103.02%;
-            letter-spacing: 0.035em;
-            color: #0e1a2a;
-            padding-left: 19px;
-          }
-          .latest__work__card__paragraph {
-            width: 286px;
-            font-family: 'Outfit';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 99.02%;
-            letter-spacing: -0.05em;
-            color: #0e1a2a;
-            padding-left: 19px;
-          }
+          height: 100%;
         }
         .latest__work__slider {
           display: flex;
-          width: 483px;
-          height: 420px;
           flex-grow: 0.5;
           background: #1a304d;
           position: relative;
@@ -92,13 +71,6 @@
             align-items: center;
           }
         }
-      }
-      .bottom__side__card {
-        display: flex;
-        width: 95%;
-        align-content: center;
-        justify-content: center;
-
       }
     }
   }

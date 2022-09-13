@@ -13,6 +13,7 @@ import { Technologies } from '../components/Home/Techologies';
 import { Clients } from '../components/Home/Clients';
 import { Testimonials } from '../components/Home/Testimonials';
 import { JoinTeam } from '../components/Home/JoinTeam';
+import CardListing from '../components/Card/CardListing';
 const Home: NextPage = () => {
   return (
     <>

@@ -8,22 +8,29 @@ export const Technologies = () => {
     <div className={styles.technologies}>
       <div className={styles.technologies__main}>
         <div className={styles.technologies__container}>
-          <div className={styles.technologies__top}>
-            <h1>Technologies</h1>
+          <div className={styles.technologies__top__container}>
+            <div className={styles.technologies__top}>
+              <h1>Technologies</h1>
+            </div>
           </div>
-          <div className={styles.technologies__bottom}>
-            <HoneycombLayout />
-            <div className={styles.technologies__right}>
-              <CardWrapper
-                title={'this is a title'}
-                paragraph={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
+          <div className={styles.technologies__bottom__container}>
+            <div className={styles.technologies__bottom}>
+              <div className={styles.technologies__left}>
+                <HoneycombLayout />
+              </div>
+              <div className={styles.technologies__right}>
+                <CardWrapper
+                  title={'this is a title'}
+                  paragraph={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.`}
-                buttonTitle={'Hover me '}
-                onClick={() => console.log('Clicked!')}
-                showButton={true}
-              />
+                  buttonTitle={'Hover me '}
+                  onClick={() => console.log('Clicked!')}
+                  showButton={true}
+                />
+              </div>
             </div>
           </div>
         </div>

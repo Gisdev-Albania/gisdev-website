@@ -10,7 +10,7 @@ interface ButtonProps {
 export const Button: React.FunctionComponent<ButtonProps> = props => {
   const { children, onClick, className } = props;
   return (
-    <a onClick={onClick} className={styles.btn}>
+    <a onClick={onClick} className={styles.btn__secondary}>
       <span>
         <span>
           <span>{children}</span>

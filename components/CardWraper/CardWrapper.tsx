@@ -13,7 +13,6 @@ interface CardProps {
 
 export const CardWrapper: React.FunctionComponent<CardProps> = props => {
   const { title, paragraph, buttonTitle, showButton, onClick } = props;
-  const [showButtonState, setShowButtonState] = useState<boolean>(false);
 
   return (
     <div className={styles.card__right__container}>
@@ -22,10 +21,7 @@ export const CardWrapper: React.FunctionComponent<CardProps> = props => {
         <p className={styles.card__paragraph}>{paragraph}</p>
         <div>
           {showButton === true ? (
-            <Button onClick={onClick}>
-              {buttonTitle}
-              {/*<Icon icon={'arrow'} type={IconType.Fill} />*/}
-            </Button>
+            <Button onClick={onClick}>{buttonTitle}</Button>
           ) : null}
         </div>
       </div>

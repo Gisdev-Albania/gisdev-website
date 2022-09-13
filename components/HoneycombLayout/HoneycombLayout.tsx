@@ -114,6 +114,36 @@ const HoneycombLayout = () => {
             />
           </a>
         </li>
+        <li className={styles.item}>
+          <a href="#0" title="14">
+            <img
+              src={
+                'https://cdn.dribbble.com/users/4835348/screenshots/16712964/media/f076cfebf1389f8b8aeee7c5b96b0780.png?compress=1&resize=400x300'
+              }
+              alt="14"
+            />
+          </a>
+        </li>
+        <li className={styles.item}>
+          <a href="#0" title="14">
+            <img
+              src={
+                'https://cdn.dribbble.com/users/4835348/screenshots/16712964/media/f076cfebf1389f8b8aeee7c5b96b0780.png?compress=1&resize=400x300'
+              }
+              alt="14"
+            />
+          </a>
+        </li>
+        <li className={styles.item}>
+          <a href="#0" title="14">
+            <img
+              src={
+                'https://cdn.dribbble.com/users/4835348/screenshots/16712964/media/f076cfebf1389f8b8aeee7c5b96b0780.png?compress=1&resize=400x300'
+              }
+              alt="14"
+            />
+          </a>
+        </li>
       </ul>
     </div>
   );

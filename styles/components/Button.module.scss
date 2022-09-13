@@ -1,12 +1,10 @@
-@import "../colors";
+@import '../colors';
+
 @mixin btn-border-slide($color, $hoverColor, $borderWidth, $time) {
   $easing: cubic-bezier(0.4, 0, 0.2, 1);
-
   position: relative;
-
   display: inline-block;
   padding: 0.5em 2em;
-
   cursor: pointer;
   overflow: hidden;
 
@@ -15,10 +13,8 @@
     content: '';
     position: absolute;
     left: 0;
-
     height: $borderWidth;
     width: 100%;
-
     background-color: $color;
   }
 
@@ -54,10 +50,8 @@
       content: '';
       position: absolute;
       top: 0;
-
       height: 100%;
       width: $borderWidth;
-
       background-color: $color;
     }
 
@@ -76,23 +70,19 @@
         position: absolute;
         left: 0;
         z-index: 9;
-
         height: $borderWidth;
         width: 100%;
-
         background-color: $hoverColor;
       }
 
       &:before {
         top: 0;
-
         transform: translate3d(-105%, 0, 0);
         transition: transform $time $easing;
       }
 
       &:after {
         bottom: 0;
-
         transform: translate3d(105%, 0, 0);
         transition: transform $time $easing;
       }
@@ -104,10 +94,8 @@
           position: absolute;
           top: 0;
           z-index: 9;
-
           height: 100%;
           width: $borderWidth;
-
           background-color: $hoverColor;
         }
 
@@ -120,7 +108,6 @@
 
         &:after {
           right: 0;
-
           transform: translate3d(0, -105%, 0);
           transition: transform $time $easing;
         }
@@ -129,11 +116,18 @@
   }
 }
 
-.btn {
+.btn__primary {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: $primary_white;
   text-decoration: none;
   @include btn-border-slide(#ffffff, #168dff, 2px, 0.9s);
+}
 
+.btn__secondary {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $dark_blue;
+  text-decoration: none;
+  @include btn-border-slide($dark_blue, #168dff, 2px, 0.9s);
 }
