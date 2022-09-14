@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["CardWrapper.module.scss"],"names":[],"mappings":"AAAA;EAEE;;AAEA;EAGE;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"CardWrapper.module.css"}
+{"version":3,"sourceRoot":"","sources":["CardWrapper.module.scss","../colors.scss"],"names":[],"mappings":"AACA;EACE,YCGgB;EDFhB;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAQA;EACE;EACA;EACA;EACA;EACA;EACA;EACA,OCpBM;;ADsBR;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OC9BM","file":"CardWrapper.module.css"}

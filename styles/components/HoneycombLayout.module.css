@@ -1,5 +1,9 @@
 .technologies__left {
-  /* 	background-color: gold; */
+  padding: 1rem 0 2.4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .technologies__left .item {
   width: 9rem;
@@ -20,7 +24,8 @@
 .technologies__left .item .item .IMG {
   visibility: hidden;
 }
-.technologies__left .item::before { /* Goldenrod outline on the hexagon */
+.technologies__left .item::before {
+  /* Goldenrod outline on the hexagon */
   content: "";
   position: absolute;
   top: 0;
@@ -127,7 +132,34 @@
   @media (min-width: 54rem) {
     .technologies__left .container {
       max-width: 50rem;
-      grid-template-columns: repeat(10, 5rem);
+      grid-template-columns: repeat(10, 4.7rem);
+    }
+    .technologies__left .item:nth-child(9n+1) {
+      grid-column: 1;
+    }
+    .technologies__left .item:nth-child(9n+2) {
+      grid-column: 3;
+    }
+    .technologies__left .item:nth-child(9n+3) {
+      grid-column: 5;
+    }
+    .technologies__left .item:nth-child(9n+4) {
+      grid-column: 7;
+    }
+    .technologies__left .item:nth-child(9n+5) {
+      grid-column: 9;
+    }
+    .technologies__left .item:nth-child(9n+6) {
+      grid-column: 2;
+    }
+    .technologies__left .item:nth-child(9n+7) {
+      grid-column: 4;
+    }
+    .technologies__left .item:nth-child(9n+8) {
+      grid-column: 6;
+    }
+    .technologies__left .item:nth-child(9n+0) {
+      grid-column: 8;
     }
   }
 }

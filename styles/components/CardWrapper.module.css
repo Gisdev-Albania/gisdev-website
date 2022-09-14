@@ -1,8 +1,18 @@
 .card__right__container {
+  background: rgba(247, 247, 248, 0.9);
+  padding: 12px;
+  cursor: pointer;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 .card__right__container .latest__work__title_card {
-  background: rgba(247, 247, 248, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .card__right__container .latest__work__title_card .latest__work__card__title {
   font-family: "Outfit";
@@ -12,7 +22,6 @@
   line-height: 103.02%;
   letter-spacing: 0.035em;
   color: #0e1a2a;
-  padding-left: 19px;
 }
 .card__right__container .latest__work__title_card .card__paragraph {
   width: 286px;
@@ -23,7 +32,6 @@
   line-height: 99.02%;
   letter-spacing: -0.05em;
   color: #0e1a2a;
-  padding-left: 19px;
 }
 
 /*# sourceMappingURL=CardWrapper.module.css.map */

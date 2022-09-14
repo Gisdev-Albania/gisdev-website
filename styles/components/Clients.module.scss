@@ -1,6 +1,7 @@
 .clients__main__container {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
@@ -15,6 +16,7 @@
     .clients__top__container {
       display: flex;
       justify-content: flex-end;
+      width: 95%;
 
       .client__main {
         display: flex;
@@ -98,7 +100,7 @@
       }
       .bottom__side__card {
         display: flex;
-        width: 95%;
+        width: 90%;
         align-content: center;
         justify-content: center;
 

@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import styles from '../../../styles/components/Clients.module.scss';
 import Button from '../../Button';
 import { CardZoomOutReveal } from '../../CardZoomOutReveal';
+import { CardWrapper } from '../../CardWraper';
 
 export const Clients = () => {
   return (
@@ -15,35 +16,29 @@ export const Clients = () => {
         <div className={styles.latest__work__bottom__container}>
           <div className={styles.latest__work__cards}>
             <div className={styles.latest__work__title_card}>
-              <h1 className={styles.latest__work__card__title}>
-                Look our latest <br />
-                work...
-              </h1>
-              <p className={styles.latest__work__card__paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{' '}
-              </p>
-              <div>
-                <Button>
-                  Our Work
-                  {/*<Icon icon={'arrow'} type={IconType.Fill} />*/}
-                </Button>
-              </div>
+              <CardWrapper
+                title={'this is a title'}
+                paragraph={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.`}
+                buttonTitle={'Hover me '}
+                onClick={() => console.log('Clicked!')}
+                showButton={true}
+              />
             </div>
             <div className={styles.latest__work__slider}>
               {/*<div className={styles.latest__work__top}>*/}
-              <CardZoomOutReveal
-                title={'Some Title'}
-                alt={''}
-                description={
-                  'Some description about this card and its purpose.'
-                }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
-              />
+              {/*<CardZoomOutReveal*/}
+              {/*  title={'Some Title'}*/}
+              {/*  alt={''}*/}
+              {/*  description={*/}
+              {/*    'Some description about this card and its purpose.'*/}
+              {/*  }*/}
+              {/*  imageSrc={*/}
+              {/*    'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'*/}
+              {/*  }*/}
+              {/*/>*/}
               {/*</div>*/}
             </div>
           </div>

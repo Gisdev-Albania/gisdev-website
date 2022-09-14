@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 15px solid #1A304C;
+  border: 15px solid #1a304c;
 }
 .main .header__description .header__text__section {
   position: relative;

@@ -158,7 +158,7 @@
     @media (min-width: 54rem) {
       .container {
         max-width: 50rem;
-        grid-template-columns: repeat(10, 6rem);
+        grid-template-columns: repeat(10, 4.7rem);
       }
       .item {
         &:nth-child(9n+1) {grid-column: 1}

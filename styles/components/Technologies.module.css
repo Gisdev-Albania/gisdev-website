@@ -1,22 +1,30 @@
 .technologies {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
 }
 .technologies .technologies__main {
   display: flex;
-  padding: 10px;
   width: 85%;
   height: 100%;
 }
 .technologies .technologies__main .technologies__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 100%;
+  height: 100%;
 }
-.technologies .technologies__main .technologies__container .technologies__top {
+.technologies .technologies__main .technologies__container .technologies__top__container {
+  display: flex;
+  justify-content: flex-start;
+}
+.technologies .technologies__main .technologies__container .technologies__top__container .technologies__top {
   display: flex;
   font-family: "Outfit", "Inter", sans-serif;
   font-style: normal;
@@ -26,7 +34,7 @@
   letter-spacing: -0.02em;
   color: rgba(2, 134, 255, 0.5);
 }
-.technologies .technologies__main .technologies__container .technologies__top h1 {
+.technologies .technologies__main .technologies__container .technologies__top__container .technologies__top h1 {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 700;
@@ -35,19 +43,28 @@
   letter-spacing: -0.02em;
   color: rgba(2, 134, 255, 0.5);
 }
-.technologies .technologies__main .technologies__container .technologies__bottom {
+.technologies .technologies__main .technologies__container .technologies__bottom__container {
   display: flex;
-  flex: 1;
-}
-.technologies .technologies__main .technologies__container .technologies__bottom .technologies__left {
-  display: flex;
-  flex: 0.7;
+  height: 100%;
   width: 100%;
 }
-.technologies .technologies__main .technologies__container .technologies__bottom .technologies__right {
+.technologies .technologies__main .technologies__container .technologies__bottom__container .technologies__bottom {
   display: flex;
-  flex: 0.3;
-  width: 1000px;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.technologies .technologies__main .technologies__container .technologies__bottom__container .technologies__bottom .technologies__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+}
+.technologies .technologies__main .technologies__container .technologies__bottom__container .technologies__bottom .technologies__right {
+  display: flex;
+  height: 100%;
+  width: 30%;
 }
 
 /*# sourceMappingURL=Technologies.module.css.map */

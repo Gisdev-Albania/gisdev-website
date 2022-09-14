@@ -17,14 +17,16 @@ export const CardZoomOutReveal: React.FunctionComponent<
   const { imageSrc, width, height, title, alt, description } = props;
   return (
     <div className={styles.card}>
-      <figure>
-        {/*change from img input to IMAGE from next*/}
-        <img src={imageSrc} alt={alt} />
-        <figcaption>
-          <h2>{title}</h2>
-          <p>{description}</p>
-        </figcaption>
-      </figure>
+      <div className={styles.card__wrapper}>
+        <figure>
+          {/*change from img input to IMAGE from next*/}
+          <img src={imageSrc} alt={alt} />
+          <figcaption>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   );
 };

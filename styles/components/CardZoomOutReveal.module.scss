@@ -1,72 +1,86 @@
 .card {
-  //display: inline-block;
-  //box-sizing: border-box;
-  figure {
-    position: relative;
-    width: 350px;
-    height: 250px;
-    background-color: #000;
-    overflow: hidden;
-
-    figcaption::before {
-      content: '';
-      position: absolute;
-      inset: 20px;
-      border: 2px solid #fff;
-      opacity: 0;
-      scale: 1.25;
-      transition: opacity 0.25s, scale 0.25s;
-    }
-
-    &:hover figcaption::before {
-      opacity: 1;
-      scale: 1;
-    }
-
-    img {
-      position: relative;
-      display: block;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      opacity: 0.85;
-      scale: 1.15;
-      transition: opacity 0.25s, scale 0.35s;
-    }
-
-    &:hover img {
-      opacity: 0.5;
-      scale: 1;
-    }
-  }
-
-  figure figcaption {
-    position: absolute;
-    inset: 0;
-    padding: 50px;
-    color: #fff;
-    text-align: center;
+  height: 15rem;
+  //border: 0.2px solid rgba(229, 229, 229, 0.55);
+  //border-radius: 4px;
+  padding: 17px;
+  cursor: pointer;
+  .card__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 15px;
     justify-content: center;
+    width: 99%;
+    height: 99%;
 
-    h2 {
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    figure {
+      position: relative;
+      //width: 350px;
+      //height: 250px;
+      width: 99%;
+      height: 99%;
+      background-color: #000;
+      overflow: hidden;
+
+      figcaption::before {
+        content: '';
+        position: absolute;
+        inset: 20px;
+        border: 2px solid #fff;
+        opacity: 0;
+        scale: 1.25;
+        transition: opacity 0.25s, scale 0.25s;
+      }
+
+      &:hover figcaption::before {
+        opacity: 1;
+        scale: 1;
+      }
+
+      img {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.85;
+        scale: 1.15;
+        transition: opacity 0.25s, scale 0.35s;
+      }
+
+      &:hover img {
+        opacity: 0.5;
+        scale: 1;
+      }
     }
 
-    p {
-      font-size: 14px;
-      opacity: 0;
-      translate: -25px;
-      transition: opacity 0.25s, translate 0.25s;
-    }
+    figure figcaption {
+      position: absolute;
+      inset: 0;
+      padding: 50px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+      justify-content: center;
 
-    &:hover p {
-      opacity: 1;
-      translate: 0;
+      h2 {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 14px;
+        opacity: 0;
+        translate: -25px;
+        transition: opacity 0.25s, translate 0.25s;
+      }
+
+      &:hover p {
+        opacity: 1;
+        translate: 0;
+      }
     }
   }
 }
