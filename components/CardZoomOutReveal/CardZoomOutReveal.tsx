@@ -19,7 +19,6 @@ export const CardZoomOutReveal: React.FunctionComponent<
     <div className={styles.card}>
       <div className={styles.card__wrapper}>
         <figure>
-          {/*change from img input to IMAGE from next*/}
           <img src={imageSrc} alt={alt} />
           <figcaption>
             <h2>{title}</h2>

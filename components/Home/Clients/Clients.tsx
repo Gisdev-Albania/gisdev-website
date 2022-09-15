@@ -13,9 +13,9 @@ export const Clients = () => {
             <h1>Our Clients</h1>
           </div>
         </div>
-        <div className={styles.latest__work__bottom__container}>
-          <div className={styles.latest__work__cards}>
-            <div className={styles.latest__work__title_card}>
+        <div className={styles.client__bottom__container}>
+          <div className={styles.client__cards}>
+            <div className={styles.client__title_card}>
               <CardWrapper
                 title={'this is a title'}
                 paragraph={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -27,47 +27,49 @@ export const Clients = () => {
                 showButton={true}
               />
             </div>
-            <div className={styles.latest__work__slider}>
-              {/*<div className={styles.latest__work__top}>*/}
-              {/*<CardZoomOutReveal*/}
-              {/*  title={'Some Title'}*/}
-              {/*  alt={''}*/}
-              {/*  description={*/}
-              {/*    'Some description about this card and its purpose.'*/}
-              {/*  }*/}
-              {/*  imageSrc={*/}
-              {/*    'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'*/}
-              {/*  }*/}
-              {/*/>*/}
-              {/*</div>*/}
-            </div>
-          </div>
-          <div className={styles.bottom__side__card}>
-            <CardZoomOutReveal
-              title={'Some Title'}
-              alt={''}
-              description={'Some description about this card and its purpose.'}
-              imageSrc={
-                'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-              }
-            />
-            <CardZoomOutReveal
-              title={'Some Title'}
-              alt={''}
-              description={'Some description about this card and its purpose.'}
-              imageSrc={
-                'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-              }
-            />
+            <div className={styles.bottom__side__card}>
+              <CardZoomOutReveal
+                title={'Some Title'}
+                alt={''}
+                description={
+                  'Some description about this card and its purpose.'
+                }
+                imageSrc={
+                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
+                }
+              />
+              <CardZoomOutReveal
+                title={'Some Title'}
+                alt={''}
+                description={
+                  'Some description about this card and its purpose.'
+                }
+                imageSrc={
+                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
+                }
+              />
 
-            <CardZoomOutReveal
-              title={'Some Title'}
-              alt={''}
-              description={'Some description about this card and its purpose.'}
-              imageSrc={
-                'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-              }
-            />
+              <CardZoomOutReveal
+                title={'Some Title'}
+                alt={''}
+                description={
+                  'Some description about this card and its purpose.'
+                }
+                imageSrc={
+                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
+                }
+              />
+              <CardZoomOutReveal
+                title={'Some Title'}
+                alt={''}
+                description={
+                  'Some description about this card and its purpose.'
+                }
+                imageSrc={
+                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
+                }
+              />
+            </div>
           </div>
         </div>{' '}
       </div>

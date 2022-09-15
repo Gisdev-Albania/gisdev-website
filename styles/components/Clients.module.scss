@@ -13,10 +13,11 @@
     justify-content: center;
     align-content: center;
     height: 100%;
+    width: 85%;
+
     .clients__top__container {
       display: flex;
       justify-content: flex-end;
-      width: 95%;
 
       .client__main {
         display: flex;
@@ -39,29 +40,28 @@
       }
     }
 
-    .latest__work__bottom__container {
+    .client__bottom__container {
       display: flex;
       width: 100%;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 100vh;
 
-      .latest__work__cards {
+      .client__cards {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-around;
-        flex: 1;
+        height: 100%;
+        justify-content: space-between;
 
-        .latest__work__title_card {
+        .client__title_card {
           display: flex;
           flex-direction: column;
-          width: 483px;
-          height: 420px;
-
+          width: 30%;
+          height: 570px;
           background: rgba(247, 247, 248, 0.9);
-          .latest__work__card__title {
+
+          .client__card__title {
             font-family: 'Outfit';
             font-style: normal;
             font-weight: 700;
@@ -71,40 +71,20 @@
             color: #0e1a2a;
             padding-left: 19px;
           }
-          .latest__work__card__paragraph {
-            width: 286px;
-            font-family: 'Outfit';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 99.02%;
-            letter-spacing: -0.05em;
-            color: #0e1a2a;
-            padding-left: 19px;
-          }
         }
-        .latest__work__slider {
-          display: flex;
-          width: 483px;
-          height: 420px;
-          flex-grow: 0.5;
-          background: #1a304d;
-          position: relative;
 
-          .latest__work__top {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
+        .bottom__side__card {
+          display: grid;
+          //justify-self: flex-start;
+          //align-self: flex-start;
+          gap: 0.8rem;
+          width: 68%;
+          //height: 570px;
+          grid-template-columns: repeat(2, 1fr);
+
         }
       }
-      .bottom__side__card {
-        display: flex;
-        width: 90%;
-        align-content: center;
-        justify-content: center;
 
-      }
     }
   }
 }
