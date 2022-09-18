@@ -13,7 +13,7 @@ import { Technologies } from '../components/Home/Techologies';
 import { Clients } from '../components/Home/Clients';
 import { Testimonials } from '../components/Home/Testimonials';
 import { JoinTeam } from '../components/Home/JoinTeam';
-import CardListing from '../components/Card/CardListing';
+
 const Home: NextPage = () => {
   return (
     <>
@@ -52,9 +52,9 @@ const Home: NextPage = () => {
             </div>
           </div>
           <Header />
+          <MainLayout />
         </div>
         {/* Main Layout Start */}
-        <MainLayout />
         <div className={styles.main__layout}>
           <Services />
           <LatestWork />

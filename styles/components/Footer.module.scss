@@ -1,4 +1,4 @@
-@import "../colors";
+@import '../colors';
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 
 .footer_section {
@@ -7,7 +7,7 @@
   padding: 2rem 0;
   justify-content: center;
   align-items: center;
-  background: $primary_color;
+  background: rgb(2, 20, 28);
   box-sizing: border-box;
 
   .container {
@@ -48,8 +48,10 @@
               outline: none;
               margin-bottom: 10px;
               color: #9da1a5;
-              font-family: "Saira Condensed", sans-serif;
-              font-size: 18px;
+              //font-family: "Saira Condensed", sans-serif;
+              font-family: 'Outfit', sans-serif;
+
+              font-size: 16px;
             }
           }
         }
@@ -81,13 +83,13 @@
                 position: relative;
                 //display: inline-block;
                 h4 {
-                  font-family: "Saira Condensed", sans-serif;
+                  font-family: 'Outfit', sans-serif;
                   color: #fff;
                   line-height: 1.2;
                 }
                 p {
                   color: #e8e6ec;
-                  font-family: "Saira Condensed", sans-serif;
+                  font-family: 'Outfit', sans-serif;
                   font-weight: 200;
                   font-size: 18px;
                   position: relative;
@@ -106,10 +108,10 @@
                     list-style-type: disc;
                     a {
                       margin-bottom: 10px;
-                      font-size: 18px;
+                      font-size: 16px;
                       font-weight: 400;
                       color: #9da1a5;
-                      font-family: "Saira Condensed", sans-serif;
+                      font-family: 'Outfit', sans-serif;
                       text-decoration: none;
                       -webkit-transition: all 0.4s ease-in;
                       transition: all 0.4s ease-in;
@@ -117,6 +119,24 @@
                         color: $primary_blue;
                       }
                     }
+                  }
+                  p {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #9da1a5;
+                    font-family: 'Outfit', sans-serif;
+                    text-decoration: none;
+                    -webkit-transition: all 0.4s ease-in;
+                    transition: all 0.4s ease-in;
+
+                  }
+                  input {
+                    width: 100%;
+                    padding: 5px 4px;
+                    margin: 5px 0;
+                    box-sizing: border-box;
+
                   }
                 }
 
@@ -136,7 +156,7 @@
 
                     ul {
                       a {
-                        font-family: "Saira Condensed", sans-serif;
+                        font-family: 'Outfit', sans-serif;
                         padding: 8px;
                         animation: float 4s ease-in-out infinite;
                         display: inline-block;
@@ -193,7 +213,7 @@
         .footer__bottom__left {
           p {
             color: #9da1a5;
-            font-family: "Saira Condensed", sans-serif;
+            font-family: 'Saira Condensed', sans-serif;
           }
         }
 
@@ -211,7 +231,7 @@
               -webkit-transition: all 0.4s ease-in;
               transition: all 0.4s ease-in;
               line-height: 24px;
-              font-family: "Saira Condensed", sans-serif;
+              font-family: 'Saira Condensed', sans-serif;
               text-decoration: none;
               cursor: pointer;
 

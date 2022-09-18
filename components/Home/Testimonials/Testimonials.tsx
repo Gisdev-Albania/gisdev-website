@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../../../styles/components/Testimonials.module.scss';
 import Button from '../../Button';
-import { CardZoomOutReveal } from '../../CardZoomOutReveal';
 import { CardWrapper } from '../../CardWraper';
 import Image from 'next/image';
 
@@ -30,7 +29,7 @@ export const Testimonials = () => {
                       <div></div>
                       <div className={styles.author}>
                         <h5>Abdullah Ansary</h5>
-                        <Button>hover me</Button>
+                        <Button isPrimary={true}>hover me</Button>
                       </div>
                     </div>
                   </div>
@@ -58,7 +57,7 @@ export const Testimonials = () => {
                       <div></div>
                       <div className={styles.author}>
                         <h5>Abdullah Ansary</h5>
-                        <Button>hover me</Button>
+                        <Button isPrimary={true}>hover me</Button>
                       </div>
                     </div>
                   </div>

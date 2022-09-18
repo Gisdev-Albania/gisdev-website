@@ -17,7 +17,7 @@
 .services__main .services__card__container {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   justify-content: space-around;
   gap: 36px;
 }
@@ -28,22 +28,6 @@
 }
 .services__main .services__card__container .services__cards h1 {
   color: #f7f7f8;
-}
-.services__main .services__card__container .services__cards__primary {
-  width: 400px;
-  height: 250px;
-  background: rgba(247, 247, 248, 0.9);
-  border: 1px solid #000000;
-}
-.services__main .services__card__container .services__cards__primary h1 {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 103.02%;
-  letter-spacing: 0.035em;
-  color: #0e1a2a;
-  padding-left: 19px;
 }
 
 /*# sourceMappingURL=Services.module.css.map */

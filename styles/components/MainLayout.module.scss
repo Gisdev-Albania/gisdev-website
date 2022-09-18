@@ -102,3 +102,132 @@
     }
   }
 }
+
+
+
+// version 0.2
+.hero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  //background-image: url(../../public/backgroundImage.png);
+  //background: hsl(7 ,0, 7);
+  //background-color:hsla(234,61%,12%,1);
+  //background-image:
+  //        radial-gradient(at 43% 61%, hsla(240,93%,15%,1) 0px, transparent 50%),
+  //        radial-gradient(at 48% 38%, hsla(241,100%,19%,1) 0px, transparent 50%),
+  //        radial-gradient(at 72% 45%, hsla(240,89%,16%,1) 0px, transparent 50%);
+  //background-repeat: no-repeat;
+  //background-size: cover;
+}
+
+.hero__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.hero__container__left {
+  width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container__left {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left {
+    line-height: 1.5;
+  }
+}
+
+.hero__container__left h1 {
+  font-size: 4rem;
+  color: $primary_blue;
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero__container__left h2 {
+  font-size: 4rem;
+  color: $primary_white;
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left h2 {
+    font-size: 2rem;
+  }
+}
+
+.hero__container__left p {
+  font-size: 2rem;
+  color: $primary_white;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left p {
+    font-size: 1.5rem;
+  }
+}
+
+
+.hero__container__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fb4b4e;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.hero__container__btn:hover:after {
+  width: 100%;
+}
+
+.hero__container__right {
+  text-align: center;
+
+  .alien__image {
+    animation: float 4s ease-in-out infinite;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    animation-delay: 1s;
+
+  }
+
+}

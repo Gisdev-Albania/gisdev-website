@@ -121,7 +121,7 @@
   letter-spacing: 0.1em;
   color: $primary_white;
   text-decoration: none;
-  @include btn-border-slide(#ffffff, #168dff, 2px, 0.9s);
+  @include btn-border-slide(#ffffff, $border_blue, 2px, 0.9s);
 }
 
 .btn__secondary {
@@ -129,5 +129,5 @@
   letter-spacing: 0.1em;
   color: $dark_blue;
   text-decoration: none;
-  @include btn-border-slide($dark_blue, #168dff, 2px, 0.9s);
+  @include btn-border-slide($dark_blue, $border_blue, 2px, 0.9s);
 }

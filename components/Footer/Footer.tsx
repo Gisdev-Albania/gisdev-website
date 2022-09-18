@@ -112,7 +112,7 @@ export const Footer = () => {
                           technology. Enter your e-mail and subscribe to our
                           newsletter.
                         </p>
-                        <input type="text" />
+                        <input type="text" placeholder={'Enter e-mail!'} />
                       </div>
                     </div>
                   </div>

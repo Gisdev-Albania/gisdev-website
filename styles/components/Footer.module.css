@@ -5,7 +5,7 @@
   padding: 2rem 0;
   justify-content: center;
   align-items: center;
-  background: #17181a !important;
+  background: rgb(2, 20, 28);
   box-sizing: border-box;
 }
 .footer_section .container {
@@ -45,8 +45,8 @@
   outline: none;
   margin-bottom: 10px;
   color: #9da1a5;
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
 }
 .footer_section .container .footer__top__area .footer__center .footer__right {
   display: flex;
@@ -74,13 +74,13 @@
   position: relative;
 }
 .footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item h4 {
-  font-family: "Saira Condensed", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: #fff;
   line-height: 1.2;
 }
 .footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item p {
   color: #e8e6ec;
-  font-family: "Saira Condensed", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 200;
   font-size: 18px;
   position: relative;
@@ -98,16 +98,32 @@
 }
 .footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item .footer__menu__explorer ul a {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #9da1a5;
-  font-family: "Saira Condensed", sans-serif;
+  font-family: "Outfit", sans-serif;
   text-decoration: none;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
 .footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item .footer__menu__explorer ul a:hover {
   color: rgb(14, 114, 178);
+}
+.footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item .footer__menu__explorer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #9da1a5;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item .footer__menu__explorer input {
+  width: 100%;
+  padding: 5px 4px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 .footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item .social__area {
   display: flex;
@@ -122,7 +138,7 @@
   color: rgb(14, 114, 178);
 }
 .footer_section .container .footer__top__area .footer__center .footer__right .footer__right__area .row__options .footer__item .social__area .footer__widget ul a {
-  font-family: "Saira Condensed", sans-serif;
+  font-family: "Outfit", sans-serif;
   padding: 8px;
   animation: float 4s ease-in-out infinite;
   display: inline-block;

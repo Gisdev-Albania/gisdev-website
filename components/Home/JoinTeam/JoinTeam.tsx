@@ -7,10 +7,10 @@ export const JoinTeam = () => {
     <div className={styles.join__main__container}>
       <div className={styles.join__section}>
         <div className={styles.join__top__section}>
-          <h1>Join our team</h1>
+          <h1>Don`t be Late, Join Us Today!</h1>
         </div>
         <div className={styles.join__bottom__section}>
-          <Button>Join now </Button>
+          <Button isPrimary>Join now </Button>
         </div>
       </div>
     </div>
