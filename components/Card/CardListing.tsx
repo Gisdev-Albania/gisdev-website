@@ -54,8 +54,6 @@ const data = [
 ];
 
 const CardListing: React.FC = () => {
-  const [bookType, setBookType] = useState<string>('PERIODIK');
-
   return (
     <>
       <div className={styles.card__listing}>

@@ -3,6 +3,7 @@ import styles from '../../../styles/components/Testimonials.module.scss';
 import Button from '../../Button';
 import { CardWrapper } from '../../CardWraper';
 import Image from 'next/image';
+import { CardOutlineBorder } from '../../CardOutlineBorder';
 
 export const Testimonials = () => {
   return (
@@ -17,59 +18,63 @@ export const Testimonials = () => {
           <div className={styles.left__testimonial__Section}>
             <div className={styles.left__main__section}>
               <div className={styles.top__left__card}>
-                <div className={styles.testimonial__wrapper}>
-                  <div className={styles.testimonial__content}>
-                    <h6>
-                      You all offered really sound advice throughout the
-                      process. We came up with a strong brand that will live on
-                      for decades. What we all created will soon become part of
-                      the soul of AMPP
-                    </h6>
-                    <div>
-                      <div></div>
-                      <div className={styles.author}>
-                        <h5>Abdullah Ansary</h5>
-                        <Button isPrimary={true}>hover me</Button>
+                <CardOutlineBorder>
+                  <div className={styles.testimonial__wrapper}>
+                    <div className={styles.testimonial__content}>
+                      <h6>
+                        You all offered really sound advice throughout the
+                        process. We came up with a strong brand that will live
+                        on for decades. What we all created will soon become
+                        part of the soul of AMPP
+                      </h6>
+                      <div>
+                        <div></div>
+                        <div className={styles.author}>
+                          <h5>Abdullah Ansary</h5>
+                          <Button isPrimary={true}>hover me</Button>
+                        </div>
                       </div>
                     </div>
+                    <div className={styles.right__testimonial__image}>
+                      <Image
+                        src={'/banner1.png'}
+                        alt={''}
+                        width={250}
+                        height={300}
+                      />
+                    </div>
                   </div>
-                  <div className={styles.right__testimonial__image}>
-                    <Image
-                      src={'/banner1.png'}
-                      alt={''}
-                      width={250}
-                      height={300}
-                    />
-                  </div>
-                </div>
+                </CardOutlineBorder>
               </div>
 
               <div className={styles.top__left__card}>
-                <div className={styles.testimonial__wrapper}>
-                  <div className={styles.testimonial__content}>
-                    <h6>
-                      You all offered really sound advice throughout the
-                      process. We came up with a strong brand that will live on
-                      for decades. What we all created will soon become part of
-                      the soul of AMPP
-                    </h6>
-                    <div>
-                      <div></div>
-                      <div className={styles.author}>
-                        <h5>Abdullah Ansary</h5>
-                        <Button isPrimary={true}>hover me</Button>
+                <CardOutlineBorder>
+                  <div className={styles.testimonial__wrapper}>
+                    <div className={styles.testimonial__content}>
+                      <h6>
+                        You all offered really sound advice throughout the
+                        process. We came up with a strong brand that will live
+                        on for decades. What we all created will soon become
+                        part of the soul of AMPP
+                      </h6>
+                      <div>
+                        <div></div>
+                        <div className={styles.author}>
+                          <h5>Abdullah Ansary</h5>
+                          <Button isPrimary={true}>hover me</Button>
+                        </div>
                       </div>
                     </div>
+                    <div className={styles.right__testimonial__image}>
+                      <Image
+                        src={'/banner1.png'}
+                        alt={''}
+                        width={250}
+                        height={300}
+                      />
+                    </div>
                   </div>
-                  <div className={styles.right__testimonial__image}>
-                    <Image
-                      src={'/banner1.png'}
-                      alt={''}
-                      width={250}
-                      height={300}
-                    />
-                  </div>
-                </div>
+                </CardOutlineBorder>
               </div>
             </div>
           </div>

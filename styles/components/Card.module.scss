@@ -1,7 +1,30 @@
 @import '../colors';
 
+$width  : 400px;
+$height : 120px;
+$primary_color : #3084AC;
+$border_color--hover : lighten($primary_color, 80);
+$stroke : 2px;
+$border: 1px solid darken($primary_color,10);
+$transition_duration:200ms;
+$pipeline_width: $width+$stroke;
+$pipeline_height: $height+$stroke;
+$pipes : 4;
+
+@function border-pipeline ($transition_duration, $pipe) {
+  @return $transition_duration*$pipe;
+}
+
+@mixin border-animation($dimension, $easing ,$pipe )
+{
+  transition: $transition_duration  $dimension $easing border-pipeline($transition_duration,$pipe);
+  -web-kit-transition: $transition_duration  $dimension $easing border-pipeline($transition_duration,$pipe);
+}
+
+
+
 .card {
-  height: 13.5rem;
+  height: 12.5rem;
   background: $secondary_blue;
   //border: 0.2px solid rgba(229, 229, 229, 0.55);
   //border-radius: 4px;
@@ -16,13 +39,13 @@
     justify-content: center;
     width: 99%;
     height: 99%;
-    border: 0.2px solid rgba(229, 229, 229, 0.55);
+    //border: 0.2px solid rgba(229, 229, 229, 0.55);
 
-    &:hover {
-      border: 2px solid transparent;
-      transform: scale(1.05);
-      transition: all 0.2s ease-out;
-    }
+    //&:hover {
+    //  border: 2px solid transparent;
+    //  transform: scale(1.05);
+    //  transition: all 0.2s ease-out;
+    //}
 
     .card__author {
       display: flex;

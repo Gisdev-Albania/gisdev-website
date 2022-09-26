@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../../../styles/components/MainLayout.module.scss';
 import Image from 'next/image';
-
 import Button from '../../Button';
 
 export const MainLayout = () => {
@@ -67,16 +66,10 @@ export const MainLayout = () => {
         <div className={styles.hero__container__right}>
           <Image
             src={'/img-2.svg'}
-            // layout={'fill'}
             width={1100}
             height={1000}
             className={styles.alien__image}
           />
-          {/*<img*/}
-          {/*  src="./img-2.svg"*/}
-          {/*  alt="alien"*/}
-          {/*  className={styles.hero__container__img}*/}
-          {/*/>*/}
         </div>
       </div>
     </div>

@@ -61,7 +61,11 @@
               word-wrap: break-word;
               background-color: $secondary_blue;
               background-clip: border-box;
-              border: 1px solid $transpharent__white;
+              border: 1px solid $transparent__white;
+
+              &:hover {
+                border: 1px solid transparent;
+              }
 
               .testimonial__content {
                 padding: 15px;

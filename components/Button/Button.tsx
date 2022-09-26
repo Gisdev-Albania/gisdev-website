@@ -1,7 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import styles from '../../styles/components/Button.module.scss';
 
-interface ButtonProps {
+export interface ButtonProps {
   children: React.ReactNode;
   onClick?: (e: SyntheticEvent<HTMLElement>) => void;
   className?: string | undefined | null;

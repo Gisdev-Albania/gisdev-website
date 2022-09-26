@@ -3,11 +3,8 @@ import styles from '../../styles/components/Header.module.scss';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 export const Header = () => {
-  const router = useRouter();
-
   return (
     <>
       <Head>
@@ -28,10 +25,10 @@ export const Header = () => {
             </div>
 
             <div className={styles.header__navigation}>
-              <Link href={'#'}>
+              <Link href={'/'}>
                 <a className={styles.active}>HOME</a>
               </Link>
-              <Link href={'#1'}>
+              <Link href={'/AboutUs'}>
                 <a>ABOUT US</a>
               </Link>
               <Link href={'#2'}>

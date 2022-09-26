@@ -1,0 +1,91 @@
+@import "../colors";
+$border_color--hover: lighten($primary_color, 80);
+$stroke: 2px;
+$border: 1px solid darken($primary_color, 10);
+$transition_duration: 240ms;
+$pipeline_width: 100.5%;
+$pipeline_height: 100.9%;
+$pipes: 4;
+
+@function border-pipeline($transition_duration, $pipe) {
+  @return $transition_duration * $pipe;
+}
+
+@mixin border-animation($dimension, $easing, $pipe) {
+  transition: $transition_duration $dimension $easing
+    border-pipeline($transition_duration, $pipe);
+  -web-kit-transition: $transition_duration $dimension $easing
+    border-pipeline($transition_duration, $pipe);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: $border;
+  text-align: center;
+  position: relative;
+  //top: 50px;
+  cursor: pointer;
+  transition: all 0.45s ease-in;
+  &:before {
+    position: absolute;
+    width: 0;
+    height: $stroke;
+    content: '';
+    background: $secondary_white;
+    top: -$stroke;
+    left: -$stroke;
+    @include border-animation(width, ease, 3);
+  }
+  &:after {
+    position: absolute;
+    width: $stroke;
+    height: 0;
+    content: '';
+    background: $secondary_white;
+    top: -$stroke;
+    right: -$stroke;
+    @include border-animation(height, ease, 2);
+  }
+  .box__inner:after {
+    position: absolute;
+    width: 0;
+    height: $stroke;
+    content: '';
+    background: $secondary_white;
+    bottom: -$stroke;
+    right: -$stroke;
+    @include border-animation(width, ease, 1);
+  }
+  .box__inner:before {
+    position: absolute;
+    width: $stroke;
+    height: 0;
+    content: '';
+    background: $secondary_white;
+    bottom: -$stroke;
+    left: -$stroke;
+    @include border-animation(height, ease, 0);
+  }
+  &:hover {
+    border-color: transparent;
+    background: darken($primary_color, 30);
+    &:before {
+      width: $pipeline_width;
+      @include border-animation(width, ease, 0);
+    }
+    &:after {
+      height: $pipeline_height;
+      @include border-animation(height, ease, 1);
+    }
+    .box__inner:after {
+      width: $pipeline_width;
+      @include border-animation(width, ease, 2);
+    }
+    .box__inner:before {
+      height: $pipeline_height;
+      @include border-animation(height, ease, 3);
+    }
+  }
+}
