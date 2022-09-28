@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/components/Button02.module.scss';
+import styles from '../../styles/components/CardOutlineBorder.module.scss';
 import { ButtonProps } from '../Button/Button';
 
 export const CardOutlineBorder: React.FunctionComponent<
