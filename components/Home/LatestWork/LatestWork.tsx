@@ -19,9 +19,9 @@ export const LatestWork = () => {
           <div className={styles.latest__work__cards}>
             <div className={styles.latest__work__title_card}>
               <CardWrapper
-                title={'latest work'}
+                title={'GISDEV is  professional and fully responsible.\n'}
                 paragraph={
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores autem corporis cumque, deleniti deserunt dolore exercitationem illo nemo nostrum perferendis possimus quo veniam voluptates?'
+                  'From the simple to the complex, we develop web and mobile software to enable the public and private companies to access, manipulate and manage data. We build strong relationships with our clients by doing three things: being accountable for our projects, making our processes transparent, and delivering excellent results.'
                 }
                 buttonTitle={'More Info'}
                 showButton={true}

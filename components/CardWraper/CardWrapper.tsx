@@ -17,7 +17,7 @@ export const CardWrapper: React.FunctionComponent<CardProps> = props => {
   return (
     <div className={styles.card__right__container}>
       <div className={styles.latest__work__title_card}>
-        <h1 className={styles.latest__work__card__title}>{title}</h1>
+        <h2 className={styles.latest__work__card__title}>{title}</h2>
         <p className={styles.card__paragraph}>{paragraph}</p>
         <div>
           {showButton === true ? (
