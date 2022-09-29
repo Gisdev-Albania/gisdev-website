@@ -1,5 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import styles from '../../styles/components/Button.module.scss';
+import Image from 'next/image';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 export interface ButtonProps {
   children: React.ReactNode;
@@ -12,17 +14,20 @@ export interface ButtonProps {
 export const Button: React.FunctionComponent<ButtonProps> = props => {
   const { children, onClick, className, isSecondary, isPrimary } = props;
   return (
-    <a
-      onClick={onClick}
-      className={
-        isPrimary === true ? styles.btn__primary : styles.btn__secondary
-      }
-    >
-      <span>
+    <>
+      <a
+        onClick={onClick}
+        className={
+          isPrimary === true ? styles.btn__primary : styles.btn__secondary
+        }
+      >
         <span>
-          <span>{children}</span>
+          <span>
+            <span>{children}</span>
+          </span>
         </span>
-      </span>
-    </a>
+        <HiArrowNarrowRight />
+      </a>
+    </>
   );
 };

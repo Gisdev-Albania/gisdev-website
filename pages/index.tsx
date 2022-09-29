@@ -13,6 +13,7 @@ import { Technologies } from '../components/Home/Techologies';
 import { Clients } from '../components/Home/Clients';
 import { Testimonials } from '../components/Home/Testimonials';
 import { JoinTeam } from '../components/Home/JoinTeam';
+import { NewTestimonials } from '../components/Home/NewTestimonials';
 
 const Home: NextPage = () => {
   return (
@@ -58,9 +59,10 @@ const Home: NextPage = () => {
         <div className={styles.main__layout}>
           <Services />
           <LatestWork />
-          <Technologies />
+          {/* <Technologies /> */}
           <Clients />
-          <Testimonials />
+          <NewTestimonials />
+          {/* <Testimonials /> */}
           <JoinTeam />
         </div>
         {/* Main Layout End */}
