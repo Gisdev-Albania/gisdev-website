@@ -19,7 +19,7 @@ export const CardWrapper: React.FunctionComponent<CardProps> = props => {
       <div className={styles.latest__work__title_card}>
         <h2 className={styles.latest__work__card__title}>{title}</h2>
         <p className={styles.card__paragraph}>{paragraph}</p>
-        <div>
+        <div className={styles.card__bottom}>
           {showButton === true ? (
             <Button onClick={onClick}>{buttonTitle}</Button>
           ) : null}

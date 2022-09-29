@@ -10,7 +10,7 @@ const data = [
   },
   {
     id: 12,
-    bookTitle: 'Software solutions for industries',
+    bookTitle: 'Software Solutions',
     isPrimary: true,
   },
   {

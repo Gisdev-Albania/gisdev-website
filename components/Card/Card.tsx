@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from '../../styles/components/Card.module.scss';
 import { CardOutlineBorder } from '../CardOutlineBorder';
-import Image from 'next/image';
+import { DiAndroid } from 'react-icons/di';
+import Button from '../Button';
 
 export interface CardProps {
   id?: number;
@@ -25,16 +26,15 @@ export const Card: React.FC<CardProps> = ({
       <CardOutlineBorder>
         <div className={isPrimary === true ? styles.card : styles.card__active}>
           <div className={styles.card__wrapper}>
-            <div className={styles.card__author}>
-              <h1>{bookTitle}</h1>
-            </div>
-            <div className={styles.card__date}>
-              <span>{bookCode}</span>
-            </div>
+            <h1>{bookTitle}</h1>
 
-            <div className={styles.card__footer}>
-              <Image src={'/web.png'} alt={''} width={50} height={50} />
-            </div>
+            {isPrimary === true ? (
+              <div className={styles.card__footer}>
+                <DiAndroid />
+              </div>
+            ) : (
+              <Button isSecondary={true}>All Services</Button>
+            )}
           </div>
         </div>
       </CardOutlineBorder>
