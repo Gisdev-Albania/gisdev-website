@@ -16,6 +16,7 @@
     height: 99%;
 
     h1 {
+      color: $primary_white;
       font-size: 29px;
       font-weight: 640;
       max-width: 200px;
@@ -36,6 +37,8 @@
 
     .card__footer {
       font-size: 60px;
+      color: $primary_white;
+
       //-webkit-transition: all 0.4s ease-in;
       //transition: all 0.4s ease-in;
       //
@@ -52,12 +55,12 @@
   box-shadow: 0 2px 8px rgb(6, 64, 152);
   padding: 17px;
   cursor: pointer;
-  color: $secondary_blue;
 
   .card__wrapper {
     display: flex;
     flex-direction: column;
     h1 {
+      color: $secondary_blue;
       font-size: 36px;
       font-weight: 800;
       max-width: 250px;
