@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../../styles/components/NewTestimonials.module.scss';
 import Button from '../../Button';
+import { CardOutlineBorder } from '../../CardOutlineBorder';
 
 export const NewTestimonials = () => {
   const testimonials = [
@@ -39,15 +40,19 @@ export const NewTestimonials = () => {
         <div className={styles.testimonials__second__card}>
           {testimonials.map((comment, key) => {
             return (
-              <div key={key} className={styles.testimonials__group__card}>
-                <div className={styles.testimonials__title__part}>
-                  <div className={styles.testimonials__card__profile}></div>
-                  <p className={styles.testimonials__card__title}>
-                    {comment.name}
-                  </p>
-                </div>
-                <p>{comment.text}</p>
-              </div>
+              <>
+                <CardOutlineBorder>
+                  <div key={key} className={styles.testimonials__group__card}>
+                    <div className={styles.testimonials__title__part}>
+                      <div className={styles.testimonials__card__profile}></div>
+                      <p className={styles.testimonials__card__title}>
+                        {comment.name}
+                      </p>
+                    </div>
+                    <p>{comment.text}</p>
+                  </div>
+                </CardOutlineBorder>
+              </>
             );
           })}
         </div>
