@@ -12,9 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 100%;
-    width: 85%;
-
+    width: 70vw;
     .clients__top__container {
       display: flex;
       justify-content: flex-end;
@@ -81,10 +79,8 @@
           width: 68%;
           //height: 570px;
           grid-template-columns: repeat(2, 1fr);
-
         }
       }
-
     }
   }
 }

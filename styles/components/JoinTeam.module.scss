@@ -2,34 +2,27 @@
 
 .join__main__container {
   display: flex;
-  height: 35vh;
+  height: 15vh;
   width: 100%;
   justify-content: center;
   align-items: center;
   background: $secondary_blue;
 
-  .join__section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 90%;
+  .join__top__section {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 103.02%;
+    /* or 49px */
 
-    .join__top__section {
-      border-bottom: 4px solid $primary_white;
-      h1 {
-        font-family: 'Outfit';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 103.02%;
-        letter-spacing: 0.035em;
-        color: #f7f7f8;
-      }
-    }
+    letter-spacing: 0.035em;
 
-    .join__bottom__section {
-    }
+    color: #f7f7f8;
+  }
+
+  .banner__text:hover {
+    color: #0286ff;
+    cursor: pointer;
   }
 }

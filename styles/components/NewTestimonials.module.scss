@@ -1,5 +1,6 @@
 .testimonials__container {
   padding-bottom: 3rem;
+  width: 70vw;
   .testimonials__main__title {
     font-family: 'Outfit';
     font-style: normal;
@@ -39,7 +40,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       .testimonials__group__card {
-        width: 600px;
+        width: 500px;
         height: 206px;
         background: #1a304d;
         padding: 15px;
