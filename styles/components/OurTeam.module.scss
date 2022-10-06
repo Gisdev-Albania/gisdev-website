@@ -1,0 +1,36 @@
+.ourteam__main__container {
+  margin-top: 3rem;
+  width: 70vw;
+  height: 382px;
+  background: #1a304c;
+  border: 1px solid #000000;
+  display: flex;
+  .ourteam__first_element {
+    display: flex;
+    flex-direction: column;
+    .ourteam__title {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 103.02%;
+      /* or 49px */
+
+      letter-spacing: 0.035em;
+
+      color: #f7f7f8;
+      padding-left: 35px;
+    }
+  }
+
+  .ourteam__second_section {
+    display: flex;
+    .ourteam__cards {
+      margin-left: 5rem;
+      margin-top: 1.5rem;
+      background-color: #f7f7f8;
+      height: 325px;
+      width: 250px;
+    }
+  }
+}

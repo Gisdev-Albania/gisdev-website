@@ -1,0 +1,77 @@
+@import '../colors';
+
+.latest__main__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
+
+  .latest__work__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70.55%;
+    height: 100%;
+
+    .latest__work__top__container {
+      display: flex;
+      justify-content: flex-end;
+
+      .latest__work__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          font-family: 'Outfit';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 96px;
+          line-height: 90.52%;
+          letter-spacing: -0.02em;
+          color: $primary_text;
+        }
+      }
+    }
+
+    .latest__work__bottom__container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .latest__work__cards {
+        height: 35em;
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        gap: 1.8rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding-block: 2rem;
+        margin: 0;
+
+        .latest__work__title_card {
+          height: 100%;
+        }
+        .latest__work__slider {
+          display: flex;
+          flex-grow: 0.5;
+          background: #1a304d;
+          position: relative;
+
+          .latest__work__top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

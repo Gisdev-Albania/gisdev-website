@@ -1,0 +1,87 @@
+@import '../colors';
+
+.technologies {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
+
+  .technologies__main {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    //display: flex;
+    //width: 100%;
+    //height: 100%;
+    //justify-content: center;
+    //margin-right: auto;
+    //margin-left: auto;
+    //padding: 20px 0;
+
+    .technologies__container {
+      //display: flex;
+      //flex-direction: column;
+      //width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 100%;
+
+      .technologies__top__container {
+        display: flex;
+        justify-content: flex-start;
+        .technologies__top {
+          display: flex;
+          font-family: 'Outfit', 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 96px;
+          line-height: 90.52%;
+          letter-spacing: -0.02em;
+          color: rgba(2, 134, 255, 0.5);
+          h1 {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 90.52%;
+            letter-spacing: -0.02em;
+            color: rgba(2, 134, 255, 0.5);
+          }
+        }
+      }
+
+      .technologies__bottom__container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        .technologies__bottom {
+          display: flex;
+          gap: 10px;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+
+          .technologies__left {
+            //border: 1px solid sandybrown;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 70%;
+          }
+          .technologies__right {
+            display: flex;
+            height: 100%;
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}

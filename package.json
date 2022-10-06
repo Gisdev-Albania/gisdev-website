@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "next": "12.2.3",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "remixicon-react": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "18.6.3",

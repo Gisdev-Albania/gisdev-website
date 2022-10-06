@@ -1,0 +1,33 @@
+.services__main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services__main .services__title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 90.52%;
+  letter-spacing: -0.02em;
+  color: rgba(2, 134, 255, 0.5);
+}
+.services__main .services__card__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  gap: 36px;
+}
+.services__main .services__card__container .services__cards {
+  width: 400px;
+  height: 250px;
+  background: #1a304d;
+}
+.services__main .services__card__container .services__cards h1 {
+  color: #f7f7f8;
+}
+
+/*# sourceMappingURL=Services.module.css.map */

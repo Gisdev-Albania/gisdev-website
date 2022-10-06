@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;300&display=swap");
+.header__main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  line-height: 80px !important;
+  z-index: 10;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+.header__main__background {
+  position: fixed;
+}
+
+.header__wrap {
+  display: flex;
+  line-height: 80px !important;
+  width: 85%;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  padding: 0 15px;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+}
+.header .header__logo {
+  flex: 0.3;
+  display: flex;
+  padding: 0 10px;
+}
+.header .header__navigation {
+  display: flex;
+  flex: 0.9;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.header .header__navigation a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  /* or 16px */
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.header__navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  right: -70px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  border-radius: 5px;
+  background-color: rgb(14, 114, 178);
+  width: auto;
+  width: 155px;
+}
+.header__navbar h4 {
+  color: #fff;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

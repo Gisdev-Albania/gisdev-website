@@ -1,0 +1,33 @@
+.services__main {
+  display: flex;
+  width: 100%;
+  //height: 95vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .services__title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 90.52%;
+    letter-spacing: -0.02em;
+    color: rgba(2, 134, 255, 0.5);
+  }
+  .services__card__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    gap: 36px;
+    .services__cards {
+      width: 400px;
+      height: 250px;
+      background: #1a304d;
+      h1 {
+        color: #f7f7f8;
+      }
+    }
+  }
+}

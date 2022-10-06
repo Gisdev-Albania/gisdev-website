@@ -1,0 +1,123 @@
+@import '../colors';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap');
+
+.hero {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    .banner__image {
+      overflow: hidden;
+      position: absolute;
+      right: 50px;
+      z-index: 9;
+    }
+  }
+  .hero__container__right {
+    width: 100%;
+    line-height: 1.2;
+    position: relative;
+    left: -255px;
+
+    h1 {
+      font-size: 2.5rem;
+      color: $primary_blue;
+    }
+    h3 {
+      font-size: 2.5rem;
+      color: $primary_white;
+    }
+    p {
+      font-size: 1.5rem;
+      color: $primary_white;
+      margin-top: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .hero__container__left {
+    text-align: center;
+    position: relative;
+    right: 150px;
+    .header__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image__frame {
+        opacity: 0.5;
+        //background: rgba(76, 175, 80, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 15px solid $secondary_blue;
+      }
+    }
+
+    svg {
+      &:nth-child(1) {
+        display: inline;
+        position: relative;
+        left: 315px;
+        bottom: -95px;
+      }
+      &:nth-child(2) {
+        display: inline;
+        position: relative;
+        left: -315px;
+        bottom: -610px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container__left {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container__left p {
+    font-size: 1.5rem;
+  }
+}
