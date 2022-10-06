@@ -117,38 +117,38 @@
 }
 
 .btn__primary {
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
   letter-spacing: 0.1em;
   color: $primary_white;
   text-decoration: none;
   @include btn-border-slide(#ffffff, $border_blue, 2px, 0.9s);
-  span {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 90.52%;
-    letter-spacing: -0.05em;
-    color: #0e1a2a;
-  }
+  //span {
+  //  font-family: 'Outfit';
+  //  font-style: normal;
+  //  font-weight: 500;
+  //  font-size: 15px;
+  //  line-height: 90.52%;
+  //  letter-spacing: -0.05em;
+  //
+  //}
 }
 
 .btn__secondary {
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
   letter-spacing: 0.1em;
   color: $dark_blue;
   text-decoration: none;
   @include btn-border-slide($dark_blue, $border_blue, 2px, 0.9s);
-  span {
-    align-items: center;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 90.52%;
-    letter-spacing: -0.05em;
-    color: #0e1a2a;
-  }
+  //span {
+  //  align-items: center;
+  //  font-family: 'Outfit';
+  //  font-style: normal;
+  //  font-weight: 500;
+  //  font-size: 15px;
+  //  line-height: 90.52%;
+  //  letter-spacing: -0.05em;
+  //  color: #0e1a2a;
+  //}
 }

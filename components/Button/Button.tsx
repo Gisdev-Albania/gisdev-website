@@ -26,7 +26,6 @@ export const Button: React.FunctionComponent<ButtonProps> = props => {
             <span>{children}</span>
           </span>
         </span>
-        <HiArrowNarrowRight />
       </a>
     </>
   );
