@@ -1,4 +1,7 @@
-@import "colors";
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap');
 
 html,
 body {
@@ -23,14 +26,14 @@ a {
   scrollbar-color: #3a3939 #c4c1c1;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(0, 0, 0);
   border-radius: 5px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   //background: linear-gradient(transparent, $primary_blue);
   background: #e1e1e1;
   border-radius: 5px;
