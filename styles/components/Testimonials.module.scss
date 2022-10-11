@@ -2,10 +2,8 @@
 
 .testimonials__container {
   display: flex;
-  width: 95%;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
+
   padding: 20px 0;
 
   .testimonials__container {
@@ -15,7 +13,6 @@
     align-content: center;
     height: 100%;
     width: 100%;
-
 
     .testimonials__top__container {
       display: flex;

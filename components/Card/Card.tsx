@@ -33,7 +33,7 @@ export const Card: React.FC<CardProps> = ({
                 <DiAndroid />
               </div>
             ) : (
-              <Button isSecondary={true}>All Services</Button>
+              <Button isSecondary={true}>Contact manager</Button>
             )}
           </div>
         </div>

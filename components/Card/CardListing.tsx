@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 13,
-    bookTitle: 'Mobile Apps',
+    bookTitle: 'Our services',
     isPrimary: false,
   },
   {

@@ -10,7 +10,7 @@
   .card__wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
+
     justify-content: space-evenly;
     width: 99%;
     height: 99%;
@@ -19,13 +19,11 @@
       color: $primary_white;
       font-size: 29px;
       font-weight: 640;
-      max-width: 200px;
+
       margin-bottom: 0;
       line-height: 1.4;
       margin-top: -10px;
       box-sizing: border-box;
-      text-align: left;
-      text-transform: uppercase;
 
       -webkit-transition: all 0.4s ease-in;
       transition: all 0.4s ease-in;
@@ -50,24 +48,24 @@
 }
 .card__active {
   @extend .card;
-  height: 12.5rem;
+
   background: rgba(255, 255, 255, 0.87);
   box-shadow: 0 2px 8px rgb(6, 64, 152);
-  padding: 17px;
+
   cursor: pointer;
 
   .card__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     h1 {
-      color: $secondary_blue;
-      font-size: 36px;
-      font-weight: 800;
-      max-width: 250px;
-      margin-bottom: 0;
-      line-height: 1.8;
-      box-sizing: border-box;
-      text-align: left;
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 103.02%;
+      letter-spacing: 0.035em;
+      color: #0e1a2a;
 
       &:hover {
         color: $secondary_blue;
