@@ -6,7 +6,7 @@ import Icon, { IconType } from '../Icon/Icon';
 interface CardProps {
   title: string;
   paragraph: string;
-  buttonTitle: string;
+  buttonTitle?: string;
   onClick?: (e: SyntheticEvent<HTMLElement>) => void;
   showButton?: boolean;
 }
