@@ -8,6 +8,7 @@ import { CardWrapper } from '../components/CardWraper';
 import CardListing from '../components/Card/CardListing';
 import { Card } from '../components/Card/Card';
 import { CardOutlineBorder } from '../components/CardOutlineBorder';
+import { CardZoomOutReveal } from '../components/CardZoomOutReveal';
 
 const AboutUs: NextPage = () => {
   return (
@@ -125,14 +126,14 @@ const AboutUs: NextPage = () => {
               </CardOutlineBorder>
             </div>
           </div>
-          <div className={styles.about__join__container}>
-            <div className={styles.about__top__section}>
-              <h1 className={styles.banner__text}>
-                Don`t be Late, Join Us Today!
-              </h1>
-              <Button isPrimary={true}>learn more</Button>
-            </div>
-          </div>
+          {/*<div className={styles.about__join__container}>*/}
+          {/*  <div className={styles.about__top__section}>*/}
+          {/*    <h1 className={styles.banner__text}>*/}
+          {/*      Don`t be Late, Join Us Today!*/}
+          {/*    </h1>*/}
+          {/*    <Button isPrimary={true}>learn more</Button>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
       </section>
 
@@ -141,7 +142,13 @@ const AboutUs: NextPage = () => {
           <div className={styles.about__company__main}>
             <div className={styles.about__company__top}>
               <div className={styles.about__cards_listing}>
-                <Image src={'/abt2.png'} width={546.6} height={560} />
+                {/*<Image src={'/abt2.png'} width={546.6} height={560} />*/}
+                <CardZoomOutReveal
+                  imageSrc={'/abt2.png'}
+                  alt={'comapny'}
+                  title={'title'}
+                  description={'Lorem ipsum dolor sit amet.'}
+                />
                 <CardWrapper
                   title={'Who We Are'}
                   paragraph={
@@ -150,6 +157,17 @@ const AboutUs: NextPage = () => {
                 />
               </div>
             </div>
+            {/*<div className={styles.about__company__top}>*/}
+            {/*  <div className={styles.about__cards_listing}>*/}
+            {/*    <CardWrapper*/}
+            {/*      title={'Who We Are'}*/}
+            {/*      paragraph={*/}
+            {/*        'Our designers and developers are very talented and are experts in their fileds. They each have years of experience in creating IT solutions that are visually appealing, efficient and well-documented.'*/}
+            {/*      }*/}
+            {/*    />{' '}*/}
+            {/*    <Image src={'/abt2.png'} width={546.6} height={560} />*/}
+            {/*  </div>*/}
+            {/*</div>*/}
             <div className={styles.about__company__bottom}>
               <div className={styles.about__cards_listing}>
                 <CardWrapper
@@ -157,7 +175,7 @@ const AboutUs: NextPage = () => {
                   paragraph={
                     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem expedita modi, nobis quasi repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem expedita modi, nobis quasi repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem expedita modi, nobis quasi repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem expedita modi, nobis quasi repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem expedita modi, nobis quasi repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorem expedita modi, nobis quasi repellat!'
                   }
-                />
+                />{' '}
                 <Image src={'/abt2.png'} width={546.6} height={560} />
               </div>
             </div>
@@ -166,182 +184,134 @@ const AboutUs: NextPage = () => {
       </section>
 
       <section className={styles.our__clients}>
-        <div className={styles.content}>
-          <h1>We are GISDEV, We Create Solutions</h1>
-          <p>
-            We build strong relationships with our clients by being accountable
-            for our projects, making our processes transparent, and delivering
-            excellent results.
-          </p>
-          <Button isPrimary={true}>Click to download the brochure</Button>
+        <div className={styles.clients__content}>
+          <div className={styles.about__us__content}>
+            <h3>About Our Clients</h3>
+            <p>
+              Our happy clients continue to grow every day. Enable your business
+              with cutting edge enterprise software.
+            </p>
+          </div>
         </div>
-        <div className={styles.slider}>
-          <div className={styles.slide__track}>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-                height="100"
-                width="250"
-                alt=""
-              />
+        <div className={styles.slider__container}>
+          <div className={styles.slider}>
+            <div className={styles.slide__track}>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className={styles.slide}>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </Layout>
   );
 };

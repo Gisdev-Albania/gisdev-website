@@ -3,12 +3,12 @@ import styles from '../../styles/components/CardZoomOutReveal.module.scss';
 import Image from 'next/image';
 
 interface CardZoomOutRevealProps {
-  imageSrc: string;
+  imageSrc?: string;
   width?: number;
   height?: number;
   alt: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 export const CardZoomOutReveal: React.FunctionComponent<

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/components/Services.module.scss';
+import styles from '../../../styles/components/HomeServices.module.scss';
 import CardListing from '../../Card/CardListing';
 
 export const Services = () => {

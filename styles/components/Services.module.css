@@ -1,33 +1,44 @@
-.services__main {
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.services .services__container {
+  display: flex;
+}
+.services .services__container .services__main {
   display: flex;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+  height: 35em;
+}
+.services .services__container .services__main .services__clients {
+  display: flex;
+  padding-top: 50px;
   justify-content: center;
 }
-.services__main .services__title {
-  font-family: "Outfit";
+.services .services__container .services__main .services__clients .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  width: 80%;
+}
+.services .services__container .services__main .services__clients .title h1 {
+  font-family: "Outfit", "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 66px;
   line-height: 90.52%;
   letter-spacing: -0.02em;
-  color: rgba(2, 134, 255, 0.5);
+  color: #0286ff;
 }
-.services__main .services__card__container {
+.services .services__container .services__main .services__clients .title .brochure__info {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  gap: 36px;
+  gap: 20px;
 }
-.services__main .services__card__container .services__cards {
-  width: 400px;
-  height: 250px;
-  background: #1a304d;
-}
-.services__main .services__card__container .services__cards h1 {
-  color: #f7f7f8;
+.services .services__container .services__main .services__clients .title .brochure__info span {
+  width: 72%;
 }
 
 /*# sourceMappingURL=Services.module.css.map */
