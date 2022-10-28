@@ -8,7 +8,7 @@ import { MdMail } from 'react-icons/md';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { Footer } from '../components/Footer';
 import { MainLayout } from '../components/Home/MainLayout';
-import { Services } from '../components/Home/Services';
+import { Services } from '../components/Home/ServicesComponents';
 import { LatestWork } from '../components/Home/LatestWork';
 import { Clients } from '../components/Home/Clients';
 import { JoinTeam } from '../components/Home/JoinTeam';
@@ -21,18 +21,13 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <Layout>
           <MainLayout />
-          {/* Main Layout Start */}
           <div className={styles.main__layout}>
             <Services />
             <LatestWork />
-            {/* <Technologies /> */}
             <Clients />
             <NewTestimonials />
-            {/* <Testimonials /> */}
             <JoinTeam />
           </div>
-          {/* Main Layout End */}
-          {/*<Footer />*/}
         </Layout>
       </div>
     </>
