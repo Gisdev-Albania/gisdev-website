@@ -65,11 +65,13 @@ export const Header = () => {
               </Link>
             </div>
             <div className={styles.header__navbar}>
-              <Link href={'contact-us'}>
-                <a id={'contactUs'} className={''}>
-                  CONTACT
-                </a>
-              </Link>
+              <button>
+                <Link href={'/contact-us'}>
+                  <a id={'contactUs'} className={''}>
+                    CONTACT
+                  </a>
+                </Link>
+              </button>
             </div>
           </div>
         </div>
