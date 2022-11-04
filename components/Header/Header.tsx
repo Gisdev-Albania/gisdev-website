@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styles from '../../styles/components/Header.module.scss';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const Header = () => {
+  const [activeTab, setActiveTab] = useState('home');
+
   return (
     <>
       <Head>
@@ -26,23 +28,50 @@ export const Header = () => {
 
             <div className={styles.header__navigation}>
               <Link href={'/'}>
-                <a className={styles.active}>HOME</a>
+                <a
+                  id={'home'}
+                  onClick={() => setActiveTab('/')}
+                  className={activeTab === 'home' ? styles.active : ''}
+                >
+                  HOME
+                </a>
               </Link>
-              <Link href={'/About-Us'}>
-                <a>ABOUT US</a>
+              <Link href={'/about-us'}>
+                <a
+                  id={'aboutUs'}
+                  onClick={() => setActiveTab('aboutUs')}
+                  className={activeTab === 'aboutUs' ? styles.active : ''}
+                >
+                  ABOUT US
+                </a>
               </Link>
-              <Link href={'Services'}>
-                <a>OUR SERVICES</a>
+              <Link href={'services'}>
+                <a
+                  id={'services'}
+                  onClick={() => setActiveTab('services')}
+                  className={activeTab === 'services' ? styles.active : ''}
+                >
+                  OUR SERVICES
+                </a>
               </Link>
-              <Link href={'#3'}>
-                <a>WORK PROCESS</a>
-              </Link>
-              <Link href={'#4'}>
-                <a>CAREERS</a>
+              <Link href={'our-work'}>
+                <a
+                  id={'work'}
+                  onClick={() => setActiveTab('work')}
+                  className={activeTab === 'work' ? styles.active : ''}
+                >
+                  Work
+                </a>
               </Link>
             </div>
             <div className={styles.header__navbar}>
-              <h4>CONTACT US</h4>
+              <button>
+                <Link href={'/contact-us'}>
+                  <a id={'contactUs'} className={''}>
+                    CONTACT
+                  </a>
+                </Link>
+              </button>
             </div>
           </div>
         </div>

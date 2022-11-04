@@ -1,0 +1,104 @@
+@import '../colors';
+
+.Tabs {
+  width: 90%;
+  height: auto;
+  min-height: 400px;
+  margin: 3.5rem auto 1.5rem;
+  padding: 2rem 1rem;
+  color: #e8f0f2;
+  border-radius: 2rem;
+  @media (max-width: 769px) {
+    padding: 2rem 0;
+  }
+}
+
+/* Tab Navigation */
+ul.nav {
+  width: 80%;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid $primary_blue;
+  border-radius: 2rem;
+  padding-left: 0px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+ul.nav li {
+  width: 50%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+ul.nav li:first-child {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+ul.nav li:last-child {
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+ul.nav li:hover {
+  //background: rgba(50, 224, 196, 0.15);
+  background: $primary_blue;
+}
+
+ul.nav li.active {
+  background: $primary_blue;
+}
+
+/* Tab Content Styles */
+.TabContent {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.outlet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  .outlet__container {
+    display: grid;
+    justify-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    .logo__wrapper {
+      display: flex;
+      padding: 8px 16px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      background-color: #2f3640;
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        -webkit-box-direction: normal;
+      }
+
+      .text__tech {
+        margin-left: 10px;
+        color: #e8e9ec;
+        font-size: 18px;
+      }
+    }
+  }
+}

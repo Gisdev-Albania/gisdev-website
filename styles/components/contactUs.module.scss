@@ -1,0 +1,108 @@
+@import '../colors';
+
+.navigation__section {
+  padding-top: 150px;
+  padding-bottom: 120px;
+
+  .container {
+    max-width: 1260px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+
+    .main__title {
+      max-width: none;
+      text-align: left;
+      font-size: 36px;
+      line-height: 120%;
+      font-family: 'General Sans', sans-serif;
+      color: #fff;
+      font-weight: 600;
+      h1 {
+      }
+    }
+
+    .form__wrapper {
+      display: grid;
+      margin-top: 60px;
+
+      grid-auto-columns: 1fr;
+      grid-column-gap: 32px;
+      grid-row-gap: 32px;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto;
+
+      .form__main {
+        max-width: 580px;
+        min-width: 200px;
+        margin: 0 0 15px;
+
+        form {
+          display: block;
+          margin-top: 0em;
+
+          .form__field {
+            margin-bottom: 40px;
+            border-style: solid;
+            border-width: 0px 0px 1px;
+            border-color: #4d4d4d #000 hsla(0, 0%, 100%, 0.3);
+            background-color: hsla(0, 0%, 100%, 0);
+            font-size: 18px;
+            display: block;
+            width: 100%;
+            height: 38px;
+            padding: 8px 12px;
+            line-height: 1.42857143;
+
+            &::placeholder {
+              color: $primary_white;
+            }
+            &::-webkit-input-placeholder {
+              /* Edge */
+              color: $primary_white;
+            }
+
+            &:-ms-input-placeholder {
+              /* Internet Explorer 10-11 */
+              color: $primary_white;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+          .textarea {
+            @extend .form__field;
+            max-width: 580px;
+            min-height: 150px;
+            min-width: 200px;
+            height: auto;
+          }
+          input {
+            line-height: normal;
+            font: inherit;
+            margin: 0;
+            writing-mode: horizontal-tb !important;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            text-align: start;
+            appearance: auto;
+            cursor: text;
+          }
+        }
+      }
+
+      .main__right {
+        display: flex;
+        width: auto;
+        gap: 36px;
+        flex-direction: column;
+      }
+    }
+  }
+}
