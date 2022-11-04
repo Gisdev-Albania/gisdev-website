@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../../../styles/components/NewTestimonials.module.scss';
 import Button from '../../Button';
 import { CardOutlineBorder } from '../../CardOutlineBorder';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 export const NewTestimonials = () => {
   const testimonials = [
@@ -41,17 +42,18 @@ export const NewTestimonials = () => {
           {testimonials.map((comment, key) => {
             return (
               <>
-                <CardOutlineBorder>
-                  <div key={key} className={styles.testimonials__group__card}>
-                    <div className={styles.testimonials__title__part}>
-                      <div className={styles.testimonials__card__profile}></div>
-                      <p className={styles.testimonials__card__title}>
-                        {comment.name}
-                      </p>
-                    </div>
-                    <p>{comment.text}</p>
+                <div key={key} className={styles.testimonials__group__card}>
+                  <div className={styles.testimonials__card__profile}></div>
+                  <div className={styles.testimonioals__card__comment}>
+                    {' '}
+                    <p className={styles.testimonials__card__paragraph}>
+                      {comment.text}
+                    </p>
+                    <p className={styles.testimonials__card__name}>
+                      {comment.name}
+                    </p>
                   </div>
-                </CardOutlineBorder>
+                </div>
               </>
             );
           })}
