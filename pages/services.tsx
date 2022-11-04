@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 import styles from '../styles/components/Services.module.scss';
+import Tabs from '../components/TabComponent/Tabs';
 
 const Services = () => {
   return (
@@ -80,6 +81,10 @@ const Services = () => {
                 software solutions.
               </div>
             </div>
+          </div>
+
+          <div className={styles.technologies_container}>
+            <Tabs />
           </div>
         </div>
       </section>
