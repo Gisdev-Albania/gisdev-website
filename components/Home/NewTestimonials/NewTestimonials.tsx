@@ -43,7 +43,8 @@ export const NewTestimonials = () => {
             return (
               <>
                 <div key={key} className={styles.testimonials__group__card}>
-                  <div className={styles.testimonials__card__profile}></div>
+                  <span className={styles.testimonials__card__profile}></span>
+
                   <div className={styles.testimonioals__card__comment}>
                     {' '}
                     <p className={styles.testimonials__card__paragraph}>

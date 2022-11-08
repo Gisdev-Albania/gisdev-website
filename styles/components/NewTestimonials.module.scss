@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .testimonials__container {
   padding-bottom: 3rem;
   width: 70vw;
@@ -46,11 +48,17 @@
         padding: 20px;
         gap: 20px;
         .testimonials__card__profile {
+          margin-top: 20px;
           background-color: #0286ff;
-
+          border-radius: 50%;
           height: 50px;
           width: 50px;
-          border: 1px solid red;
+        }
+        .testimonials__card__profile_hr {
+          height: 100px;
+          width: 1px;
+          background-color: white;
+          margin-top: 10px;
         }
 
         .testimonioals__card__comment {

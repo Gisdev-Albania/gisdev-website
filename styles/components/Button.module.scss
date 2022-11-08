@@ -1,4 +1,4 @@
-@import '../colors';
+@import '../colors.scss';
 
 @mixin btn-border-slide($color, $hoverColor, $borderWidth, $time) {
   $easing: cubic-bezier(0.4, 0, 0.2, 1);

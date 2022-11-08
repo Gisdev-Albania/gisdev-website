@@ -1,4 +1,4 @@
-@import '../colors';
+@import '../colors.scss';
 
 .card {
   height: 12.5rem;
@@ -9,13 +9,12 @@
 
   .card__wrapper {
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
     justify-content: space-evenly;
     width: 99%;
     height: 99%;
 
-    h1 {
+    .card__title {
       color: $primary_white;
       font-size: 29px;
       font-weight: 640;
@@ -45,6 +44,30 @@
       //}
     }
   }
+  .card__wrapper__primary {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-left: 20px;
+
+    .card__title {
+      color: $primary_white;
+      font-size: 40px;
+    }
+
+    .card__footer {
+      font-size: 60px;
+      color: $primary_white;
+
+      //-webkit-transition: all 0.4s ease-in;
+      //transition: all 0.4s ease-in;
+      //
+      //&:hover {
+      //  color: $primary_blue;
+      //}
+    }
+  }
 }
 .card__active {
   @extend .card;
@@ -58,7 +81,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    h1 {
+    .card__title {
       font-family: 'Outfit';
       font-style: normal;
       font-weight: 700;

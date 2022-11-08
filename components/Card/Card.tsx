@@ -13,6 +13,7 @@ export interface CardProps {
   bookCode?: string;
   rating?: number;
   isPrimary?: boolean;
+  icon?: any;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -20,18 +21,21 @@ export const Card: React.FC<CardProps> = ({
   bookAuthor,
   bookCode,
   isPrimary,
+  icon,
 }) => {
   return (
     <>
       <CardOutlineBorder>
         <div className={isPrimary === true ? styles.card : styles.card__active}>
-          <div className={styles.card__wrapper}>
-            <h1>{bookTitle}</h1>
+          <div
+            className={
+              isPrimary ? styles.card__wrapper__primary : styles.card__wrapper
+            }
+          >
+            <span className={styles.card__title}>{bookTitle}</span>
 
             {isPrimary === true ? (
-              <div className={styles.card__footer}>
-                <DiAndroid />
-              </div>
+              <div className={styles.card__footer}>{icon}</div>
             ) : (
               <Button isSecondary={true}>Contact manager</Button>
             )}
