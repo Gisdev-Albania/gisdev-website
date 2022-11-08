@@ -47,7 +47,6 @@ const Layout = (props: any) => {
         <Header />
       </div>
       {children}
-      <Footer />
     </>
   );
 };

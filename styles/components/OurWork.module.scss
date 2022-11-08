@@ -1,0 +1,19 @@
+.work__main__layout {
+  background-color: #0e1a2a;
+
+  height: 100vh;
+  width: 100vw;
+
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main__container {
+    height: 100%;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
