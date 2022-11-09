@@ -3,6 +3,7 @@ import styles from '../../../styles/components/MainLayout.module.scss';
 import Image from 'next/image';
 import Button from '../../Button';
 import { BottomLeftDots, TopRightDots } from '../../Dots';
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 
 export const MainLayout = () => {
   return (
@@ -20,13 +21,38 @@ export const MainLayout = () => {
                 width={1200}
               />
             </div>
+            <div className={styles.slider__buttons}>
+              <span className={styles.slider__buttons__left}>
+                <HiOutlineChevronLeft
+                  style={{
+                    color: 'white',
+                    height: '50px',
+                    width: '50px',
+                    backgroundColor: '#0e1a2a',
+                  }}
+                />
+              </span>
+              <span className={styles.slider__buttons__right}>
+                <HiOutlineChevronRight
+                  style={{
+                    color: 'white',
+                    height: '50px',
+                    width: '50px',
+                    backgroundColor: '#0574da',
+                  }}
+                />
+              </span>
+            </div>
           </div>
         </div>
         <div className={styles.hero__container__right}>
-          <h1> TAILORED IT STRATEGY TO</h1>
-          <h3> SOLVE BUSSINES NEEDS</h3>
-          <p>
+          <h1>
             {' '}
+            TAILORED IT STRATEGY TO <br />
+            SOLVE BUSSINES NEEDS
+          </h1>
+
+          <p>
             A Tirana Agency specializing in web design, eCommerce development,
             and product branding
           </p>

@@ -16,7 +16,7 @@
     align-items: center;
     justify-items: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     z-index: 1;
     width: 100%;
     max-width: 1200px;
@@ -31,17 +31,17 @@
     }
   }
   .hero__container__right {
-    width: 100%;
     line-height: 1.2;
     position: relative;
     left: -255px;
+    width: 500px;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       color: $primary_blue;
     }
     h3 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       color: $primary_white;
     }
     p {
@@ -60,7 +60,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      position: relative;
+      .slider__buttons {
+        display: flex;
+        position: relative;
+      }
       .image__frame {
         opacity: 0.5;
         //background: rgba(76, 175, 80, 0.3);

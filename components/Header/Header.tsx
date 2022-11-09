@@ -60,18 +60,21 @@ export const Header = () => {
                   onClick={() => setActiveTab('work')}
                   className={activeTab === 'work' ? styles.active : ''}
                 >
-                  Work
+                  WORK
                 </a>
-              </Link>
-            </div>
-            <div className={styles.header__navbar}>
-              <button>
-                <Link href={'/contact-us'}>
-                  <a id={'contactUs'} className={''}>
-                    CONTACT
-                  </a>
-                </Link>
-              </button>
+              </Link>{' '}
+              <div className={styles.header__navbar}>
+                <button className={styles.header__navbar__button}>
+                  <Link href={'/contact-us'}>
+                    <a
+                      id={'contactUs'}
+                      className={styles.header__navbar__title}
+                    >
+                      CONTACT US NOW
+                    </a>
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
         </div>
