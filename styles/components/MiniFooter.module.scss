@@ -1,13 +1,13 @@
 .mini__footer__container {
-  width: 1127px;
-  height: 500px;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   .horizontal__line {
-    background-color: white;
+    background-color: #f7f7f8;
     height: 2px;
-    width: 1127px;
+    width: 75vw;
     margin: 20px;
   }
 
@@ -19,7 +19,7 @@
     line-height: 121.52%;
     text-align: center;
     letter-spacing: -0.01em;
-    color: #ffffff;
+    color: #f7f7f8;
   }
 
   .secondary__title {
@@ -29,13 +29,14 @@
     font-size: 48px;
     line-height: 121.52%;
     text-align: center;
-    color: #ffffff;
+    color: #f7f7f8;
   }
 
   .mini__footer_part {
     display: flex;
     justify-content: space-between;
-    width: 1127px;
+    width: 75vw;
+    padding-bottom: 10px;
     div {
       display: flex;
       p {

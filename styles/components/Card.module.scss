@@ -2,7 +2,7 @@
 
 .card {
   height: 12.5rem;
-  background: $secondary_blue;
+  background: #1a304c;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 17px;
   cursor: pointer;
@@ -91,7 +91,7 @@
       color: #0e1a2a;
 
       &:hover {
-        color: $secondary_blue;
+        color: #1a304c;
       }
     }
     .card__footer {

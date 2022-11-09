@@ -9,6 +9,7 @@ import CardListing from '../components/Card/CardListing';
 import { Card } from '../components/Card/Card';
 import { CardOutlineBorder } from '../components/CardOutlineBorder';
 import { CardZoomOutReveal } from '../components/CardZoomOutReveal';
+import MiniFooter from '../components/MiniFooter/MiniFooter';
 
 const AboutUs: NextPage = () => {
   return (
@@ -311,6 +312,7 @@ const AboutUs: NextPage = () => {
             </div>
           </div>
         </div>
+        <MiniFooter />
       </section>
     </Layout>
   );

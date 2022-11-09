@@ -12,12 +12,12 @@ const MiniFooter = () => {
         <br />
         <span className={styles.secondary__title}>Strap in and lets go!</span>
       </h1>
-      <Button isSecondary={true}>Get started</Button>
+      <Button isPrimary={true}>Get started</Button>
       <span className={styles.horizontal__line}></span>
       <div className={styles.mini__footer_part}>
         <div>
           {' '}
-          <Image src={'/gisdev-minilogo.png'} width={100} height={15} />
+          <Image src={'/gisdev-minilogo.png'} width={150} height={2} />
           <p> © Copyright 2022. All Rights Reserved.</p>
         </div>
         <div>

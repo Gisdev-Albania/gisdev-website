@@ -1,7 +1,6 @@
 .work__main__layout {
   background-color: #0e1a2a;
-
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 
   padding-top: 5rem;
@@ -11,9 +10,42 @@
 
   .main__container {
     height: 100%;
-    width: 1140px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+
+    .main__title__container {
+      .main__header__title {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        color: #ffffff;
+      }
+
+      .header__main__paragraph {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+
+    .project__card__container {
+      height: 1400px;
+      margin: 0 auto;
+      display: column;
+      columns: 3;
+
+      .card__element {
+        width: 350px;
+        background: #1a304d;
+      }
+      .project__card__container > * {
+        break-inside: avoid;
+      }
+    }
   }
 }

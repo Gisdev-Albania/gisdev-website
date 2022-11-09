@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout/Layout';
 import styles from '../styles/components/Services.module.scss';
 import Tabs from '../components/TabComponent/Tabs';
+import MiniFooter from '../components/MiniFooter/MiniFooter';
 
 const Services = () => {
   return (
@@ -91,6 +92,7 @@ const Services = () => {
 
       <br />
       <br />
+      <MiniFooter />
     </Layout>
   );
 };
