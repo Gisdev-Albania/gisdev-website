@@ -1,4 +1,4 @@
-@import '../colors';
+@import '../colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap');
 
 .hero {
@@ -8,8 +8,8 @@
   align-items: center;
   background-color: #08121e;
   background-image: radial-gradient(at 43% 61%, #0e1a2a 0px, transparent 50%),
-  radial-gradient(at 48% 38%, #0e1a2a 0px, transparent 50%),
-  radial-gradient(at 72% 45%, #0e1a2a 0px, transparent 50%);
+    radial-gradient(at 48% 38%, #0e1a2a 0px, transparent 50%),
+    radial-gradient(at 72% 45%, #0e1a2a 0px, transparent 50%);
 
   .hero__container {
     display: flex;
