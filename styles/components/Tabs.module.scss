@@ -1,4 +1,4 @@
-@import '../colors';
+@import '../colors.scss';
 
 .Tabs {
   width: 90%;
@@ -20,7 +20,7 @@ ul.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border:1px solid $primary_blue;
+  border: 1px solid $primary_blue;
   border-radius: 2rem;
   padding-left: 0px;
   @media (max-width: 768px) {

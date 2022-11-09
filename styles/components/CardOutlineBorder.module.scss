@@ -1,4 +1,4 @@
-@import "../colors";
+@import '../colors.scss';
 $border_color--hover: lighten($primary_color, 80);
 $stroke: 2px;
 $border: 1px solid darken($primary_color, 10);
