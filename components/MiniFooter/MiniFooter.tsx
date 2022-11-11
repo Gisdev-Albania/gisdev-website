@@ -14,17 +14,7 @@ const MiniFooter = () => {
       </h1>
       <Button isPrimary={true}>Get started</Button>
       <span className={styles.horizontal__line}></span>
-      <div className={styles.mini__footer_part}>
-        <div>
-          {' '}
-          <Image src={'/gisdev-minilogo.png'} width={150} height={2} />
-          <p> © Copyright 2022. All Rights Reserved.</p>
-        </div>
-        <div>
-          <p>Sitemap</p>
-          <p>Contact</p>
-        </div>
-      </div>
+      
     </div>
   );
 };

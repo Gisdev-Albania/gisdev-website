@@ -29,6 +29,7 @@ const Home: NextPage = () => {
             <NewTestimonials />
           </div>
           <MiniFooter />
+          <Footer/>
         </Layout>
       </div>
     </>
