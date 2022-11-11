@@ -62,6 +62,9 @@ export const MainLayout = () => {
       </div>
 
       <div className={styles.hero}>
+        <div className={styles.background__image}>
+          <Image src={'/banner-bg-text.png'} height={460} width={400} />
+        </div>
         <div className={styles.hero__main__image}>
           <div className={styles.main__image__container}>
             <Image src={imageUrl} height={500} width={500} alt="main image" />

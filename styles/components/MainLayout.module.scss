@@ -28,12 +28,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+    .background__image {
+      position: absolute;
+
+      right: 0;
+    }
     .hero__main__image {
-      border: 30px solid #0e1a2a;
-
       .main__image__container {
+        border: 30px solid #0e1a2a;
         position: relative;
+
         .slider__buttons {
           position: absolute;
           display: flex;

@@ -24,24 +24,22 @@ export const Card: React.FC<CardProps> = ({
   icon,
 }) => {
   return (
-    <>
-      <CardOutlineBorder>
-        <div className={isPrimary === true ? styles.card : styles.card__active}>
-          <div
-            className={
-              isPrimary ? styles.card__wrapper__primary : styles.card__wrapper
-            }
-          >
-            <span className={styles.card__title}>{bookTitle}</span>
+    <CardOutlineBorder>
+      <div className={isPrimary === true ? styles.card : styles.card__active}>
+        <div
+          className={
+            isPrimary ? styles.card__wrapper__primary : styles.card__wrapper
+          }
+        >
+          <span className={styles.card__title}>{bookTitle}</span>
 
-            {isPrimary === true ? (
-              <div className={styles.card__footer}>{icon}</div>
-            ) : (
-              <Button isPrimary={false}>All Services</Button>
-            )}
-          </div>
+          {isPrimary === true ? (
+            <div className={styles.card__footer}>{icon}</div>
+          ) : (
+            <Button isPrimary={false}>All Services</Button>
+          )}
         </div>
-      </CardOutlineBorder>
-    </>
+      </div>
+    </CardOutlineBorder>
   );
 };

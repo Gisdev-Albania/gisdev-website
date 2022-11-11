@@ -1,18 +1,5 @@
 .clients__main__container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px 0;
-
   .clients__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 70vw;
     .clients__top__container {
       display: flex;
       justify-content: flex-end;

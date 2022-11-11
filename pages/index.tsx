@@ -17,14 +17,15 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <MainLayout />
-
-      <Services />
-      <LatestWork />
-      <Clients />
-      <NewTestimonials />
-
-      <MiniFooter />
-      <Footer />
+      <div className={styles.container__body}>
+        {' '}
+        <Services />
+        <LatestWork />
+        <Clients />
+        <NewTestimonials />
+        <MiniFooter />
+        <Footer />
+      </div>
     </div>
   );
 };
