@@ -5,12 +5,25 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  transition: ease .3s;
+ 
 }
-
+.header__big{
+  width: 100%;
+  background-color: white;
+  height: 84px;
+top: 0;
+display: flex;
+justify-content: center;
+transition: ease .3s;
+  box-shadow: 0px 0px 8px 0px white;
+}
 .header__wrap {
   width: 70vw;
   height: 84px;
 }
+
+
 
 .header {
   display: flex;
