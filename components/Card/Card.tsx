@@ -37,7 +37,7 @@ export const Card: React.FC<CardProps> = ({
             {isPrimary === true ? (
               <div className={styles.card__footer}>{icon}</div>
             ) : (
-              <Button isSecondary={true}>Contact manager</Button>
+              <Button isPrimary={false}>All Services</Button>
             )}
           </div>
         </div>

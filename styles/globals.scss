@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $dark_blue;
 }
 
 a {
@@ -45,6 +46,6 @@ a {
   }
   body {
     color: white;
-    background: $dark_blue;
+    background: #0e1a2a;
   }
 }

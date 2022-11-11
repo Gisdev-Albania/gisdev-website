@@ -2,7 +2,7 @@
 
 .card {
   height: 12.5rem;
-  background: $secondary_blue;
+  background: #1a304c;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 17px;
   cursor: pointer;
@@ -24,10 +24,12 @@
       margin-top: -10px;
       box-sizing: border-box;
 
-      -webkit-transition: all 0.4s ease-in;
-      transition: all 0.4s ease-in;
-
       &:hover {
+      }
+
+      .card__title:hover {
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
         color: $primary_blue;
       }
     }
@@ -57,6 +59,7 @@
     }
 
     .card__footer {
+      height: 80px;
       font-size: 60px;
       color: $primary_white;
 
@@ -68,7 +71,24 @@
       //}
     }
   }
+
+  .card__wrapper__primary:hover {
+    .card__title {
+      -webkit-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
+      color: $primary_blue;
+    }
+
+    .card__footer {
+      transform: rotateY(180deg);
+      color: $primary_blue;
+      filter: drop-shadow(0 0 0.75rem rgba(250, 250, 250, 0.255));
+      -webkit-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
+    }
+  }
 }
+
 .card__active {
   @extend .card;
 
@@ -91,7 +111,7 @@
       color: #0e1a2a;
 
       &:hover {
-        color: $secondary_blue;
+        color: #1a304c;
       }
     }
     .card__footer {

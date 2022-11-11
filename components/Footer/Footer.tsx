@@ -104,17 +104,7 @@ export const Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className={styles.footer__item}>
-                      <h4>NEWS LETTER</h4>
-                      <div className={styles.footer__menu__explorer}>
-                        <p>
-                          Keep up on our always evolving product features and
-                          technology. Enter your e-mail and subscribe to our
-                          newsletter.
-                        </p>
-                        <input type="text" placeholder={'Enter e-mail!'} />
-                      </div>
-                    </div>
+       
                   </div>
                   <div className={styles.row__options}>
                     <div className={styles.footer__item}>
@@ -153,22 +143,16 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className={styles.footer__bottom__area}>
-            <div className={styles.footer__row__bottom}>
-              <div className={styles.footer__bottom__left}>
-                <p>© Copyright 2022. All Rights Reserved.</p>
+          <div className={styles.mini__footer_part}>
+              <div>
+          
+          
+                <p> © Copyright 2022. All Rights Reserved.</p>
               </div>
-              <div className={styles.footer__bottom__right}>
-                <ul>
-                  <Link href={'#'}>
-                    <a>PRIVACY POLICY</a>
-                  </Link>
-                  <Link href={'#'}>
-                    <a>TERM OF USE</a>
-                  </Link>
-                </ul>
+              <div>
+                <p>Sitemap</p>
+                <p>Contact</p>
               </div>
-            </div>
           </div>
         </div>
       </footer>

@@ -4,9 +4,15 @@
   $easing: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: inline-block;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   cursor: pointer;
   overflow: hidden;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 90.52%;
+  letter-spacing: -0.05em;
 
   &:before,
   &:after {

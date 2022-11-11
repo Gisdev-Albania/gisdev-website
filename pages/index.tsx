@@ -14,6 +14,7 @@ import { Clients } from '../components/Home/Clients';
 import { JoinTeam } from '../components/Home/JoinTeam';
 import { NewTestimonials } from '../components/Home/NewTestimonials';
 import Layout from '../components/Layout/Layout';
+import MiniFooter from '../components/MiniFooter/MiniFooter';
 
 const Home: NextPage = () => {
   return (
@@ -26,8 +27,9 @@ const Home: NextPage = () => {
             <LatestWork />
             <Clients />
             <NewTestimonials />
-            <JoinTeam />
           </div>
+          <MiniFooter />
+          <Footer/>
         </Layout>
       </div>
     </>
