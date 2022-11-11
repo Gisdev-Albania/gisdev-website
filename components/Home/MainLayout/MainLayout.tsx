@@ -67,7 +67,7 @@ export const MainLayout = () => {
         </div>
         <div className={styles.hero__main__image}>
           <div className={styles.main__image__container}>
-            <Image src={imageUrl} height={500} width={500} alt="main image" />
+            <Image src={imageUrl} height={600} width={600} alt="main image" />
 
             <div className={styles.slider__buttons}>
               <div>
