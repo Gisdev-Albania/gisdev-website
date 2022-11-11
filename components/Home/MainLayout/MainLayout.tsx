@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Button from '../../Button';
 import { BottomLeftDots, TopRightDots } from '../../Dots';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
+import { Header } from '../../Header';
+import { useScrollPosition } from '../../Header/useScrollPosition';
 
 export const MainLayout = () => {
   const [imageId, setImageId] = useState(1);
@@ -44,22 +46,28 @@ export const MainLayout = () => {
     }
   };
 
+  const scrollPosition = useScrollPosition();
+
   console.log(imageUrl, 'image url');
   return (
     <div className={styles.main_background}>
-      <div className={styles.bg__image}>
-        {' '}
-        <Image
-          src={'/banner-bg-text.png'}
-          height={400}
-          width={460}
-          alt="img big"
-        />
+      <div
+        className={styles.main__header}
+        style={{
+          marginTop: scrollPosition > 0 ? '0' : '1.5rem',
+          transition: 'ease .3s ',
+        }}
+      >
+        <Header />
       </div>
+
       <div className={styles.hero}>
+        <div className={styles.background__image}>
+          <Image src={'/banner-bg-text.png'} height={460} width={400} />
+        </div>
         <div className={styles.hero__main__image}>
           <div className={styles.main__image__container}>
-            <Image src={imageUrl} height={650} width={650} alt="main image" />
+            <Image src={imageUrl} height={600} width={600} alt="main image" />
 
             <div className={styles.slider__buttons}>
               <div>

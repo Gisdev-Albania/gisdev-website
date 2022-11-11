@@ -4,31 +4,46 @@
 .main_background {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+
   background-color: #08121e;
   background-image: radial-gradient(at 43% 61%, #0e1a2a 0px, transparent 50%),
     radial-gradient(at 48% 38%, #0e1a2a 0px, transparent 50%),
     radial-gradient(at 72% 45%, #0e1a2a 0px, transparent 50%);
+  position: relative;
 
-  .bg__image {
-    position: relative;
-    z-index: 1;
-    transform: translate(80%, 120%);
+  // .bg__image {
+  //   position: relative;
+  //   z-index: 1;
+  //   transform: translate(80%, 120%);
+  //   overflow: hidden;
+  // }
+  .main__header {
+    position: fixed;
+
+    z-index: 10;
   }
+
   .hero {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    .hero__main__image {
-      border: 30px solid #0e1a2a;
+    position: relative;
 
+    .background__image {
+      position: absolute;
+
+      right: 0;
+    }
+    .hero__main__image {
       .main__image__container {
+        border: 30px solid #0e1a2a;
         position: relative;
+
         .slider__buttons {
           position: absolute;
           display: flex;
-          transform: translate(50px, -100px);
+          transform: translate(25px, -80px);
 
           div:nth-child(1) {
             cursor: pointer;
