@@ -63,7 +63,12 @@ export const MainLayout = () => {
 
       <div className={styles.hero}>
         <div className={styles.background__image}>
-          <Image src={'/banner-bg-text.png'} height={460} width={400} />
+          <Image
+            src={'/banner-bg-text.png'}
+            height={460}
+            width={400}
+            alt={'Company-Image'}
+          />
         </div>
         <div className={styles.hero__main__image}>
           <div className={styles.main__image__container}>
@@ -73,14 +78,14 @@ export const MainLayout = () => {
               <div>
                 {' '}
                 <HiOutlineChevronLeft
-                  style={{ height: '60px', width: '60px', color: 'white' }}
+                  style={{ height: '40px', width: '60px', color: 'white' }}
                   onClick={() => backImage(0) as any}
                 />
               </div>
               <div>
                 {' '}
                 <HiOutlineChevronRight
-                  style={{ height: '60px', width: '60px', color: 'white' }}
+                  style={{ height: '40px', width: '60px', color: 'white' }}
                   onClick={() => nextImage(3) as any}
                 />
               </div>

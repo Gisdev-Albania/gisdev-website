@@ -77,9 +77,10 @@ const Services = () => {
                 <h1>We know Technologies</h1>
               </div>
               <div className={styles.text__block}>
-                We have built on our reputation on our ability to effectively
-                use a broad range of technologies and tools to develop great
-                software solutions.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur dolorum eos quasi facere blanditiis delectus iusto.
+                Error, ipsum magnam animi accusamus nihil, voluptas labore illo
+                necessitatibus eos earum ipsa culpa a ullam ad provident nobis!
               </div>
             </div>
           </div>
