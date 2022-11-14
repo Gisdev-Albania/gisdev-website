@@ -20,16 +20,15 @@
       font-family: 'Outfit';
       font-style: normal;
       font-weight: 700;
-      font-size: 53px;
-      width: 80%;
+      font-size: 30px;
       line-height: 103.02%;
       letter-spacing: 0.035em;
-      color: #0e1a2a;
+      color: $body_bg;
       margin: 0;
     }
     .card__paragraph {
       font-family: 'Outfit';
-      width: 80%;
+      //width: 90%;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -40,6 +39,7 @@
 
     .card__bottom {
       display: flex;
+      justify-content: flex-start;
       width: 80%;
       box-sizing: border-box;
       text-align: left;

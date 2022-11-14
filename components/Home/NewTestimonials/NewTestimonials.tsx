@@ -3,6 +3,7 @@ import styles from '../../../styles/components/NewTestimonials.module.scss';
 import Button from '../../Button';
 import { CardOutlineBorder } from '../../CardOutlineBorder';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import { CardWrapper } from '../../CardWraper';
 
 export const NewTestimonials = () => {
   const testimonials = [
@@ -28,15 +29,22 @@ export const NewTestimonials = () => {
 
   return (
     <div className={styles.testimonials__container}>
-      <h1 className={styles.testimonials__main__title}>Testimonials</h1>
+      <div className={styles.clients__top__container}>
+        <div className={styles.client__main}>
+          <h1>Testimonials</h1>
+        </div>
+      </div>
 
       <div className={styles.testimonials__cards}>
-        <div className={styles.testimonials__first__card}>
-          <h1 className={styles.testimonials__first__card__title}>
-            What’s client
-            <br /> say
-          </h1>
-          <Button>Click for more</Button>
+        <div className={styles.right__testimonial__Section}>
+          <CardWrapper
+            title={'What Client Say'}
+            paragraph={
+              'We guide game-changing companies, across platforms & places, through agile design & digital experience. We make waves.'
+            }
+            buttonTitle={'Learn More'}
+            showButton={true}
+          />
         </div>
         <div className={styles.testimonials__second__card}>
           {testimonials.map((comment, key) => {

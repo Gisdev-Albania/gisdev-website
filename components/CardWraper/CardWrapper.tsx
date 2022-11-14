@@ -9,15 +9,26 @@ interface CardProps {
   buttonTitle?: string;
   onClick?: (e: SyntheticEvent<HTMLElement>) => void;
   showButton?: boolean;
+  primaryText?: boolean;
 }
 
 export const CardWrapper: React.FunctionComponent<CardProps> = props => {
-  const { title, paragraph, buttonTitle, showButton, onClick } = props;
+  const { title, paragraph, buttonTitle, showButton, primaryText, onClick } =
+    props;
 
   return (
     <div className={styles.card__right__container}>
       <div className={styles.latest__work__title_card}>
-        <h2 className={styles.latest__work__card__title}>{title}</h2>
+        {primaryText ? (
+          <h2
+            className={styles.latest__work__card__title}
+            style={{ fontSize: '45px' }}
+          >
+            {title}
+          </h2>
+        ) : (
+          <h2 className={styles.latest__work__card__title}>{title}</h2>
+        )}
         <p className={styles.card__paragraph}>{paragraph}</p>
         <div className={styles.card__bottom}>
           {showButton === true ? (
