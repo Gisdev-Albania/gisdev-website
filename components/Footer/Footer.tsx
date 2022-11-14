@@ -22,12 +22,12 @@ export const Footer = () => {
                   <Image
                     src={'/GIS-DEV_logo_final-02.png'}
                     alt={''}
-                    width={180}
+                    width={230}
                     height={60}
                   />
                 </div>
 
-                <div className={styles.ul}>
+                <div className={styles.address}>
                   <Link href={'#'}>
                     <a>
                       <RiRecordCircleLine />
@@ -54,12 +54,13 @@ export const Footer = () => {
                   </Link>
                 </div>
               </div>
+
               <div className={styles.footer__right}>
                 <div className={styles.footer__right__area}>
-                  <div className={styles.row__options}>
-                    <div className={styles.footer__item}>
-                      <h4>Explore On</h4>
-                      <div className={styles.footer__menu__explorer}>
+                  <div className={styles.area__options}>
+                    <div className={styles.area__item}>
+                      <h3>Explore On</h3>
+                      <div className={styles.footer__area__explorer}>
                         <ul>
                           <Link href={'#'}>
                             <a>Home</a>
@@ -79,9 +80,10 @@ export const Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className={styles.footer__item}>
-                      <h4>Our Services</h4>
-                      <div className={styles.footer__menu__explorer}>
+
+                    <div className={styles.area__item}>
+                      <h3>Our Services</h3>
+                      <div className={styles.footer__area__explorer}>
                         <ul>
                           <Link href={'#'}>
                             <a>Web Development</a>
@@ -104,55 +106,49 @@ export const Footer = () => {
                         </ul>
                       </div>
                     </div>
-       
-                  </div>
-                  <div className={styles.row__options}>
-                    <div className={styles.footer__item}>
-                      <div className={styles.social__area}>
-                        <div className={styles.footer__widget}>
-                          <h4>Join Our community</h4>
-                        </div>
-                        <div className={styles.footer__widget}>
-                          <ul>
-                            <Link href={'#'}>
-                              <a>
-                                <BsFacebook />
-                              </a>
-                            </Link>
-                            <Link href={'#'}>
-                              <a>
-                                <AiOutlineTwitter />
-                              </a>
-                            </Link>
-                            <Link href={'#'}>
-                              <a>
-                                <GrLinkedinOption />
-                              </a>
-                            </Link>
-                            <Link href={'#'}>
-                              <a>
-                                <FiDribbble />
-                              </a>
-                            </Link>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className={styles.mini__footer_part}>
-              <div>
-          
-          
-                <p> © Copyright 2022. All Rights Reserved.</p>
+            <div className={styles.footer__text}>
+              <p> © Copyright 2022. All Rights Reserved.</p>
+            </div>
+            <div className={styles.row__options}>
+              <div className={styles.footer__item}>
+                <div className={styles.social__area}>
+                  <div className={styles.footer__widget}>
+                    <h4>Join Our community</h4>
+                  </div>
+                  <div className={styles.footer__widget}>
+                    <ul>
+                      <Link href={'#'}>
+                        <a>
+                          <BsFacebook />
+                        </a>
+                      </Link>
+                      <Link href={'#'}>
+                        <a>
+                          <AiOutlineTwitter />
+                        </a>
+                      </Link>
+                      <Link href={'#'}>
+                        <a>
+                          <GrLinkedinOption />
+                        </a>
+                      </Link>
+                      <Link href={'#'}>
+                        <a>
+                          <FiDribbble />
+                        </a>
+                      </Link>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p>Sitemap</p>
-                <p>Contact</p>
-              </div>
+            </div>
           </div>
         </div>
       </footer>

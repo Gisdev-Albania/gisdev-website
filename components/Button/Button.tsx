@@ -29,16 +29,10 @@ export const Button: React.FunctionComponent<ButtonProps> = props => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
+                justifyContent: 'space-around',
               }}
             >
               {children}
-              <FaLongArrowAltRight
-                style={{
-                  color: isPrimary === true ? 'white' : '#0E1A2A',
-                  width: '50px',
-                }}
-              />
             </span>
           </span>
         </span>

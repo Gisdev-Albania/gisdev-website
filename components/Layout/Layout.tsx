@@ -2,10 +2,11 @@ import React from 'react';
 import styles from '../../styles/components/Layout.module.scss';
 import { Header } from '../Header';
 import { useScrollPosition } from '../Header/useScrollPosition';
+import { Footer } from '../Footer';
+import { NextPage } from 'next';
 
 const Layout = (props: any) => {
   const scrollPosition = useScrollPosition();
-  console.log('scrollPosition>>>', scrollPosition);
   const { children } = props;
   return (
     <>
@@ -19,6 +20,7 @@ const Layout = (props: any) => {
         <Header />
       </div>
       {children}
+      <Footer />
     </>
   );
 };

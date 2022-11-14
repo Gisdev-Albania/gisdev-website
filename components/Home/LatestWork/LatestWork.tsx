@@ -21,43 +21,15 @@ export const LatestWork = () => {
               <CardWrapper
                 title={'GISDEV is  professional and fully responsible.\n'}
                 paragraph={
-                  'From the simple to the complex, we develop web and mobile software to enable the public and private companies to access, manipulate and manage data. We build strong relationships with our clients by doing three things: being accountable for our projects, making our processes transparent, and delivering excellent results.'
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eius error et libero neque nobis non, recusandae veniam! Dignissimos eos nihil porro quasi? Aperiam enim fugiat hic nobis optio quaerat quam, quas rerum sapiente? A accusamus adipisci asperiores atque consequatur consequuntur culpa cupiditate debitis dicta distinctio dolorem doloribus ducimus ea eum explicabo inventore ipsa ipsum laboriosam maiores, modi nesciunt nobis nostrum nulla numquam officia pariatur perferendis placeat quaerat quia quibusdam reiciendis reprehenderit repudiandae sed sunt tempore voluptas voluptatum! Accusantium ad at corporis deserunt, dolorum ea nam quidem rem reprehenderit sed sit ullam ut. Alias consequatur excepturi iure libero minima pariatur praesentium rem sed! Earum, enim?'
                 }
-                buttonTitle={'More Info'}
-                showButton={true}
+                showButton={false}
               />
             </div>
             <div className={styles.latest__work__slider}>
-              <div className={styles.latest__work__top}></div>
+              <div className={styles.latest__work__top}>This is a div</div>
             </div>
           </div>
-          {/*<div className={styles.bottom__side__card}>*/}
-          {/*  <CardZoomOutReveal*/}
-          {/*    title={'Some Title'}*/}
-          {/*    alt={''}*/}
-          {/*    description={'Some description about this card and its purpose.'}*/}
-          {/*    imageSrc={*/}
-          {/*      'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'*/}
-          {/*    }*/}
-          {/*  />*/}
-          {/*  <CardZoomOutReveal*/}
-          {/*    title={'Some Title'}*/}
-          {/*    alt={''}*/}
-          {/*    description={'Some description about this card and its purpose.'}*/}
-          {/*    imageSrc={*/}
-          {/*      'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'*/}
-          {/*    }*/}
-          {/*  />*/}
-
-          {/*  <CardZoomOutReveal*/}
-          {/*    title={'Some Title'}*/}
-          {/*    alt={''}*/}
-          {/*    description={'Some description about this card and its purpose.'}*/}
-          {/*    imageSrc={*/}
-          {/*      'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'*/}
-          {/*    }*/}
-          {/*  />*/}
-          {/*</div>*/}
         </div>
       </div>
     </div>
