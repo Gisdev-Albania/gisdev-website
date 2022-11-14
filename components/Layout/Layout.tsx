@@ -1,22 +1,21 @@
 import React from 'react';
-import styles from '../../styles/Home.module.scss';
-import { IoLocationSharp } from 'react-icons/io5';
-import { BsFacebook, BsFillTelephoneFill, BsTwitter } from 'react-icons/bs';
-import { MdMail } from 'react-icons/md';
-import { GrLinkedinOption } from 'react-icons/gr';
+import styles from '../../styles/components/Layout.module.scss';
 import { Header } from '../Header';
-import { Footer } from '../Footer';
 import { useScrollPosition } from '../Header/useScrollPosition';
 
 const Layout = (props: any) => {
-
-  const scrollPosition = useScrollPosition()
-
+  const scrollPosition = useScrollPosition();
+  console.log('scrollPosition>>>', scrollPosition);
   const { children } = props;
   return (
     <>
-      <div className={styles.navbar} style={{marginTop: scrollPosition > 0 ? '0' : '1.5rem', transition: 'ease .3s '}}>
-        
+      <div
+        className={styles.main__header}
+        style={{
+          marginTop: scrollPosition > 0 ? '0' : '1.5rem',
+          transition: 'ease .3s ',
+        }}
+      >
         <Header />
       </div>
       {children}

@@ -14,9 +14,11 @@
   top: 0;
   display: flex;
   justify-content: center;
-  transition: ease 0.3s;
+  //transition: ease 0.3s;
   box-shadow: 0px 0px 8px 0px white;
+  transition: ease-in-out 0.3s;
 }
+
 .header__wrap {
   width: 70vw;
   height: 84px;

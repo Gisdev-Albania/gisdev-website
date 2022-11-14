@@ -1,7 +1,6 @@
 @import 'colors';
 
 .container {
-  // background-color: #0e1a2a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +8,4 @@
   .container__body {
     max-width: 70vw;
   }
-}
-.main__layout {
-  // background-color: $dark_blue;
 }
