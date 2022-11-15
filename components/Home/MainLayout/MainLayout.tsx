@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Button from '../../Button';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import Layout from '../../Layout/Layout';
+import { BottomLeftDots, TopRightDots } from '../../Dots';
 
 export const MainLayout = () => {
   const [imageId, setImageId] = useState(1);
@@ -56,6 +57,10 @@ export const MainLayout = () => {
           />
         </div>
         <div className={styles.hero__main__image}>
+          <span className={styles.right__dots}>
+            <TopRightDots />
+          </span>
+
           <div className={styles.main__image__container}>
             <Image src={imageUrl} height={500} width={500} alt="main image" />
 
@@ -76,6 +81,9 @@ export const MainLayout = () => {
               </div>
             </div>
           </div>
+          <span className={styles.left__dots}>
+            <BottomLeftDots />
+          </span>
         </div>
         <div className={styles.hero__title__section}>
           <h1>
