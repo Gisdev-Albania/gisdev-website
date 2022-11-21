@@ -36,6 +36,19 @@
       right: 0;
     }
     .hero__main__image {
+      position: relative;
+      .right__dots {
+        position: absolute;
+        z-index: 12;
+        left: 340px;
+        top: -0.3rem;
+      }
+      .left__dots {
+        position: absolute;
+        z-index: 12;
+        top: 460px;
+        left: -1rem;
+      }
       .main__image__container {
         border: 30px solid #0e1a2a;
         position: relative;
