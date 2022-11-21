@@ -14,10 +14,11 @@ const Services = () => {
           </h1>
           <div className={styles.brochure__info}>
             <span>
-              Tailored IT strategy to solve business issues. Our 5-phase process ensures your
-              project flows smoothly and efficently. We employ quality control checklists throughout
-              the process and communicate with you on a regular basis about the on-going status of
-              your your project. Check out our services and our solutions.
+              Tailored IT strategy to solve business issues. Our 5-phase process
+              ensures your project flows smoothly and efficently. We employ
+              quality control checklists throughout the process and communicate
+              with you on a regular basis about the on-going status of your your
+              project. Check out our services and our solutions.
             </span>
           </div>
         </div>
@@ -71,9 +72,10 @@ const Services = () => {
                 <h1>We know Technologies</h1>
               </div>
               <div className={styles.text__block}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum eos quasi
-                facere blanditiis delectus iusto. Error, ipsum magnam animi accusamus nihil,
-                voluptas labore illo necessitatibus eos earum ipsa culpa a ullam ad provident nobis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur dolorum eos quasi facere blanditiis delectus iusto.
+                Error, ipsum magnam animi accusamus nihil, voluptas labore illo
+                necessitatibus eos earum ipsa culpa a ullam ad provident nobis!
               </div>
             </div>
           </div>
@@ -82,10 +84,9 @@ const Services = () => {
             <Tabs />
           </div>
         </div>
+        <span className={styles.horizontal__line}></span>
       </section>
 
-      <br />
-      <br />
       <MiniFooter />
     </Layout>
   );

@@ -21,7 +21,8 @@ const AboutUs: NextPage = () => {
             Hi , we’re <br /> Gis<span style={{ color: '#0574DA' }}>dev</span>
           </div>
           <p>
-            We build strong relationships with our clients by being accountable for our projects,
+            We build strong relationships with our clients by being accountable
+            for our projects,
             <br />
             making our processes transparent, and delivering excellent results.
           </p>
@@ -75,10 +76,11 @@ const AboutUs: NextPage = () => {
           <div className={styles.top__container}>
             <div className={styles.about__main__container}>
               <div className={styles.about__title__section}>
-                <h2 className={styles.title}>Why GisDev </h2>
+                <div className={styles.title}>Why GisDev </div>
                 <p>
-                  Prepared is me marianne pleasure likewise debating. Wonder an unable except better
-                  stairs do ye admire. His secure called esteem praise.
+                  Prepared is me marianne pleasure likewise debating. Wonder an
+                  unable except better stairs do ye admire. His secure called
+                  esteem praise.
                 </p>
               </div>
             </div>
@@ -173,8 +175,8 @@ const AboutUs: NextPage = () => {
           <div className={styles.about__us__content}>
             <h3>About Our Clients</h3>
             <p>
-              Our happy clients continue to grow every day. Enable your business with cutting edge
-              enterprise software.
+              Our happy clients continue to grow every day. Enable your business
+              with cutting edge enterprise software.
             </p>
           </div>
         </div>
