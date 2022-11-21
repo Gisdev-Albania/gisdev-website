@@ -15,34 +15,20 @@ const AboutUs: NextPage = () => {
   return (
     <Layout>
       <div className={styles.about__us}>
-        <div className={styles.about__container}>
-          <div className={styles.about__row}>
-            <div className={styles.about__left}>
-              <div className={styles.left__content}>
-                <div className={styles.content}>
-                  <h1>We are GISDEV, We Create Solutions</h1>
-                  <p>
-                    We build strong relationships with our clients by being
-                    accountable for our projects, making our processes
-                    transparent, and delivering excellent results.
-                  </p>
-                  <Button isPrimary={true}>
-                    Click to download the brochure
-                  </Button>
-                </div>
-              </div>
-            </div>
-            <div className={styles.about__right}>
-              <div className={styles.right__img}>
-                <Image
-                  className={styles.img__fluid}
-                  src={'/w4.png'}
-                  width={390}
-                  height={510}
-                />
-              </div>
-            </div>
+        <div className={styles.about__us__title}>
+          {' '}
+          <div className={styles.main__title}>
+            Hi , we’re <br /> Gis<span style={{ color: '#0574DA' }}>dev</span>
           </div>
+          <p>
+            We build strong relationships with our clients by being accountable
+            for our projects,
+            <br />
+            making our processes transparent, and delivering excellent results.
+          </p>
+        </div>{' '}
+        <div className={styles.about__us__logo}>
+          <Image src={'/gis-logo.png'} height={350} width={350} />
         </div>
       </div>
 
@@ -90,7 +76,7 @@ const AboutUs: NextPage = () => {
           <div className={styles.top__container}>
             <div className={styles.about__main__container}>
               <div className={styles.about__title__section}>
-                <h2 className={styles.title}>Why GisDev </h2>
+                <div className={styles.title}>Why GisDev </div>
                 <p>
                   Prepared is me marianne pleasure likewise debating. Wonder an
                   unable except better stairs do ye admire. His secure called
@@ -111,17 +97,17 @@ const AboutUs: NextPage = () => {
               </CardOutlineBorder>
               <CardOutlineBorder>
                 <CardWrapper
-                  title={'OUR VISION'}
+                  title={'WHY US'}
                   paragraph={
-                    'Our vision is to improve and grow in a constant manner, as a major IT service provider, in providing quality Web and Software Development solutions, in order to become an actor in the competitive global market.'
+                    'We have been able to bring together a talented crew of professionals all of which possess outstanding talent. The result of what GISDEV does comes from a blend of passion for success and accumulated skills to help you become more efficient.'
                   }
                 />
               </CardOutlineBorder>
               <CardOutlineBorder>
                 <CardWrapper
-                  title={'WHY US'}
+                  title={'OUR VISION'}
                   paragraph={
-                    'We have been able to bring together a talented crew of professionals all of which possess outstanding talent. The result of what GISDEV does comes from a blend of passion for success and accumulated skills to help you become more efficient.'
+                    'Our vision is to improve and grow in a constant manner, as a major IT service provider, in providing quality Web and Software Development solutions, in order to become an actor in the competitive global market.'
                   }
                 />
               </CardOutlineBorder>
