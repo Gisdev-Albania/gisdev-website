@@ -4,7 +4,7 @@ import styles from '../styles/components/contactUs.module.scss';
 import Button from '../components/Button';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { TbMessageCircle2 } from 'react-icons/tb';
-import {TfiMapAlt} from "react-icons/tfi";
+import {GrMapLocation} from "react-icons/gr";
 
 const ContactUs = () => {
   return (
@@ -97,7 +97,7 @@ const ContactUs = () => {
                 <div className={styles.row__container}>
                   <div className={styles.container__box}>
                     <div className={styles.icon}>
-                      <TfiMapAlt />
+                      <GrMapLocation />
                     </div>
                     <div className={styles.info__box}>
                       <p>
