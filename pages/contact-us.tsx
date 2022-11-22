@@ -4,7 +4,7 @@ import styles from '../styles/components/contactUs.module.scss';
 import Button from '../components/Button';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { TbMessageCircle2 } from 'react-icons/tb';
-import {TfiMapAlt} from "react-icons/all";
+import {TfiMapAlt} from "react-icons/tfi";
 
 const ContactUs = () => {
   return (
