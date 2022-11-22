@@ -1,102 +1,31 @@
 @import '../colors.scss';
 
 .about__us {
-  position: relative;
-  overflow: hidden;
-  background-image: url('../../public/page-header-about-us.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $dark_blue;
+  gap: 30px;
 
-  .about__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  .about__us__title {
+    p {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #ffffff;
+    }
 
-    .about__row {
-      display: flex;
+    .main__title {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
 
-      .about__left {
-        align-self: center !important;
-        display: flex !important;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-
-        .left__content {
-          //font-size: 18px;
-          //line-height: 28px;
-          //color: #ffff;
-          //margin-top: 26px;
-          .content {
-            font-size: 18px;
-            line-height: 28px;
-            color: #ffff;
-            margin-top: 26px;
-            .h1 {
-              font-family: 'Poppins', sans-serif;
-              margin-bottom: 0.5rem;
-              margin-top: 0;
-              font-size: 48px;
-              color: #fff;
-              font-weight: 700;
-              margin-block-start: 0.67em;
-              margin-block-end: 0.67em;
-            }
-          }
-        }
-      }
-      .about__right {
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-
-        .right__img {
-          position: absolute;
-          top: -95px;
-          left: 100px;
-          max-width: 380px;
-          width: auto;
-          .img__fluid {
-            height: auto;
-            vertical-align: middle;
-            border-style: none;
-          }
-        }
-      }
+      color: #ffffff;
     }
   }
-}
-
-.about__us::before {
-  background: $dark_blue;
-  //mix-blend-mode: multiply;
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  //background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
-  opacity: 0.9;
 }
 
 .about__main {
@@ -174,12 +103,14 @@
 
           .title {
             display: block;
-            font-size: 4.5em;
-            line-height: 50px;
-            color: $primary_white;
-            font-weight: 700;
+
+            color: $primary_text;
+
             text-transform: capitalize;
-            margin-bottom: 24px;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 96px;
           }
           p {
             max-width: 650px;
@@ -195,7 +126,6 @@
       display: flex;
       width: 100%;
 
-      height: 40vh;
       padding-bottom: 55px;
       align-items: center;
       justify-content: center;
@@ -319,17 +249,20 @@ $animationSpeed: 40s;
     width: 80%;
     padding-bottom: 20px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 
     .about__us__content {
-      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       h3 {
-        font-family: 'Poppins', sans-serif;
         margin-bottom: 0.5rem;
-        margin-top: 0;
-        font-size: 58px;
+        font-family: 'Outfit';
+        font-style: normal;
         font-weight: 700;
+        font-size: 96px;
+
         margin-block-start: 0.67em;
         margin-block-end: 0.67em;
         color: $primary_blue;
