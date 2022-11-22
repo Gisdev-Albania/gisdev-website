@@ -21,14 +21,9 @@ const ContactUs = () => {
               </div>
               <div className={styles.main__paragraph}>
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                  dignissimos dolorem dolorum in ipsum itaque laborum maiores
-                  perspiciatis sunt tempore. Asperiores blanditiis ea earum
-                  error eveniet fugiat quas sunt voluptates!Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit. Ad dignissimos dolorem
-                  dolorum in ipsum itaque laborum maiores perspiciatis sunt
-                  tempore. Asperiores blanditiis ea earum error eveniet fugiat
-                  quas sunt voluptates!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque dicta doloremque inventore,
+                  iure minima necessitatibus nemo nobis perferendis provident quae quis quod sapiente tenetur, veritatis! Ab aliquam, aut consequuntur delectus dicta doloremque iste laborum minima obcaecati optio perspiciatis quia quo tempore, veritatis voluptates voluptatibus voluptatum.
+                  Neque, quaerat temporibus? Accusamus alias doloribus incidunt porro quibusdam vel.
                 </span>
               </div>
             </div>
