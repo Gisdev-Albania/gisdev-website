@@ -3,7 +3,6 @@
 
 .navigation__section {
   padding-top: 150px;
-  padding-bottom: 120px;
 
   .container {
     max-width: 1260px;
@@ -114,7 +113,6 @@
           text-align: left;
           display: flex;
           p {
-            //font-family: 'Outfit';
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
@@ -139,7 +137,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      flex: 1;
+      width: 80%;
       .left__side {
         display: flex;
         align-items: center;
@@ -150,11 +148,59 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
+        justify-content: flex-start;
 
+        .right__side_text {
+          display: flex;
+          width: 100%;
+          color: $figma_blue;
+          justify-content: flex-start;
+          padding-left: 15px;
+        }
         .address {
           display: flex;
+          justify-content: center;
           flex-direction: column;
-          gap: 25px;
+          width: 100%;
+
+          .row__container {
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            :nth-child(1) {
+              width: 100%;
+            }
+            .container__box {
+              margin-bottom: 30px;
+              padding: 30px 30px 22px;
+              cursor: pointer;
+              text-align: center;
+              background: $secondary_blue;
+              .icon {
+                font-size: 30px;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 70px;
+                display: inline-block;
+                position: relative;
+                color: $primary_white;
+              }
+
+              .info__box {
+                cursor: pointer;
+                text-align: center;
+                color: $primary_white;
+                &:hover {
+                  transition: all 0.4s ease-in;
+                  color: $primary_blue;
+                }
+              }
+            }
+          }
         }
       }
     }
