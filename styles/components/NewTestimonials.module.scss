@@ -56,46 +56,19 @@
       }
     }
     .testimonials__second__card {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      .testimonials__group__card {
-        background-color: #1a304d;
-        display: grid;
-        grid-template-columns: repeat(2, auto auto);
-        padding: 20px;
-        gap: 20px;
-        .testimonials__card__profile {
-          margin-top: 20px;
-          background-color: #0286ff;
-          border-radius: 50%;
-          height: 50px;
-          width: 50px;
-        }
-        .testimonials__card__profile_hr {
-          height: 100px;
-          width: 1px;
-          background-color: white;
-          margin-top: 10px;
-        }
+      width: 1600px;
+      height: 300px;
+      background: #1a304c;
 
-        .testimonioals__card__comment {
-          .testimonials__card__name {
-            color: #f7f7f8;
-            font-family: 'Outfit';
-            font-weight: 600;
-          }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-          .testimonials__card__paragraph {
-            color: #f7f7f8;
-            font-family: 'Outfit';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 14px;
-            height: auto;
-            padding: 0;
-          }
-        }
+      .testimonials__card__body {
+        border: 1px solid red;
+        display: flex;
+        height: 250px;
+        width: 600px;
       }
     }
   }
