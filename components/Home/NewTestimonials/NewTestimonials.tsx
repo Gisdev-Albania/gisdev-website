@@ -57,18 +57,33 @@ export const NewTestimonials = () => {
 
       <div className={styles.testimonials__cards}>
         <div className={styles.testimonials__second__card}>
-          <HiOutlineChevronLeft
-            style={{ height: '160px', width: '240px', color: 'white' }}
-          />
+          <div className={styles.second__card__buttons}>
+            <HiOutlineChevronLeft
+              style={{
+                height: '50px',
+                width: '50px',
+                color: 'white',
+                background: '#0e1a2a',
+              }}
+            />
+            <HiOutlineChevronRight
+              style={{
+                height: '50px',
+                width: '50px',
+                color: 'white',
+                background: '#0286ff',
+              }}
+              onClick={nextButton}
+            />
+          </div>
 
           <div className={styles.testimonials__card__body}>
-            <p>{cardObject.name}</p>
+            <div className={styles.testimonials__card_body__elements}>
+              <span className={styles.testimonials__card__profile}></span>
+              <p>{cardObject.name}</p>
+            </div>{' '}
             <p>{cardObject.text}</p>
           </div>
-          <HiOutlineChevronRight
-            style={{ height: '160px', width: '240px', color: 'white' }}
-            onClick={nextButton}
-          />
         </div>
 
         <div className={styles.right__testimonial__Section}>

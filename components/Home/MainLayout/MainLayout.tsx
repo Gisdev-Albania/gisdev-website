@@ -51,8 +51,8 @@ export const MainLayout = () => {
         <div className={styles.background__image}>
           <Image
             src={'/banner-bg-text.png'}
-            height={460}
-            width={400}
+            height={440}
+            width={380}
             alt={'Company-Image'}
           />
         </div>
@@ -68,14 +68,14 @@ export const MainLayout = () => {
               <div>
                 {' '}
                 <HiOutlineChevronLeft
-                  style={{ height: '40px', width: '60px', color: 'white' }}
+                  style={{ height: '50px', width: '50px', color: 'white' }}
                   onClick={() => backImage(0) as any}
                 />
               </div>
               <div>
                 {' '}
                 <HiOutlineChevronRight
-                  style={{ height: '40px', width: '60px', color: 'white' }}
+                  style={{ height: '50px', width: '50px', color: 'white' }}
                   onClick={() => nextImage(3) as any}
                 />
               </div>
