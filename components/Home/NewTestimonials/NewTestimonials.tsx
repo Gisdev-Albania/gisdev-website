@@ -2,45 +2,48 @@ import React, { useState } from 'react';
 import styles from '../../../styles/components/NewTestimonials.module.scss';
 import { CardWrapper } from '../../CardWraper';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
-import Card from '../../Card';
+import Image from 'next/image';
 
 export const NewTestimonials = () => {
   const [count, setCount] = useState(0);
 
   const testimonials = [
     {
-      name: 'Kim',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Kim Pearce',
+      role: 'Chief Executive Officer - Continuum Works',
+      text: 'It is rare to find a vendor like GISDEV who go beyond the effective delivery of projects to become a consistently responsive and trusted collaborator.We have launched at least 5 projects with the GISDEV team, all of them successful and extremely professional.',
       visible: true,
+      image: '/kim_pearce.jpg',
     },
 
     {
-      name: 'John',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Andrea Cristofoletto',
+      role: 'Chief Operating Officer - Cannabiscienza',
+      text: 'GISDEVs team did an excellent job.They solved some time consuming tasks for my team on our educational platform and they provided custom web solutionsto improve UX and security of our LMS.Highly recommend, even on short dedlines.',
       visible: false,
+      image: '/andrea_cristofoletto.jpg',
     },
 
     {
-      name: 'Oliv',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Ines Michel',
+      role: 'Sales Support Professional Asia - SKIDATA AG',
+      text: 'GISDEV company supporte us from the scratch with the implementation of our project. They are extremely reliable and work quickly. Great team - highly recommended!',
       visible: false,
-    },
-    {
-      name: 'Dan',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      visible: false,
+      image: '/ines_michel.jpg',
     },
   ];
   const cardObject = {
     name: testimonials[count].name,
     text: testimonials[count].text,
+    role: testimonials[count].role,
+    image: testimonials[count].image,
   };
 
   const nextButton = () => {
     setCount(count + 1);
     testimonials[count]?.visible === true;
     testimonials[count + 1]?.visible === false;
-    if (count === 3) {
+    if (count === 2) {
       setCount(0);
     }
   };
@@ -79,8 +82,11 @@ export const NewTestimonials = () => {
 
           <div className={styles.testimonials__card__body}>
             <div className={styles.testimonials__card_body__elements}>
-              <span className={styles.testimonials__card__profile}></span>
-              <p>{cardObject.name}</p>
+              <Image src={`${cardObject?.image}`} height={60} width={40} />
+              <span>
+                <p>{cardObject?.name}</p>
+                <span>{cardObject?.role}</span>
+              </span>
             </div>{' '}
             <p>{cardObject.text}</p>
           </div>
