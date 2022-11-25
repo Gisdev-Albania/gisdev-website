@@ -1,9 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import styles from '../../styles/components/Button.module.scss';
-import Image from 'next/image';
-import { HiArrowNarrowRight } from 'react-icons/hi';
-import { FaLongArrowAltRight } from 'react-icons/fa';
-import { BsDisplayFill } from 'react-icons/bs';
+import { CgArrowLongRight } from 'react-icons/cg';
+import { BsArrowRight } from 'react-icons/bs';
 
 export interface ButtonProps {
   children: React.ReactNode;
@@ -33,6 +31,13 @@ export const Button: React.FunctionComponent<ButtonProps> = props => {
               }}
             >
               {children}
+
+              <BsArrowRight
+                style={{
+                  color: isPrimary ? 'white' : '#0e1a2a',
+                  marginLeft: '10px',
+                }}
+              />
             </span>
           </span>
         </span>

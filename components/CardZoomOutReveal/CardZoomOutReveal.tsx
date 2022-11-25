@@ -19,7 +19,11 @@ export const CardZoomOutReveal: React.FunctionComponent<
     <div className={styles.card}>
       <div className={styles.card__wrapper}>
         <figure>
-          <img src={imageSrc} alt={alt} />
+          <img
+            src={imageSrc}
+            alt={alt}
+            style={{ width: `${width}`, height: `${height}` }}
+          />
           <figcaption>
             <h2>{title}</h2>
             <p>{description}</p>

@@ -38,9 +38,9 @@
     width: 650px;
 
     a {
-      margin: 2%;
+      margin: 2.2%;
 
-      padding-bottom: 4px;
+      // padding-bottom: 3px;
       font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 700;
@@ -104,6 +104,7 @@
           line-height: 117.52%;
           letter-spacing: 0.1em;
           color: white;
+          cursor: pointer;
         }
       }
     }

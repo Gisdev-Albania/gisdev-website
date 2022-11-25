@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Button from '../../Button';
 import Icon, { IconType } from '../../Icon/Icon';
 import { CardWrapper } from '../../CardWraper';
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import { CardZoomOutReveal } from '../../CardZoomOutReveal';
 
 export const LatestWork = () => {
@@ -19,15 +20,48 @@ export const LatestWork = () => {
           <div className={styles.latest__work__cards}>
             <div className={styles.latest__work__title_card}>
               <CardWrapper
-                title={'GISDEV is  professional and fully responsible.\n'}
+                title={'Look our latest work....\n'}
                 paragraph={
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eius error et libero neque nobis non, recusandae veniam! Dignissimos eos nihil porro quasi? Aperiam enim fugiat hic nobis optio quaerat quam, quas rerum sapiente? A accusamus adipisci asperiores atque consequatur consequuntur culpa cupiditate debitis dicta distinctio dolorem doloribus ducimus ea eum explicabo inventore ipsa ipsum laboriosam maiores, modi nesciunt nobis nostrum nulla numquam officia pariatur perferendis placeat quaerat quia quibusdam reiciendis reprehenderit repudiandae sed sunt tempore voluptas voluptatum! Accusantium ad at corporis deserunt, dolorum ea nam quidem rem reprehenderit sed sit ullam ut. Alias consequatur excepturi iure libero minima pariatur praesentium rem sed! Earum, enim?'
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eius error et libero neque nobis non, recusandae veniam! Dignissimos eos nihil porro quasi? Aperiam enim fugiat hic nobis optio quaerat quam,.'
                 }
-                showButton={false}
+                showButton={true}
+                buttonTitle={'Show more '}
               />
             </div>
             <div className={styles.latest__work__slider}>
-              <div className={styles.latest__work__top}>This is a div</div>
+              <div className={styles.second__card__buttons}>
+                <HiOutlineChevronLeft
+                  style={{
+                    height: '50px',
+                    width: '50px',
+                    color: 'white',
+                    background: '#0e1a2a',
+                  }}
+                />
+                <HiOutlineChevronRight
+                  style={{
+                    height: '50px',
+                    width: '50px',
+                    color: 'white',
+                    background: '#0286ff',
+                  }}
+                />
+              </div>
+
+              <div className={styles.lates__work__slider__images}>
+                <CardZoomOutReveal
+                  title={'Some Title'}
+                  alt={''}
+                  description={
+                    'Some description about this card and its purpose.'
+                  }
+                  imageSrc={
+                    'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
+                  }
+                  width={700}
+                  height={500}
+                />
+              </div>
             </div>
           </div>
         </div>

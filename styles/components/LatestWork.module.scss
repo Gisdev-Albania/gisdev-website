@@ -49,6 +49,23 @@
         padding-block: 2rem;
         margin: 0;
 
+        .latest__work__slider {
+          display: flex;
+
+          .second__card__buttons {
+            padding: 1rem 0 1rem 1rem;
+            display: flex;
+            align-items: flex-end;
+          }
+
+          .lates__work__slider__images {
+            height: 350px;
+            width: 700px;
+            margin: auto auto 90px 0;
+            background-color: #0286ff;
+          }
+        }
+
         .latest__work__title_card {
           height: 100%;
         }
