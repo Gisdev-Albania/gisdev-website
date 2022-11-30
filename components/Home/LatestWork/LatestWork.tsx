@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styles from '../../../styles/components/LatestWork.module.scss';
 import Image from 'next/image';
 import Button from '../../Button';
@@ -8,6 +8,39 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import { CardZoomOutReveal } from '../../CardZoomOutReveal';
 
 export const LatestWork = () => {
+  const [isShown, setIsShown] = useState(false);
+
+  const boxRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    setIsShown(true);
+    console.log(boxRef, 'box ref');
+  };
+
+  const handleMouseLeave = () => {
+    setIsShown(false);
+  };
+
+  console.log(isShown, 'yepp');
+  const projectCards = [
+    {
+      title: 'First project',
+      visible: false,
+    },
+    {
+      title: 'Second project',
+      visible: false,
+    },
+    {
+      title: 'Third project',
+      visible: false,
+    },
+    {
+      title: 'Fourth project',
+      visible: false,
+    },
+  ];
+
   return (
     <div className={styles.latest__main__container}>
       <div className={styles.latest__work__container}>
@@ -29,39 +62,21 @@ export const LatestWork = () => {
               />
             </div>
             <div className={styles.latest__work__slider}>
-              <div className={styles.second__card__buttons}>
-                <HiOutlineChevronLeft
-                  style={{
-                    height: '50px',
-                    width: '50px',
-                    color: 'white',
-                    background: '#0e1a2a',
-                  }}
-                />
-                <HiOutlineChevronRight
-                  style={{
-                    height: '50px',
-                    width: '50px',
-                    color: 'white',
-                    background: '#0286ff',
-                  }}
-                />
-              </div>
-
-              <div className={styles.lates__work__slider__images}>
-                <CardZoomOutReveal
-                  title={'Some Title'}
-                  alt={''}
-                  description={
-                    'Some description about this card and its purpose.'
-                  }
-                  imageSrc={
-                    'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                  }
-                  width={700}
-                  height={500}
-                />
-              </div>
+              {projectCards.map((elem, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={`${styles['latest__work__project__cards']} ${
+                      isShown ? styles['latest__work__project__hover'] : ''
+                    } `}
+                    ref={boxRef}
+                    onMouseEnter={() => console.log(elem.title)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {elem.title}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
