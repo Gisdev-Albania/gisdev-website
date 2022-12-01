@@ -9,9 +9,9 @@ const Services = () => {
     <Layout>
       <section className={styles.services}>
         <div className={styles.title}>
-          <h1>
+          <span>
             Explore our <span style={{ color: '#0286FF' }}>services</span>
-          </h1>
+          </span>
           <div className={styles.brochure__info}>
             <span>
               Tailored IT strategy to solve business issues. Our 5-phase process
@@ -28,9 +28,9 @@ const Services = () => {
         <div className={styles.services__main_container}>
           <div className={styles.menu}>
             <div className={styles.title__menu}>
-              <div className={styles.title__card}>
+              {/* <div className={styles.title__card}>
                 <h1>Our services</h1>
-              </div>
+              </div> */}
             </div>
 
             <div className={styles.card__container}>

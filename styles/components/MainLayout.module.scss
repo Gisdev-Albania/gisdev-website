@@ -29,14 +29,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
+   width: 100vw;
+   
 
     .background__image {
       position: absolute;
-
       right: 0;
+      
     }
     .hero__main__image {
       position: relative;
+      
+      
       .right__dots {
         position: absolute;
         z-index: 12;
@@ -75,6 +79,7 @@
     }
 
     .hero__title__section {
+     
       h1 {
         font-family: 'Outfit';
         font-style: normal;

@@ -9,33 +9,39 @@ import { CardZoomOutReveal } from '../../CardZoomOutReveal';
 
 export const LatestWork = () => {
   const [isShown, setIsShown] = useState(false);
+  const [id, setId] = useState(null)
 
-  const boxRef = useRef(null);
 
-  const handleMouseEnter = () => {
-    setIsShown(true);
-    console.log(boxRef, 'box ref');
-  };
 
-  const handleMouseLeave = () => {
-    setIsShown(false);
-  };
+const openCard= (cardId: any) => {
+  setId(cardId)
 
-  console.log(isShown, 'yepp');
+  if(cardId === id) {
+    setIsShown(true)
+  }
+
+}
+
+
+  
   const projectCards = [
     {
+      id: 0,
       title: 'First project',
       visible: false,
     },
     {
+      id: 1,
       title: 'Second project',
       visible: false,
     },
     {
+      id: 2,
       title: 'Third project',
       visible: false,
     },
     {
+      id: 3,
       title: 'Fourth project',
       visible: false,
     },
@@ -69,11 +75,12 @@ export const LatestWork = () => {
                     className={`${styles['latest__work__project__cards']} ${
                       isShown ? styles['latest__work__project__hover'] : ''
                     } `}
-                    ref={boxRef}
-                    onMouseEnter={() => console.log(elem.title)}
-                    onMouseLeave={handleMouseLeave}
+
+                    
+                 
                   >
-                    {elem.title}
+                    <p onClick={() => openCard(elem.id) as any}>{elem.title}</p>
+                    <p onClick={() => {setId(null); setIsShown(false), console.log('closed')}}>Close</p>
                   </div>
                 );
               })}
