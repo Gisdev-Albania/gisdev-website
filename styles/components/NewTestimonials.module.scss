@@ -83,12 +83,35 @@
           display: flex;
           gap: 20px;
 
+          .testimonials__body__text{
+            display: flex;
+            flex-direction: column;
+                span:nth-child(1){
+                  font-weight: 700;
+                  font-size: 20px;
+                  font-family: 'Outfit';
+                }
+
+                span:nth-child(2){
+                  font-family: 'Outfit';
+                  font-style: italic;
+                  font-size: 16px;
+                  
+                }
+
+          }
+
           .testimonials__card__profile {
             height: 50px;
             width: 50px;
             background-color: #0286ff;
             border-radius: 50%;
           }
+        }
+        .testimonials__body__paragraph{
+          font-weight: lighter;
+          font-size: 16px;
+          font-family: 'Outfit';
         }
       }
     }

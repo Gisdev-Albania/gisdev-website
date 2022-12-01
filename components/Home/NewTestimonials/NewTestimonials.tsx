@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../../styles/components/NewTestimonials.module.scss';
 import { CardWrapper } from '../../CardWraper';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
@@ -6,13 +6,14 @@ import Image from 'next/image';
 
 export const NewTestimonials = () => {
   const [count, setCount] = useState(0);
+  const [animate, setAnimate] = useState(false)
 
   const testimonials = [
     {
       name: 'Kim Pearce',
       role: 'Chief Executive Officer - Continuum Works',
       text: 'It is rare to find a vendor like GISDEV who go beyond the effective delivery of projects to become a consistently responsive and trusted collaborator.We have launched at least 5 projects with the GISDEV team, all of them successful and extremely professional.',
-      visible: true,
+      visible: false,
       image: '/kim_pearce.jpg',
     },
 
@@ -46,7 +47,17 @@ export const NewTestimonials = () => {
     if (count === 2) {
       setCount(0);
     }
+setAnimate(true)
+    
+    
   };
+
+  console.log(animate, 'animate')
+useEffect(() => {
+  setTimeout(() => {setAnimate(false)}, 200)
+
+
+},[count])
 
   console.log(cardObject);
 
@@ -58,8 +69,8 @@ export const NewTestimonials = () => {
         </div>
       </div>
 
-      <div className={styles.testimonials__cards}>
-        <div className={styles.testimonials__second__card}>
+      <div className={styles.testimonials__cards} >
+        <div className={styles.testimonials__second__card} style={{backgroundColor: animate ? 'rgba(26, 48, 77, 0.71)' : '',transition: 'all .15s'}}>
           <div className={styles.second__card__buttons}>
             <HiOutlineChevronLeft
               style={{
@@ -80,15 +91,16 @@ export const NewTestimonials = () => {
             />
           </div>
 
-          <div className={styles.testimonials__card__body}>
+          <div className={styles.testimonials__card__body} style={{transform: animate ? 'scale(.97)' : '', transition: 'all .15s', }}>
             <div className={styles.testimonials__card_body__elements}>
-              <Image src={`${cardObject?.image}`} height={60} width={40} />
-              <span>
-                <p>{cardObject?.name}</p>
+              <img src={cardObject?.image} style={{maxHeight: '70px', maxWidth: '50px'}}/>
+              <span className={styles.testimonials__body__text}>
+                <span>{cardObject?.name}</span>
                 <span>{cardObject?.role}</span>
               </span>
             </div>{' '}
-            <p>{cardObject.text}</p>
+            <p className={styles.testimonials__body__paragraph}>{cardObject.text}</p>
+            
           </div>
         </div>
 
