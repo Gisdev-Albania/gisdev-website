@@ -64,7 +64,6 @@ export const MainLayout = () => {
                 />
               </div>
               <div>
-                {' '}
                 <HiOutlineChevronRight
                   style={{ height: '50px', width: '50px', color: 'white' }}
                 />

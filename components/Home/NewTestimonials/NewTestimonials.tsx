@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export const NewTestimonials = () => {
   const [count, setCount] = useState(0);
-  const [animate, setAnimate] = useState(false)
+  const [animate, setAnimate] = useState(false);
 
   const testimonials = [
     {
@@ -47,19 +47,14 @@ export const NewTestimonials = () => {
     if (count === 2) {
       setCount(0);
     }
-setAnimate(true)
-    
-    
+    setAnimate(true);
   };
 
-  console.log(animate, 'animate')
-useEffect(() => {
-  setTimeout(() => {setAnimate(false)}, 200)
-
-
-},[count])
-
-  console.log(cardObject);
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimate(false);
+    }, 200);
+  }, [count]);
 
   return (
     <div className={styles.testimonials__container}>
@@ -69,8 +64,14 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className={styles.testimonials__cards} >
-        <div className={styles.testimonials__second__card} style={{backgroundColor: animate ? 'rgba(26, 48, 77, 0.71)' : '',transition: 'all .15s'}}>
+      <div className={styles.testimonials__cards}>
+        <div
+          className={styles.testimonials__second__card}
+          style={{
+            backgroundColor: animate ? 'rgba(26, 48, 77, 0.71)' : '',
+            transition: 'all .15s',
+          }}
+        >
           <div className={styles.second__card__buttons}>
             <HiOutlineChevronLeft
               style={{
@@ -91,16 +92,32 @@ useEffect(() => {
             />
           </div>
 
-          <div className={styles.testimonials__card__body} style={{transform: animate ? 'scale(.97)' : '', transition: 'all .15s', }}>
+          <div
+            className={styles.testimonials__card__body}
+            style={{
+              transform: animate ? 'scale(.97)' : '',
+              transition: 'all .15s',
+            }}
+          >
+            <span className={styles.testimonials__left__corner}>
+              <Image src={'/corner.png'} height={100} width={200} />
+            </span>
             <div className={styles.testimonials__card_body__elements}>
-              <img src={cardObject?.image} style={{maxHeight: '70px', maxWidth: '50px'}}/>
+              <img
+                src={cardObject?.image}
+                style={{ maxHeight: '70px', maxWidth: '50px' }}
+              />
               <span className={styles.testimonials__body__text}>
                 <span>{cardObject?.name}</span>
                 <span>{cardObject?.role}</span>
               </span>
             </div>{' '}
-            <p className={styles.testimonials__body__paragraph}>{cardObject.text}</p>
-            
+            <p className={styles.testimonials__body__paragraph}>
+              {cardObject.text}
+            </p>
+            <span className={styles.testimonials__right__corner}>
+              <Image src={'/corner.png'} height={100} width={200} />
+            </span>
           </div>
         </div>
 

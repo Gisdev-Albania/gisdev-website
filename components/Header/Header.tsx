@@ -11,12 +11,10 @@ export const Header = () => {
   useEffect(() => {
     let tab = window?.location?.pathname;
     setActiveTab(tab);
-  });
+  }, []);
 
   // const activeTab = '/about-us';
   const scrollPosition = useScrollPosition();
-
-  console.log();
 
   return (
     <>

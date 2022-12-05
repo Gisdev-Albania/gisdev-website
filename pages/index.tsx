@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <MainLayout />
         <div className={styles.container__body}>
           <Services />
-          <LatestWork />
+          <Clients />
           {/* <Clients /> */}
           <NewTestimonials />
           <Slider />
