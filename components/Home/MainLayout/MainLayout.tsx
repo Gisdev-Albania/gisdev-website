@@ -32,6 +32,10 @@ export const MainLayout = () => {
     image: imageObject[count]?.image,
   };
 
+  const nextImage = () => {
+    console.log('hello world');
+  };
+
   return (
     <div className={styles.main_background}>
       <div className={styles.hero}>

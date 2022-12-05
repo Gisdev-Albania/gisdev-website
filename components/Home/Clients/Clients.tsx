@@ -37,9 +37,7 @@ export const Clients = () => {
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/onlineLearning.png'}
               />
               <CardZoomOutReveal
                 title={'Dashboard'}
@@ -47,9 +45,7 @@ export const Clients = () => {
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/myosh-bashboard.png'}
               />
 
               <CardZoomOutReveal
@@ -58,9 +54,7 @@ export const Clients = () => {
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/intergoma.png'}
               />
               <CardZoomOutReveal
                 title={'Albanian bees'}
@@ -68,9 +62,7 @@ export const Clients = () => {
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/albanianBees.png'}
               />
             </div>
           </div>
