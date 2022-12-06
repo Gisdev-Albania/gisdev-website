@@ -1,11 +1,11 @@
 @import '../colors.scss';
 
-//.right__testimonial__Section {
-//        display: flex;
-//        align-items: center;
-//        justify-content: center;
-//        height: 550px;
-//      }
+// .right__testimonial__Section {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 300px;
+// }
 
 .testimonials__container {
   padding-bottom: 120px;
@@ -38,17 +38,12 @@
     display: flex;
     gap: 20px;
     .testimonials__first__card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 550px;
+      width: 20px;
       .testimonials__first__card__title {
         font-family: 'Outfit';
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
-        line-height: 103.02%;
-        /* or 49px */
 
         letter-spacing: 0.035em;
 
@@ -56,11 +51,10 @@
       }
     }
     .testimonials__second__card {
-      width: 1600px;
-      height: 300px;
+      height: auto;
       background: #1a304c;
       display: flex;
-
+      width: 80vw;
       .second__card__buttons {
         padding: 1rem;
         display: flex;
@@ -69,8 +63,7 @@
 
       .testimonials__card__body {
         height: 300px;
-        width: 800px;
-
+        max-width: 900px;
         padding: 1rem;
         margin: 0px auto 0px auto;
         display: flex;
@@ -86,17 +79,19 @@
         .testimonials__right__corner {
           position: absolute;
 
-          transform: translate(600px, 1.5rem) rotate(-180deg);
+          transform: translate(450px, 2.5rem) rotate(-180deg);
         }
         .testimonials__card_body__elements {
-          width: auto;
           height: auto;
           display: flex;
           gap: 20px;
 
+          width: 400px;
+
           .testimonials__body__text {
             display: flex;
             flex-direction: column;
+
             span:nth-child(1) {
               font-weight: 700;
               font-size: 20px;
@@ -121,6 +116,7 @@
           font-weight: lighter;
           font-size: 16px;
           font-family: 'Outfit';
+          max-width: 650px;
         }
       }
     }
