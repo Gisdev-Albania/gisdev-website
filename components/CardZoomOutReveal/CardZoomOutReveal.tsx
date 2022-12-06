@@ -3,7 +3,7 @@ import styles from '../../styles/components/CardZoomOutReveal.module.scss';
 import Image from 'next/image';
 
 interface CardZoomOutRevealProps {
-  imageSrc?: string;
+  imageSrc?: string | any;
   width?: number;
   height?: number;
   alt: string;
@@ -19,7 +19,7 @@ export const CardZoomOutReveal: React.FunctionComponent<
     <div className={styles.card}>
       <div className={styles.card__wrapper}>
         <figure>
-          <img src={imageSrc} alt={alt} />
+          <Image src={imageSrc} alt={alt} height={300} width={650} />
           <figcaption>
             <h2>{title}</h2>
             <p>{description}</p>

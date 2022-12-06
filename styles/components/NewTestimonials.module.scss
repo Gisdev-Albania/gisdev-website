@@ -1,11 +1,11 @@
 @import '../colors.scss';
 
-//.right__testimonial__Section {
-//        display: flex;
-//        align-items: center;
-//        justify-content: center;
-//        height: 550px;
-//      }
+// .right__testimonial__Section {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 300px;
+// }
 
 .testimonials__container {
   padding-bottom: 120px;
@@ -38,17 +38,12 @@
     display: flex;
     gap: 20px;
     .testimonials__first__card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 550px;
+      width: 20px;
       .testimonials__first__card__title {
         font-family: 'Outfit';
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
-        line-height: 103.02%;
-        /* or 49px */
 
         letter-spacing: 0.035em;
 
@@ -56,45 +51,72 @@
       }
     }
     .testimonials__second__card {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      .testimonials__group__card {
-        background-color: #1a304d;
-        display: grid;
-        grid-template-columns: repeat(2, auto auto);
-        padding: 20px;
-        gap: 20px;
-        .testimonials__card__profile {
-          margin-top: 20px;
-          background-color: #0286ff;
-          border-radius: 50%;
-          height: 50px;
-          width: 50px;
-        }
-        .testimonials__card__profile_hr {
-          height: 100px;
-          width: 1px;
-          background-color: white;
-          margin-top: 10px;
+      height: auto;
+      background: #1a304c;
+      display: flex;
+      width: 80vw;
+      .second__card__buttons {
+        padding: 1rem;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .testimonials__card__body {
+        height: 300px;
+        max-width: 900px;
+        padding: 1rem;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        position: relative;
+        .testimonials__left__corner {
+          position: absolute;
+          transform: translate(-2.5rem, -3.5rem);
         }
 
-        .testimonioals__card__comment {
-          .testimonials__card__name {
-            color: #f7f7f8;
-            font-family: 'Outfit';
-            font-weight: 600;
+        .testimonials__right__corner {
+          position: absolute;
+
+          transform: translate(450px, 2.5rem) rotate(-180deg);
+        }
+        .testimonials__card_body__elements {
+          height: auto;
+          display: flex;
+          gap: 20px;
+
+          width: 400px;
+
+          .testimonials__body__text {
+            display: flex;
+            flex-direction: column;
+
+            span:nth-child(1) {
+              font-weight: 700;
+              font-size: 20px;
+              font-family: 'Outfit';
+            }
+
+            span:nth-child(2) {
+              font-family: 'Outfit';
+              font-style: italic;
+              font-size: 16px;
+            }
           }
 
-          .testimonials__card__paragraph {
-            color: #f7f7f8;
-            font-family: 'Outfit';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 14px;
-            height: auto;
-            padding: 0;
+          .testimonials__card__profile {
+            height: 50px;
+            width: 50px;
+            background-color: #0286ff;
+            border-radius: 50%;
           }
+        }
+        .testimonials__body__paragraph {
+          font-weight: lighter;
+          font-size: 16px;
+          font-family: 'Outfit';
+          max-width: 650px;
         }
       }
     }

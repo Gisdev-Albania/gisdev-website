@@ -90,9 +90,10 @@ const OurWork = () => {
                         : card.size === 'medium'
                         ? '423px'
                         : '462px',
+                        marginBottom: '20px'
                   }}
                 >
-                  <h1>{card.title}</h1>
+                  <span>{card.title}</span>
                 </div>
               );
             })}

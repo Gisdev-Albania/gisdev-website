@@ -1,3 +1,6 @@
+$bp-md: 600px;
+$bp-lg: 800px;
+
 .work__main__layout {
   background-color: #0e1a2a;
   height: 100%;
@@ -16,6 +19,7 @@
     align-items: center;
 
     .main__title__container {
+      width: 42vw;
       .main__header__title {
         font-family: 'Outfit';
         font-style: normal;

@@ -10,7 +10,7 @@ export const Clients = () => {
       <div className={styles.clients__container}>
         <div className={styles.clients__top__container}>
           <div className={styles.client__main}>
-            <h1>Our Clients</h1>
+            <h1>Latest work</h1>
           </div>
         </div>
         <div className={styles.client__bottom__container}>
@@ -26,52 +26,43 @@ export const Clients = () => {
                   minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat.`}
                 buttonTitle={'Learn More'}
-                onClick={() => console.log('Clicked!')}
                 showButton={true}
                 primaryText={true}
               />
             </div>
             <div className={styles.bottom__side__card}>
               <CardZoomOutReveal
-                title={'Some Title'}
+                title={'Online Learning'}
                 alt={''}
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/onlineLearning.png'}
               />
               <CardZoomOutReveal
-                title={'Some Title'}
+                title={'Dashboard'}
                 alt={''}
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/myosh-bashboard.png'}
               />
 
               <CardZoomOutReveal
-                title={'Some Title'}
+                title={'Intergoma'}
                 alt={''}
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/intergoma.png'}
               />
               <CardZoomOutReveal
-                title={'Some Title'}
+                title={'Albanian bees'}
                 alt={''}
                 description={
                   'Some description about this card and its purpose.'
                 }
-                imageSrc={
-                  'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?cs=srgb&dl=pexels-uzunov-rostislav-5011647.jpg&fm=jpg'
-                }
+                imageSrc={'/albanianBees.png'}
               />
             </div>
           </div>

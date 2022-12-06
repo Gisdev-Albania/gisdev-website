@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .card {
   height: 19rem;
   //border: 0.2px solid rgba(229, 229, 229, 0.55);
@@ -69,6 +71,7 @@
       h2 {
         letter-spacing: 1px;
         text-transform: uppercase;
+        color: $figma_blue;
       }
 
       p {

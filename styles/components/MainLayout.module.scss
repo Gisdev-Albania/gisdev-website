@@ -29,28 +29,29 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 
     .background__image {
       position: absolute;
-
       right: 0;
     }
     .hero__main__image {
       position: relative;
+
       .right__dots {
         position: absolute;
         z-index: 12;
-        left: 340px;
-        top: -0.3rem;
+        left: 330px;
+        top: -0.5rem;
       }
       .left__dots {
         position: absolute;
         z-index: 12;
-        top: 460px;
-        left: -1rem;
+        top: 440px;
+        left: -0.8rem;
       }
       .main__image__container {
-        border: 30px solid #0e1a2a;
+        border: 20px solid #0e1a2a;
         position: relative;
 
         .slider__buttons {
@@ -60,14 +61,14 @@
 
           div:nth-child(1) {
             cursor: pointer;
-            height: 40px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
             background-color: #0e1a2a;
           }
           div:nth-child(2) {
             cursor: pointer;
-            height: 40px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
             background-color: #0574da;
           }
         }
@@ -79,9 +80,9 @@
         font-family: 'Outfit';
         font-style: normal;
         font-weight: 600;
-        font-size: 50px;
+        font-size: 48px;
 
-        letter-spacing: 0.045em;
+        letter-spacing: -0.045em;
         color: #ffffff;
       }
       p {

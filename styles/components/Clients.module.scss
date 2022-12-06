@@ -44,17 +44,16 @@
           flex-direction: column;
           width: 30%;
           height: 590px;
-          background: rgba(247, 247, 248, 0.9);
+          background: white;
 
           .client__card__title {
             font-family: 'Outfit';
             font-style: normal;
             font-weight: 700;
-            font-size: 53px;
-            line-height: 103.02%;
+            font-size: 20px;
+
             letter-spacing: 0.035em;
             color: #0e1a2a;
-            padding-left: 19px;
           }
         }
 

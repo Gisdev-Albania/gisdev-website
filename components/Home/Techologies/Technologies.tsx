@@ -27,7 +27,6 @@ export const Technologies = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.`}
                   buttonTitle={'Hover me '}
-                  onClick={() => console.log('Clicked!')}
                   showButton={true}
                 />
               </div>

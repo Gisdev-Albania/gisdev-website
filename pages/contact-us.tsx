@@ -4,7 +4,6 @@ import styles from '../styles/components/contactUs.module.scss';
 import Button from '../components/Button';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { TbMessageCircle2 } from 'react-icons/tb';
-import {TfiMapAlt} from "react-icons/tfi";
 
 const ContactUs = () => {
   return (
@@ -21,9 +20,14 @@ const ContactUs = () => {
               </div>
               <div className={styles.main__paragraph}>
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque dicta doloremque inventore,
-                  iure minima necessitatibus nemo nobis perferendis provident quae quis quod sapiente tenetur, veritatis! Ab aliquam, aut consequuntur delectus dicta doloremque iste laborum minima obcaecati optio perspiciatis quia quo tempore, veritatis voluptates voluptatibus voluptatum.
-                  Neque, quaerat temporibus? Accusamus alias doloribus incidunt porro quibusdam vel.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Atque cumque dicta doloremque inventore, iure minima
+                  necessitatibus nemo nobis perferendis provident quae quis quod
+                  sapiente tenetur, veritatis! Ab aliquam, aut consequuntur
+                  delectus dicta doloremque iste laborum minima obcaecati optio
+                  perspiciatis quia quo tempore, veritatis voluptates
+                  voluptatibus voluptatum. Neque, quaerat temporibus? Accusamus
+                  alias doloribus incidunt porro quibusdam vel.
                 </span>
               </div>
             </div>
@@ -96,9 +100,7 @@ const ContactUs = () => {
               <div className={styles.address}>
                 <div className={styles.row__container}>
                   <div className={styles.container__box}>
-                    <div className={styles.icon}>
-                      <TfiMapAlt />
-                    </div>
+                    <div className={styles.icon}>{/* <TfiMapAlt /> */}</div>
                     <div className={styles.info__box}>
                       <p>
                         Rruga Ndreko Rino, P. Viridario 1, Nr. 44, Tiranë,

@@ -49,19 +49,25 @@
         padding-block: 2rem;
         margin: 0;
 
+        .latest__work__slider {
+          width: 800px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .latest__work__project__cards {
+            height: 250px;
+            width: 388px;
+            background-color: white;
+          }
+
+          .latest__work__project__hover {
+            background-color: #0286ff;
+          }
+        }
+
         .latest__work__title_card {
           height: 100%;
-        }
-        .latest__work__slider {
-          display: flex;
-          flex-grow: 0.5;
-          background: #1a304d;
-          position: relative;
-
-          .latest__work__top {
-            display: flex;
-            justify-content: center;
-          }
         }
       }
     }

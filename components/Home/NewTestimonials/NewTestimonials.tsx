@@ -1,31 +1,60 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../../styles/components/NewTestimonials.module.scss';
-import Button from '../../Button';
-import { CardOutlineBorder } from '../../CardOutlineBorder';
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import { CardWrapper } from '../../CardWraper';
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
+import Image from 'next/image';
 
 export const NewTestimonials = () => {
+  const [count, setCount] = useState(0);
+  const [animate, setAnimate] = useState(false);
+
   const testimonials = [
     {
-      name: 'Kim',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Kim Pearce',
+      role: 'Chief Executive Officer - Continuum Works',
+      text: 'It is rare to find a vendor like GISDEV who go beyond the effective delivery of projects to become a consistently responsive and trusted collaborator.We have launched at least 5 projects with the GISDEV team, all of them successful and extremely professional.',
+      visible: false,
+      image: '/kim_pearce.jpg',
     },
 
     {
-      name: 'John',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Andrea Cristofoletto',
+      role: 'Chief Operating Officer - Cannabiscienza',
+      text: 'GISDEVs team did an excellent job.They solved some time consuming tasks for my team on our educational platform and they provided custom web solutionsto improve UX and security of our LMS.Highly recommend, even on short dedlines.',
+      visible: false,
+      image: '/andrea_cristofoletto.jpg',
     },
 
     {
-      name: 'Oliv',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      name: 'Dan',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Ines Michel',
+      role: 'Sales Support Professional Asia - SKIDATA AG',
+      text: 'GISDEV company supporte us from the scratch with the implementation of our project. They are extremely reliable and work quickly. Great team - highly recommended!',
+      visible: false,
+      image: '/ines_michel.jpg',
     },
   ];
+  const cardObject = {
+    name: testimonials[count].name,
+    text: testimonials[count].text,
+    role: testimonials[count].role,
+    image: testimonials[count].image,
+  };
+
+  const nextButton = () => {
+    setCount(count + 1);
+    testimonials[count]?.visible === true;
+    testimonials[count + 1]?.visible === false;
+    if (count === 2) {
+      setCount(0);
+    }
+    setAnimate(true);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimate(false);
+    }, 200);
+  }, [count]);
 
   return (
     <div className={styles.testimonials__container}>
@@ -36,6 +65,62 @@ export const NewTestimonials = () => {
       </div>
 
       <div className={styles.testimonials__cards}>
+        <div
+          className={styles.testimonials__second__card}
+          style={{
+            backgroundColor: animate ? 'rgba(26, 48, 77, 0.71)' : '',
+            transition: 'all .15s',
+          }}
+        >
+          <div className={styles.second__card__buttons}>
+            <HiOutlineChevronLeft
+              style={{
+                height: '50px',
+                width: '50px',
+                color: 'white',
+                background: '#0e1a2a',
+              }}
+            />
+            <HiOutlineChevronRight
+              style={{
+                height: '50px',
+                width: '50px',
+                color: 'white',
+                background: '#0286ff',
+              }}
+              onClick={nextButton}
+            />
+          </div>
+
+          <div
+            className={styles.testimonials__card__body}
+            style={{
+              transform: animate ? 'scale(.97)' : '',
+              transition: 'all .15s',
+            }}
+          >
+            <span className={styles.testimonials__left__corner}>
+              <Image src={'/corner.png'} height={100} width={200} />
+            </span>
+            <div className={styles.testimonials__card_body__elements}>
+              <img
+                src={cardObject?.image}
+                style={{ maxHeight: '70px', maxWidth: '50px' }}
+              />
+              <span className={styles.testimonials__body__text}>
+                <span>{cardObject?.name}</span>
+                <span>{cardObject?.role}</span>
+              </span>
+            </div>{' '}
+            <p className={styles.testimonials__body__paragraph}>
+              {cardObject.text}
+            </p>
+            <span className={styles.testimonials__right__corner}>
+              <Image src={'/corner.png'} height={100} width={200} />
+            </span>
+          </div>
+        </div>
+
         <div className={styles.right__testimonial__Section}>
           <CardWrapper
             title={'What Client Say'}
@@ -45,27 +130,6 @@ export const NewTestimonials = () => {
             buttonTitle={'Learn More'}
             showButton={true}
           />
-        </div>
-        <div className={styles.testimonials__second__card}>
-          {testimonials.map((comment, key) => {
-            return (
-              <>
-                <div key={key} className={styles.testimonials__group__card}>
-                  <span className={styles.testimonials__card__profile}></span>
-
-                  <div className={styles.testimonioals__card__comment}>
-                    {' '}
-                    <p className={styles.testimonials__card__paragraph}>
-                      {comment.text}
-                    </p>
-                    <p className={styles.testimonials__card__name}>
-                      {comment.name}
-                    </p>
-                  </div>
-                </div>
-              </>
-            );
-          })}
         </div>
       </div>
     </div>

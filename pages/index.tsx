@@ -8,6 +8,7 @@ import { Clients } from '../components/Home/Clients';
 import { NewTestimonials } from '../components/Home/NewTestimonials';
 import MiniFooter from '../components/MiniFooter/MiniFooter';
 import Layout from '../components/Layout/Layout';
+import { Slider } from '../components/Home/Slider';
 
 const Home: NextPage = () => {
   return (
@@ -16,9 +17,10 @@ const Home: NextPage = () => {
         <MainLayout />
         <div className={styles.container__body}>
           <Services />
-          <LatestWork />
           <Clients />
+          {/* <Clients /> */}
           <NewTestimonials />
+          <Slider />
         </div>
       </div>
     </Layout>

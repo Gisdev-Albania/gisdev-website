@@ -8,41 +8,32 @@ import Layout from '../../Layout/Layout';
 import { BottomLeftDots, TopRightDots } from '../../Dots';
 
 export const MainLayout = () => {
-  const [imageId, setImageId] = useState(1);
-  const [imageUrl, setImageUrl] = useState('/codding.png');
+  const [count, setCount] = useState(0);
 
   const imageObject = [
     {
       image: '/codding.png',
       id: 0,
+      visible: true,
     },
     {
       image: '/banner1.png',
       id: 1,
+      visible: false,
     },
     {
       image: '/abt2.png',
       id: 2,
+      visible: false,
     },
   ];
 
-  const nextImage = (arg: number) => {
-    if (imageId < arg) {
-      setImageId(prevState => prevState + 1);
-      imageObject.every(element =>
-        element.id === imageId ? setImageUrl(element.image) : '/codding.png',
-      );
-    }
+  const displayedImage = {
+    image: imageObject[count]?.image,
   };
 
-  const backImage = (arg: number) => {
-    if (imageId > arg) {
-      setImageId(prevState => prevState - 1);
-      console.log(imageId, 'image id');
-      imageObject.every(element =>
-        element.id === imageId ? setImageUrl(element.image) : '/codding.png',
-      );
-    }
+  const nextImage = () => {
+    console.log('hello world');
   };
 
   return (
@@ -51,8 +42,8 @@ export const MainLayout = () => {
         <div className={styles.background__image}>
           <Image
             src={'/banner-bg-text.png'}
-            height={460}
-            width={400}
+            height={440}
+            width={380}
             alt={'Company-Image'}
           />
         </div>
@@ -62,21 +53,23 @@ export const MainLayout = () => {
           </span>
 
           <div className={styles.main__image__container}>
-            <Image src={imageUrl} height={500} width={500} alt="main image" />
+            <Image
+              src={displayedImage.image}
+              height={500}
+              width={500}
+              alt="main image"
+            />
 
             <div className={styles.slider__buttons}>
               <div>
                 {' '}
                 <HiOutlineChevronLeft
-                  style={{ height: '40px', width: '60px', color: 'white' }}
-                  onClick={() => backImage(0) as any}
+                  style={{ height: '50px', width: '50px', color: 'white' }}
                 />
               </div>
               <div>
-                {' '}
                 <HiOutlineChevronRight
-                  style={{ height: '40px', width: '60px', color: 'white' }}
-                  onClick={() => nextImage(3) as any}
+                  style={{ height: '50px', width: '50px', color: 'white' }}
                 />
               </div>
             </div>

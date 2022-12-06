@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,300;1,700&family=Roboto&display=swap');
 .main {
   display: flex;
   height: 100vh;
@@ -35,7 +35,7 @@
 }
 .main .header__description .header__text__section .header__text {
   width: 80%;
-  font-family: "Outfit";
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -43,11 +43,15 @@
   letter-spacing: 0.045em;
   color: #ffffff;
 }
-.main .header__description .header__text__section .header__text .header__text__first {
+.main
+  .header__description
+  .header__text__section
+  .header__text
+  .header__text__first {
   color: #0286ff;
 }
 .main .header__description .header__text__section .header__paragraph {
-  font-family: "Outfit";
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -173,7 +177,7 @@
 }
 .hero__container__btn:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 0;
