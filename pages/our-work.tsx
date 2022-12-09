@@ -90,10 +90,13 @@ const OurWork = () => {
                         : card.size === 'medium'
                         ? '423px'
                         : '462px',
-                        marginBottom: '20px'
+                    marginBottom: '20px',
                   }}
                 >
                   <span>{card.title}</span>
+                  <div className={styles.info}>
+                    <h1>{card.title}</h1>
+                  </div>
                 </div>
               );
             })}
