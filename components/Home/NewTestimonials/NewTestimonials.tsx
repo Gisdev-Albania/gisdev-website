@@ -54,13 +54,6 @@ export const NewTestimonials = () => {
     setAnimate(true);
   };
 
-  setTimeout(() => {
-    setCount(count + 1);
-    if (count === 2) {
-      setCount(0);
-    }
-  }, 10000);
-
   useEffect(() => {
     setTimeout(() => {
       setAnimate(false);
@@ -105,7 +98,7 @@ export const NewTestimonials = () => {
           <div className={styles.testimonials__left_section}>
             <span className={styles.testimonials__left__corner}>
               <RiDoubleQuotesL
-                style={{ width: '100px', height: '100px', color: 'white' }}
+                style={{ width: '75px', height: '75px', color: 'white' }}
               />
             </span>
             <div
@@ -150,8 +143,8 @@ export const NewTestimonials = () => {
             <span className={styles.testimonials__right__corner}>
               <RiDoubleQuotesR
                 style={{
-                  width: '100px',
-                  height: '100px',
+                  width: '75px',
+                  height: '75px',
                   color: 'white',
                 }}
               />

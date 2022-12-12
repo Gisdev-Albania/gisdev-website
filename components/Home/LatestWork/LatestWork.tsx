@@ -67,9 +67,7 @@ export const LatestWork = () => {
                 return (
                   <div
                     key={index}
-                    className={`${styles['latest__work__project__cards']} ${
-                      isShown ? styles['latest__work__project__hover'] : ''
-                    } `}
+                    className={styles.latest__work__project__cards}
                   >
                     <p onClick={() => openCard(elem.id) as any}>{elem.title}</p>
                     <p

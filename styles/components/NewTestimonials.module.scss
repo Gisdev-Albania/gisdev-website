@@ -69,6 +69,8 @@
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
+
+          height: 250px;
         }
         .testimonials__card__body {
           height: 300px;
@@ -129,8 +131,20 @@
             font-size: 16px;
             font-family: 'Outfit';
             max-width: 650px;
-            height: 75px;
+            height: auto;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .testimonials__container {
+    .testimonials__cards {
+      .testimonials__second__card {
+        .testimonials__left_section {
+          margin: 0;
         }
       }
     }
