@@ -69,9 +69,10 @@
       justify-content: center;
 
       h2 {
+        opacity: 0;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: $figma_blue;
+        color: white;
       }
 
       p {
@@ -84,6 +85,9 @@
       &:hover p {
         opacity: 1;
         translate: 0;
+      }
+      &:hover h2 {
+        opacity: 1;
       }
     }
   }

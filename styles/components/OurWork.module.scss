@@ -4,7 +4,7 @@ $bp-lg: 800px;
 .work__main__layout {
   background-color: #0e1a2a;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 
   padding-top: 5rem;
   display: flex;
@@ -46,34 +46,48 @@ $bp-lg: 800px;
       .card__element {
         width: 350px;
         background: #1a304d;
-      }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-      .card__element:hover {
-        color: red;
         .info {
-          opacity: 1;
-          transform: translateY(0px);
+          position: relative;
+          z-index: 3;
+          height: 100%;
+          width: 100%;
+
+          opacity: 0;
+          background: #0e1a2a63;
+
+          .info__body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: 0;
+            padding-left: 10px;
+            p {
+              width: 70%;
+            }
+          }
         }
       }
 
-      .card__element:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 2;
-        transition: 0.5s;
-        opacity: 0;
-      }
+      .card__element:hover {
+        color: white;
+        .info {
+          opacity: 1;
+          .info__body {
+            padding-bottom: 50px;
 
-      .project__card__container > * {
-        break-inside: avoid;
+            transition: 0.5s;
+          }
+        }
       }
+    }
+
+    .project__card__container > * {
+      break-inside: avoid;
     }
   }
 }

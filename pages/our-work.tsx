@@ -93,9 +93,14 @@ const OurWork = () => {
                     marginBottom: '20px',
                   }}
                 >
-                  <span>{card.title}</span>
                   <div className={styles.info}>
-                    <h1>{card.title}</h1>
+                    <div className={styles.info__body}>
+                      <h1>{card.title}</h1>
+                      <p>
+                        Here are some of our favorite projects created for
+                        people were proud to partner with:
+                      </p>
+                    </div>
                   </div>
                 </div>
               );
