@@ -90,10 +90,18 @@ const OurWork = () => {
                         : card.size === 'medium'
                         ? '423px'
                         : '462px',
-                        marginBottom: '20px'
+                    marginBottom: '20px',
                   }}
                 >
-                  <span>{card.title}</span>
+                  <div className={styles.info}>
+                    <div className={styles.info__body}>
+                      <h1>{card.title}</h1>
+                      <p>
+                        Here are some of our favorite projects created for
+                        people were proud to partner with:
+                      </p>
+                    </div>
+                  </div>
                 </div>
               );
             })}
