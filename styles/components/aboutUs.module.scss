@@ -1,13 +1,13 @@
 @import '../colors.scss';
 
-.about__us__content {
-  // padding-top: 150px;
-  // height: 50vh;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // background-color: $dark_blue;
-  // gap: 30px;
+.about__us {
+  padding-top: 150px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark_blue;
+  gap: 30px;
 
   .about__us__title {
     p {
@@ -16,13 +16,6 @@
       font-weight: 500;
       font-size: 16px;
       color: #ffffff;
-    }
-    .about__us__title {
-      font-family: 'Outfit';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 96px;
-      color: #0574da;
     }
 
     .main__title {
@@ -36,20 +29,6 @@
   }
 }
 
-.our__clients {
-  .clients__content {
-    .about__us__content {
-      .about__us__title {
-        font-family: 'Outfit';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 96px;
-        color: #0574da;
-      }
-    }
-  }
-}
-
 .about__main {
   display: flex;
   width: 100%;
@@ -57,6 +36,183 @@
   align-items: center;
   justify-content: center;
   background-color: $dark_blue;
+
+  .about__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 90.52%;
+      letter-spacing: -0.02em;
+      color: #0574da;
+    }
+  }
+
+  .about__card__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about__cards {
+      max-width: 1336px;
+      height: 55em;
+      width: 100%;
+      display: grid;
+      justify-self: center;
+      align-self: center;
+      gap: 1.8rem;
+      grid-template-columns: repeat(2, 1fr);
+      padding-block: 2rem;
+      margin: 0;
+    }
+  }
+}
+
+.about__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px;
+  width: 100%;
+  background-color: $dark_blue;
+
+  .container {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .top__container {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      .about__main__container {
+        text-align: center;
+        margin-bottom: 56px;
+
+        .about__title__section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .title {
+            display: block;
+
+            color: $primary_text;
+
+            text-transform: capitalize;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 96px;
+          }
+          p {
+            max-width: 650px;
+            font-size: 19px;
+            line-height: 26px;
+            color: $primary_white;
+          }
+        }
+      }
+    }
+
+    .bottom__container {
+      display: flex;
+      width: 100%;
+
+      padding-bottom: 55px;
+      align-items: center;
+      justify-content: center;
+
+      .card__listing {
+        max-width: 1336px;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        gap: 1.8rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding-block: 2rem;
+        //width: 70.55%;
+        /*width: min(95%, 80rem);*/
+        /*margin-inline: auto;*/
+        margin: 0;
+      }
+    }
+
+    .about__join__container {
+      display: flex;
+      height: 15vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background: #1a304c;
+
+      .about__top__section {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 103.02%;
+        /* or 49px */
+
+        letter-spacing: 0.035em;
+
+        color: #f7f7f8;
+      }
+
+      .banner__text:hover {
+        color: #0286ff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.about__company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //padding: 80px 0 0 0;
+
+  .about__company__container {
+    max-width: 1336px;
+
+    .about__company__main {
+      display: flex;
+      flex-direction: column;
+      .about__company__top {
+        display: flex;
+        width: 100%;
+        height: 19rem;
+        padding-bottom: 30px;
+
+        .about__cards_listing {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 30px;
+        }
+      }
+      .about__company__bottom {
+        display: flex;
+        width: 100%;
+        padding-bottom: 50px;
+
+        .about__cards_listing {
+          display: flex;
+          width: 100%;
+          gap: 30px;
+        }
+      }
+    }
+  }
 }
 
 @mixin white-gradient {
@@ -91,12 +247,31 @@ $animationSpeed: 40s;
     line-height: 28px;
     color: #ffff;
     margin-top: 30px;
-
+    width: 80%;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
 
-    //
+    .about__us__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+
+        color: #0286ff;
+        margin-bottom: 1.25rem;
+      }
+      p {
+        font-weight: lighter;
+        font-size: 22px;
+        font-family: 'Outfit';
+      }
+    }
   }
 
   .slider__container {
