@@ -3,13 +3,12 @@
 
 .navigation__section {
   padding-top: 150px;
+  max-width: 1260px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
 
   .container {
-    max-width: 1260px;
-    margin-right: auto;
-    margin-left: auto;
-    flex-direction: column;
-
     .form__wrapper {
       display: grid;
       margin-top: 60px;
@@ -21,108 +20,82 @@
       -ms-grid-rows: auto;
       grid-template-rows: auto;
 
-      .form__main {
-        max-width: 580px;
-        min-width: 200px;
-        margin: 0 0 15px;
-        font-family: 'Outfit';
-        padding-bottom: 25px;
-
-        form {
-          display: block;
-          margin-top: 0em;
-
-          .form__field {
-            margin-bottom: 40px;
-            border-style: solid;
-            border-width: 0px 0px 1px;
-            border-color: #4d4d4d #000 hsla(0, 0%, 100%, 0.3);
-            background-color: hsla(0, 0%, 100%, 0);
-            font-size: 18px;
-            display: block;
-            width: 100%;
-            height: 38px;
-            padding: 8px 12px;
-            line-height: 1.42857143;
-
-            &::placeholder {
-              color: $primary_white;
-            }
-            &::-webkit-input-placeholder {
-              /* Edge */
-              color: $primary_white;
-            }
-
-            &:-ms-input-placeholder {
-              /* Internet Explorer 10-11 */
-              color: $primary_white;
-            }
-
-            &:focus {
-              outline: none;
-            }
-          }
-          .textarea {
-            @extend .form__field;
-            max-width: 580px;
-            min-height: 150px;
-            min-width: 200px;
-            height: auto;
-            font-family: 'Outfit';
-          }
-          input {
-            line-height: normal;
-            //font: inherit;
-            margin: 0;
-            writing-mode: horizontal-tb !important;
-            letter-spacing: normal;
-            word-spacing: normal;
-            text-transform: none;
-            text-indent: 0px;
-            text-shadow: none;
-            text-align: start;
-            appearance: auto;
-            cursor: text;
-          }
-        }
-      }
-
       .main__right {
         display: flex;
         width: auto;
-        gap: 36px;
+
         flex-direction: column;
 
-        .main__title {
-          max-width: none;
-          text-align: left;
-          font-size: 36px;
-          line-height: 120%;
-          font-family: 'General Sans', sans-serif;
-          color: #fff;
-          font-weight: 600;
-          h1 {
-            span {
-              color: $figma_blue;
-            }
+        .page__title {
+          font-family: 'Outfit';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 106px;
+          color: #ffffff;
+          padding: 0;
+          margin: 0;
+          span {
+            color: $figma_blue;
           }
         }
 
         .main__paragraph {
-          max-width: 450px;
+          max-width: 350px;
           text-align: left;
           display: flex;
-          p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 90.52%;
-            letter-spacing: -0.05em;
-            color: #f7f7f8;
-            padding-left: 20px;
-          }
+          font-family: 'Outfit';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+
+          color: #ffffff;
         }
       }
+    }
+  }
+
+  .social__urls {
+    width: 100%;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90.52%;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0px 4rem 0px;
+    margin-top: 4rem;
+
+    .social__content {
+      display: flex;
+      gap: 1rem;
+
+      .social__content__circle {
+        background-color: $figma_blue;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+    }
+
+    .social__title {
+      width: 100%;
+      color: #1a304c;
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 95.5%;
     }
   }
 
@@ -203,6 +176,95 @@
           }
         }
       }
+    }
+  }
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 2rem;
+    .contact__section__body {
+      display: flex;
+      gap: 20px;
+      .form__main {
+        font-family: 'Outfit';
+        padding-bottom: 25px;
+
+        form {
+          width: 500px;
+
+          .form__field {
+            margin-bottom: 25px;
+            border: none;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+            background: #1a304c;
+            padding: 2rem 1rem;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 95.5%;
+            color: #ffffff;
+
+            &::placeholder {
+              color: $primary_white;
+            }
+            &::-webkit-input-placeholder {
+              /* Edge */
+              color: $primary_white;
+            }
+
+            &:-ms-input-placeholder {
+              /* Internet Explorer 10-11 */
+              color: $primary_white;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+          .textarea {
+            @extend .form__field;
+            max-width: 580px;
+            min-height: 150px;
+            min-width: 200px;
+            height: auto;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 95.5%;
+            color: #ffffff;
+          }
+          input {
+            line-height: normal;
+            //font: inherit;
+            margin: 0;
+            writing-mode: horizontal-tb !important;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            text-align: start;
+            appearance: auto;
+            cursor: text;
+          }
+        }
+      }
+    }
+
+    .contact__section__title {
+      display: flex;
+      justify-content: flex-end;
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 95.5%;
+      color: #ffffff;
     }
   }
 }
