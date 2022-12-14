@@ -17,12 +17,12 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1900px) {
   .card__data {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 768px) {
   .card__data {
     grid-template-columns: repeat(1, 0.9fr);
   }

@@ -40,11 +40,10 @@ export const MainLayout = () => {
     <div className={styles.main_background}>
       <div className={styles.hero}>
         <div className={styles.background__image}>
-          <Image
+          <img
             src={'/banner-bg-text.png'}
-            height={440}
-            width={380}
             alt={'Company-Image'}
+            style={{ width: '320px', height: '360px' }}
           />
         </div>
         <div className={styles.hero__main__image}>
@@ -53,7 +52,7 @@ export const MainLayout = () => {
           </span>
 
           <div className={styles.main__image__container}>
-            <Image
+            <img
               src={displayedImage.image}
               height={500}
               width={500}
