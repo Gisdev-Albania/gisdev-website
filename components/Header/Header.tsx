@@ -49,9 +49,11 @@ export const Header = () => {
                 className={styles.hamburger__menu}
                 onClick={() => setIsVisible(!isVisible)}
               >
-                <GiHamburgerMenu
-                  style={{ height: '35px', width: '35px', color: 'black' }}
-                />
+                <div className={isVisible ? styles.open : styles.nav__icon4}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
 
@@ -110,15 +112,6 @@ export const Header = () => {
               transition: 'ease-in',
             }}
           >
-            <IoMdClose
-              onClick={() => setIsVisible(!isVisible)}
-              style={{
-                height: '35px',
-                width: '35px',
-                margin: '50px',
-                color: 'black',
-              }}
-            />
             <div className={styles.header__column__navigation}>
               <Link href={'/'}>
                 <a
