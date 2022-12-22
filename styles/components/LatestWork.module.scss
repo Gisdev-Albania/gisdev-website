@@ -74,3 +74,15 @@
     }
   }
 }
+
+@media (max-width: 1366px) {
+  .latest__main__container {
+    .latest__work__container {
+      .latest__work__bottom__container {
+        .latest__work__cards {
+          border: 1px solid red;
+        }
+      }
+    }
+  }
+}
