@@ -109,7 +109,7 @@ export const NewTestimonials = () => {
           <div className={styles.testimonials__left_section}>
             <span className={styles.testimonials__left__corner}>
               <RiDoubleQuotesL
-                style={{ width: '75px', height: '75px', color: 'white' }}
+                style={{ width: '50px', height: '50px', color: 'white' }}
               />
             </span>
             <div
@@ -154,8 +154,8 @@ export const NewTestimonials = () => {
             <span className={styles.testimonials__right__corner}>
               <RiDoubleQuotesR
                 style={{
-                  width: '75px',
-                  height: '75px',
+                  width: '50px',
+                  height: '50px',
                   color: 'white',
                 }}
               />
