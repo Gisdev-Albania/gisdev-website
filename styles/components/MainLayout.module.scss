@@ -58,6 +58,7 @@
           position: absolute;
           display: flex;
           transform: translate(25px, -80px);
+          z-index: 13;
 
           div:nth-child(1) {
             cursor: pointer;
@@ -66,10 +67,10 @@
             background-color: #0e1a2a;
           }
           div:nth-child(2) {
-            cursor: pointer;
             height: 50px;
             width: 50px;
             background-color: #0574da;
+            cursor: pointer;
           }
         }
       }

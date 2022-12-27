@@ -54,6 +54,16 @@ export const NewTestimonials = () => {
     setAnimate(true);
   };
 
+  const backButton = () => {
+    setCount(count - 1);
+    testimonials[count]?.visible === true;
+    testimonials[count - 1]?.visible === false;
+    if (count === 0) {
+      setCount(2);
+    }
+    setAnimate(true);
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setAnimate(false);
@@ -84,6 +94,7 @@ export const NewTestimonials = () => {
                 color: 'white',
                 background: '#0e1a2a',
               }}
+              onClick={backButton}
             />
             <HiOutlineChevronRight
               style={{
