@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import styles from '../../../styles/components/MainLayout.module.scss';
 import Image from 'next/image';
@@ -6,9 +6,12 @@ import Button from '../../Button';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import Layout from '../../Layout/Layout';
 import { BottomLeftDots, TopRightDots } from '../../Dots';
+import { useScrollPosition } from '../../Header/useScrollPosition';
 
 export const MainLayout = () => {
   const [count, setCount] = useState(0);
+  const [pauseSlider, setPauseSlider] = useState(true);
+  const scrollPosition = useScrollPosition();
 
   const imageObject = [
     {
@@ -28,13 +31,44 @@ export const MainLayout = () => {
     },
   ];
 
+  const nextImage = () => {
+    setCount(count + 1);
+    if (count === 2) {
+      setCount(0);
+    }
+  };
+
+  const backImage = () => {
+    setCount(count - 1);
+    if (count === 0) {
+      setCount(2);
+    }
+  };
+
   const displayedImage = {
     image: imageObject[count]?.image,
   };
 
-  const nextImage = () => {
-    console.log('hello world');
-  };
+  useEffect(() => {
+    if (scrollPosition > 100) {
+      setPauseSlider(false);
+    } else {
+      setPauseSlider(true);
+    }
+  }, [scrollPosition]);
+
+  const MINUTE_MS = 50000;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount(count + 1);
+      if (count === 2) {
+        setCount(0);
+      } else count === 2;
+    }, MINUTE_MS);
+
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, []);
 
   return (
     <div className={styles.main_background}>
@@ -64,11 +98,13 @@ export const MainLayout = () => {
                 {' '}
                 <HiOutlineChevronLeft
                   style={{ height: '50px', width: '50px', color: 'white' }}
+                  onClick={backImage}
                 />
               </div>
               <div>
                 <HiOutlineChevronRight
                   style={{ height: '50px', width: '50px', color: 'white' }}
+                  onClick={nextImage}
                 />
               </div>
             </div>
