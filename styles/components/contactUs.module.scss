@@ -200,7 +200,7 @@
             display: block;
             width: 100%;
             background: #1a304c;
-            padding: 2rem 1rem;
+            padding: 1.5rem 1rem;
             font-family: 'Outfit';
             font-style: normal;
             font-weight: 400;
@@ -228,7 +228,7 @@
           .textarea {
             @extend .form__field;
             max-width: 580px;
-            min-height: 150px;
+            min-height: 200px;
             min-width: 200px;
             height: auto;
             font-family: 'Outfit';
@@ -265,6 +265,25 @@
       font-size: 96px;
       line-height: 95.5%;
       color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navigation__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pad: 1rem;
+    .form__container {
+      .contact__section__body {
+        display: flex;
+        flex-direction: column;
+        .map {
+          height: 400px;
+          width: 500px;
+        }
+      }
     }
   }
 }
