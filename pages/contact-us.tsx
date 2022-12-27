@@ -53,13 +53,7 @@ const ContactUs = () => {
                 about. Someone from Ground Control will be in touch shortly.
               </div>
             </div>
-            <img
-              src={'./arrow.png'}
-              style={{
-                height: '300px',
-                width: '300px',
-              }}
-            />
+            <img className={styles.header__img} src={'./arrow.png'} />
           </div>
         </div>
 
