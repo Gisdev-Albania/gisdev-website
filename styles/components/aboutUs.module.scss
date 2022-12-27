@@ -244,7 +244,7 @@ $animationSpeed: 40s;
 
   .clients__content {
     font-size: 18px;
-    line-height: 28px;
+
     color: #ffff;
     margin-top: 30px;
     width: 80%;
@@ -257,12 +257,11 @@ $animationSpeed: 40s;
       flex-direction: column;
       align-items: center;
 
-      h3 {
+      span {
         font-family: 'Outfit';
         font-style: normal;
         font-weight: 700;
         font-size: 96px;
-
         color: #0286ff;
         margin-bottom: 1.25rem;
       }

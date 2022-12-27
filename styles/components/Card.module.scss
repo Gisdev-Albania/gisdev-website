@@ -121,3 +121,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1366px) {
+  .card {
+    .card__wrapper__primary {
+      .card__title {
+        font-size: 30px;
+      }
+    }
+  }
+}

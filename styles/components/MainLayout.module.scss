@@ -19,8 +19,7 @@
   // }
   .main__header {
     position: fixed;
-
-    z-index: 10;
+    z-index: 88;
   }
 
   .hero {
@@ -40,13 +39,13 @@
 
       .right__dots {
         position: absolute;
-        z-index: 12;
+        z-index: 2;
         left: 330px;
         top: -0.5rem;
       }
       .left__dots {
         position: absolute;
-        z-index: 12;
+        z-index: 2;
         top: 440px;
         left: -0.8rem;
       }
@@ -58,7 +57,7 @@
           position: absolute;
           display: flex;
           transform: translate(25px, -80px);
-          z-index: 13;
+          z-index: 3;
 
           div:nth-child(1) {
             cursor: pointer;

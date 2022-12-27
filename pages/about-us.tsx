@@ -173,7 +173,7 @@ const AboutUs: NextPage = () => {
       <section className={styles.our__clients}>
         <div className={styles.clients__content}>
           <div className={styles.about__us__content}>
-            <h3>About Our Clients</h3>
+            <span>About our clients</span>
             <p>
               Our happy clients continue to grow every day. Enable your business
               with cutting edge enterprise software.

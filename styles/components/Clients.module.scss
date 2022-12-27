@@ -70,3 +70,22 @@
     }
   }
 }
+@media (max-width: 1366px) {
+  .clients__main__container {
+    .clients__container {
+      .client__bottom__container {
+        .client__cards {
+          display: flex;
+          flex-direction: column;
+          .client__title_card {
+            width: auto;
+            height: 40%;
+          }
+          .bottom__side__card {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
