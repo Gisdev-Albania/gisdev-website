@@ -39,11 +39,12 @@ export const Header = () => {
         <div className={styles.header__wrap}>
           <div className={styles.header}>
             <div className={styles.header__logo}>
-              <Image
+              <img
                 src={'/GIS-DEV_logo_final-01.png'}
                 alt="Logo of the company"
                 width={200}
                 height={50}
+                className={styles.header__img}
               />
               <div
                 className={styles.hamburger__menu}

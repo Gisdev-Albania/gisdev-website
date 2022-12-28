@@ -122,7 +122,7 @@ export const Footer = () => {
                   <div className={styles.footer__widget}>
                     <h4>Join Our community</h4>
                   </div>
-                  <div className={styles.footer__widget}>
+                  <div className={styles.footer__secon__widget}>
                     <ul>
                       <Link href={'#'}>
                         <a>

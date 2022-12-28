@@ -209,10 +209,10 @@
       background-color: white;
       position: absolute;
       right: 0;
-      width: 500px;
+      width: 400px;
       height: 90vh;
       .header__column__navigation {
-        width: 500px;
+        width: 400px;
         height: 650px;
         display: flex;
         flex-direction: column;
@@ -303,6 +303,21 @@
       }
       .header__navigation {
         display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header__wrap {
+    .header {
+      .header__logo {
+        .header__img {
+          width: 100px;
+          height: 25px;
+        }
+        .hamburger__menu {
+        }
       }
     }
   }

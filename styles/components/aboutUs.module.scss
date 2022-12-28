@@ -328,8 +328,16 @@ $animationSpeed: 40s;
       .about__us__content {
         .about__us__title {
           font-size: 30px;
+          margin: 0;
+          text-align: center;
+        }
+        p {
+          font-size: 15px;
         }
       }
+    }
+    .slider__container {
+      width: 100vw;
     }
   }
 }
