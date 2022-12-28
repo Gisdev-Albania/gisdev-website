@@ -91,6 +91,7 @@ export const MainLayout = () => {
               height={500}
               width={500}
               alt="main image"
+              className={styles.main__image}
             />
 
             <div className={styles.slider__buttons}>

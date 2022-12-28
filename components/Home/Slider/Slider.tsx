@@ -11,18 +11,7 @@ export const Slider = () => {
     <section className={styles.our__clients}>
       <div className={styles.clients__content}>
         <div className={styles.about__us__content}>
-          <span
-            className={styles.about__us__title}
-            style={{
-              color: '#0286ff',
-              fontFamily: 'Outfit',
-              fontSize: '96px',
-              fontWeight: '700',
-              marginBottom: '1rem',
-            }}
-          >
-            About Our Clients
-          </span>
+          <span className={styles.about__us__title}>About Our Clients</span>
           <p style={{ textAlign: 'center' }}>
             Our happy clients continue to grow every day. Enable your business
             with cutting edge enterprise software.

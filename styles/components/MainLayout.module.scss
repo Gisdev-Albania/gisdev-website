@@ -97,3 +97,34 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .main_background {
+    .hero {
+      flex-direction: column;
+      margin-top: 1rem;
+      .background__image {
+        display: none;
+      }
+      .hero__main__image {
+        .right__dots {
+          display: none;
+        }
+        .left__dots {
+          display: none;
+        }
+        .main__image__container {
+          .main__image {
+            height: 300px;
+            width: 300px;
+          }
+        }
+      }
+      .hero__title__section {
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

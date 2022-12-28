@@ -150,7 +150,7 @@ export const NewTestimonials = () => {
                   );
                 })}
               </div>
-            </div>{' '}
+            </div>
             <span className={styles.testimonials__right__corner}>
               <RiDoubleQuotesR
                 style={{

@@ -257,7 +257,7 @@ $animationSpeed: 40s;
       flex-direction: column;
       align-items: center;
 
-      span {
+      .about__us__title {
         font-family: 'Outfit';
         font-style: normal;
         font-weight: 700;
@@ -317,6 +317,18 @@ $animationSpeed: 40s;
       .slide {
         height: 100px;
         width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .our__clients {
+    .clients__content {
+      .about__us__content {
+        .about__us__title {
+          font-size: 30px;
+        }
       }
     }
   }
