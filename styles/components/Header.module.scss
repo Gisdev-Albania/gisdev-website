@@ -60,7 +60,7 @@
           position: absolute;
           height: 7px;
           width: 100%;
-          background: black;
+          background: #1a304d;
           border-radius: 9px;
           opacity: 1;
           left: 0;
@@ -309,6 +309,11 @@
 }
 
 @media (max-width: 450px) {
+  .header__main {
+  }
+  .header__big {
+    height: 65px;
+  }
   .header__wrap {
     .header {
       .header__logo {
