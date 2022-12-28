@@ -9,3 +9,10 @@
     max-width: 70vw;
   }
 }
+
+@media (max-width: 450px) {
+  .container {
+    .container__body {
+    }
+  }
+}

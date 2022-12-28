@@ -89,3 +89,24 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .clients__main__container {
+    .clients__container {
+      .clients__top__container {
+        .client__main {
+          h1 {
+            font-size: 50px;
+          }
+        }
+      }
+      .client__bottom__container {
+        .client__cards {
+          .bottom__side__card {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

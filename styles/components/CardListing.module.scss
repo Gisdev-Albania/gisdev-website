@@ -27,3 +27,8 @@
     grid-template-columns: repeat(1, 0.9fr);
   }
 }
+
+@media (max-width: 450px) {
+  .card__listing {
+  }
+}

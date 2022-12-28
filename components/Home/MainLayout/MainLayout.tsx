@@ -91,19 +91,20 @@ export const MainLayout = () => {
               height={500}
               width={500}
               alt="main image"
+              className={styles.main__image}
             />
 
             <div className={styles.slider__buttons}>
               <div>
                 {' '}
                 <HiOutlineChevronLeft
-                  style={{ height: '50px', width: '50px', color: 'white' }}
                   onClick={backImage}
+                  className={styles.left__chevron}
                 />
               </div>
               <div>
                 <HiOutlineChevronRight
-                  style={{ height: '50px', width: '50px', color: 'white' }}
+                  className={styles.right__chevron}
                   onClick={nextImage}
                 />
               </div>

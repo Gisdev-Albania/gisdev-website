@@ -19,6 +19,10 @@
       grid-template-columns: 1fr 1fr;
       -ms-grid-rows: auto;
       grid-template-rows: auto;
+      .header__img {
+        height: 300px;
+        width: 300px;
+      }
 
       .main__right {
         display: flex;
@@ -200,7 +204,7 @@
             display: block;
             width: 100%;
             background: #1a304c;
-            padding: 2rem 1rem;
+            padding: 1.5rem 1rem;
             font-family: 'Outfit';
             font-style: normal;
             font-weight: 400;
@@ -228,7 +232,7 @@
           .textarea {
             @extend .form__field;
             max-width: 580px;
-            min-height: 150px;
+            min-height: 200px;
             min-width: 200px;
             height: auto;
             font-family: 'Outfit';
@@ -265,6 +269,51 @@
       font-size: 96px;
       line-height: 95.5%;
       color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navigation__section {
+    width: 100%;
+    display: block;
+    .container {
+      .form__wrapper {
+        display: flex;
+
+        .header__img {
+          height: 100px;
+          width: 100px;
+        }
+        .main__right {
+          .page__title {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .social__urls {
+      .social__title {
+        font-size: 40px;
+      }
+      .social__content {
+        display: flex;
+        flex-direction: column;
+        .social__content__circle {
+          max-width: 95%;
+        }
+      }
+    }
+    .form__container {
+      max-width: 400px;
+      .contact__section__body {
+        display: flex;
+        flex-direction: column;
+        .map {
+          height: 400px;
+          width: 500px;
+        }
+      }
     }
   }
 }

@@ -64,12 +64,22 @@
             height: 50px;
             width: 50px;
             background-color: #0e1a2a;
+            .left__chevron {
+              height: 50px;
+              width: 50px;
+              color: white;
+            }
           }
           div:nth-child(2) {
             height: 50px;
             width: 50px;
             background-color: #0574da;
             cursor: pointer;
+            .right__chevron {
+              height: 50px;
+              width: 50px;
+              color: white;
+            }
           }
         }
       }
@@ -93,6 +103,71 @@
         line-height: 90.52%;
         letter-spacing: -0.05em;
         color: #cecece;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .main_background {
+    .hero {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      .background__image {
+        display: none;
+      }
+      .hero__main__image {
+        .right__dots {
+          display: none;
+        }
+        .left__dots {
+          display: none;
+        }
+        .main__image__container {
+          .main__image {
+            height: 300px;
+            width: 300px;
+          }
+          .slider__buttons {
+            transform: translate(25px, -50px);
+            div:nth-child(1) {
+              cursor: pointer;
+              height: 30px;
+              width: 30px;
+              background-color: #0e1a2a;
+              .left__chevron {
+                height: 30px;
+                width: 30px;
+                color: white;
+              }
+            }
+            div:nth-child(2) {
+              cursor: pointer;
+              height: 30px;
+              width: 30px;
+              background-color: #0574da;
+              .right__chevron {
+                height: 30px;
+                width: 30px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .hero__title__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          font-size: 30px;
+          text-align: center;
+        }
+        p {
+          font-size: 15px;
+          text-align: center;
+        }
       }
     }
   }

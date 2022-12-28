@@ -102,7 +102,7 @@
             height: auto;
             display: flex;
             gap: 20px;
-            width: 400px;
+            // width: 400px;
 
             .testimonials__body__text {
               display: flex;
@@ -163,6 +163,42 @@
       .testimonials__second__card {
         display: flex;
         flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonials__container {
+    .clients__top__container {
+      .client__main {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+    .testimonials__cards {
+      .testimonials__second__card {
+        .second__card__buttons {
+        }
+        .testimonials__left_section {
+          .testimonials__card__body {
+            .testimonials__card_body__elements {
+              .testimonials__body__text {
+                max-width: 250px;
+              }
+            }
+            .testimonials__body__paragraph {
+              max-width: 250px;
+            }
+          }
+          .testimonials__left__corner {
+            display: none;
+          }
+          .testimonials__right__corner {
+            display: none;
+          }
+        }
       }
     }
   }
