@@ -22,7 +22,7 @@
       font-family: 'Outfit';
       font-style: normal;
       font-weight: 700;
-      font-size: 50px;
+      font-size: 45px;
       line-height: 103.02%;
       letter-spacing: 0.035em;
       color: $body_bg;
@@ -55,6 +55,24 @@
       .card__paragraph {
         max-height: 300px;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .card__right__container {
+    .latest__work__title_card {
+      .latest__work__card__title {
+        font-size: 25px;
+      }
+      .card__paragraph {
+        font-size: 12px;
+        width: 250px;
+        height: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }

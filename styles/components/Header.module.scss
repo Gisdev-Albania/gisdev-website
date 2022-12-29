@@ -316,12 +316,27 @@
   }
   .header__wrap {
     .header {
+      border-radius: 0px;
       .header__logo {
         .header__img {
           width: 100px;
           height: 25px;
         }
         .hamburger__menu {
+          .open {
+            width: 35px;
+            span {
+              height: 5px;
+              width: 30px;
+            }
+          }
+          .nav__icon4 {
+            width: 35px;
+            border: 1px solid red;
+            span {
+              height: 5px;
+            }
+          }
         }
       }
     }
