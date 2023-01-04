@@ -17,6 +17,11 @@
     height: 100%;
     padding: 1rem;
     max-height: 600px;
+    .latest__work__text {
+      h2 {
+        font-size: 45px;
+      }
+    }
 
     .latest__work__card__title {
       font-family: 'Outfit';
@@ -63,16 +68,13 @@
 @media (max-width: 450px) {
   .card__right__container {
     .latest__work__title_card {
-      .latest__work__card__title {
-        font-size: 25px;
-      }
-      .card__paragraph {
-        font-size: 12px;
-        width: 250px;
-        height: 50px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      .latest__work__text {
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 14px;
+        }
       }
     }
   }
