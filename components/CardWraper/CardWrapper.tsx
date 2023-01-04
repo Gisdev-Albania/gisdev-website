@@ -22,12 +22,7 @@ export const CardWrapper: React.FunctionComponent<CardProps> = props => {
         {primaryText ? (
           <div>
             {' '}
-            <h2
-              className={styles.latest__work__card__title}
-              style={{ fontSize: '45px' }}
-            >
-              {title}
-            </h2>
+            <h2 className={styles.latest__work__card__title}>{title}</h2>
             <p className={styles.card__paragraph}>{paragraph}</p>
           </div>
         ) : (
