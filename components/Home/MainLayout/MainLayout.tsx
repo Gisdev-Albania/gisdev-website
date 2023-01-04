@@ -57,18 +57,20 @@ export const MainLayout = () => {
     }
   }, [scrollPosition]);
 
-  const MINUTE_MS = 50000;
+  const MINUTE_MS = 1500;
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCount(count + 1);
-      if (count === 2) {
-        setCount(0);
-      } else count === 2;
-    }, MINUTE_MS);
-
-    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-  }, []);
+    if (pauseSlider === true) {
+      const interval = setInterval(() => {
+        setCount(count + 1);
+        if (count === 2) {
+          setCount(0);
+        } else count === 2;
+      }, MINUTE_MS);
+      return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+      console.log('next');
+    }
+  });
 
   return (
     <div className={styles.main_background}>
@@ -85,7 +87,10 @@ export const MainLayout = () => {
             <TopRightDots />
           </span>
 
-          <div className={styles.main__image__container}>
+          <div
+            className={styles.main__image__container}
+            style={{ animation: 'shrink 1s linear 0s infinite alternate' }}
+          >
             <img
               src={displayedImage.image}
               height={500}
