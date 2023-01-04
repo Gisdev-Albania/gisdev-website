@@ -20,18 +20,13 @@ export const CardWrapper: React.FunctionComponent<CardProps> = props => {
     <div className={styles.card__right__container}>
       <div className={styles.latest__work__title_card}>
         {primaryText ? (
-          <div>
+          <div className={styles.latest__work__text}>
             {' '}
-            <h2
-              className={styles.latest__work__card__title}
-              style={{ fontSize: '45px' }}
-            >
-              {title}
-            </h2>
+            <h2 className={styles.latest__work__card__title}>{title}</h2>
             <p className={styles.card__paragraph}>{paragraph}</p>
           </div>
         ) : (
-          <div>
+          <div className={styles.latest__work__text}>
             {' '}
             <h2 className={styles.latest__work__card__title}>{title}</h2>
             <p className={styles.card__paragraph}>{paragraph}</p>

@@ -136,3 +136,15 @@
   text-decoration: none;
   @include btn-border-slide($dark_blue, $border_blue, 2px, 0.9s);
 }
+
+@media (max-width: 450px) {
+  .btn__primary {
+    padding: 0.6em 1em;
+  }
+  .btn__secondary {
+    padding: 0.6em 1em;
+  }
+  .btn__style {
+    font-size: 14px;
+  }
+}

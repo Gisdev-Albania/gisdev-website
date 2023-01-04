@@ -29,6 +29,7 @@ export const Button: React.FunctionComponent<ButtonProps> = props => {
                 alignItems: 'center',
                 justifyContent: 'space-around',
               }}
+              className={styles.btn__style}
             >
               {children}
 
