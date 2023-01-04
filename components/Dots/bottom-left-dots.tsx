@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export const BottomLeftDots = () => {
+export const BottomLeftDots = (animate: any) => {
   return (
     <>
       <svg
@@ -10,7 +10,7 @@ export const BottomLeftDots = () => {
         viewBox="0 0 224 115"
         fill="none"
       >
-        <rect y="36" width="2" height="2" fill="#555555" />
+        <rect y="36" width="2" height="2" fill="#555555 " />
         <rect y="24" width="2" height="2" fill="#555555" />
         <rect y="12" width="2" height="2" fill="#555555" />
         <rect width="2" height="2" fill="#555555" />

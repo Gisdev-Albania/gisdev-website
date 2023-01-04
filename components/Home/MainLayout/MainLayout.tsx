@@ -11,6 +11,7 @@ import { useScrollPosition } from '../../Header/useScrollPosition';
 export const MainLayout = () => {
   const [count, setCount] = useState(0);
   const [pauseSlider, setPauseSlider] = useState(true);
+  const [animate, setAnimate] = useState(false);
   const scrollPosition = useScrollPosition();
 
   const imageObject = [
@@ -36,6 +37,7 @@ export const MainLayout = () => {
     if (count === 2) {
       setCount(0);
     }
+    setAnimate(true);
   };
 
   const backImage = () => {
@@ -63,6 +65,7 @@ export const MainLayout = () => {
     if (pauseSlider === true) {
       const interval = setInterval(() => {
         setCount(count + 1);
+        setAnimate(true);
         if (count === 2) {
           setCount(0);
         } else count === 2;
@@ -71,6 +74,14 @@ export const MainLayout = () => {
       console.log('next');
     }
   });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimate(false);
+    }, 300);
+  }, [count]);
+
+  console.log(animate);
 
   return (
     <div className={styles.main_background}>
@@ -87,10 +98,7 @@ export const MainLayout = () => {
             <TopRightDots />
           </span>
 
-          <div
-            className={styles.main__image__container}
-            style={{ animation: 'shrink 1s linear 0s infinite alternate' }}
-          >
+          <div className={styles.main__image__container}>
             <img
               src={displayedImage.image}
               height={500}
@@ -115,8 +123,16 @@ export const MainLayout = () => {
               </div>
             </div>
           </div>
-          <span className={styles.left__dots}>
-            <BottomLeftDots />
+          <span
+            className={styles.left__dots}
+            style={{
+              transition: 'all .15s',
+            }}
+          >
+            <BottomLeftDots
+              animate={animate}
+              fill={animate ? 'red' : 'black'}
+            />
           </span>
         </div>
         <div className={styles.hero__title__section}>
