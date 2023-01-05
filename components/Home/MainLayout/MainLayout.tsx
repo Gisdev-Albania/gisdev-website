@@ -12,6 +12,7 @@ export const MainLayout = () => {
   const [count, setCount] = useState(0);
   const [pauseSlider, setPauseSlider] = useState(true);
   const [animate, setAnimate] = useState(false);
+  const [zoomOut, setZoomOut] = useState(false);
   const scrollPosition = useScrollPosition();
 
   const imageObject = [
@@ -59,7 +60,7 @@ export const MainLayout = () => {
     }
   }, [scrollPosition]);
 
-  const MINUTE_MS = 1500;
+  const MINUTE_MS = 3000;
 
   useEffect(() => {
     if (pauseSlider === true) {
@@ -78,8 +79,16 @@ export const MainLayout = () => {
   useEffect(() => {
     setTimeout(() => {
       setAnimate(false);
-    }, 300);
+      setZoomOut(false);
+    }, 500);
   }, [count]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setZoomOut(true);
+    }, 3000);
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  });
 
   console.log(animate);
 
@@ -94,17 +103,36 @@ export const MainLayout = () => {
           />
         </div>
         <div className={styles.hero__main__image}>
-          <span className={styles.right__dots}>
+          <span
+            className={styles.right__dots}
+            style={{
+              transform: animate ? 'scale(1.6)' : '',
+              transition: animate ? '1s cubic-bezier(.17,.67,.83,.67)' : '',
+            }}
+          >
             <TopRightDots />
           </span>
 
-          <div className={styles.main__image__container}>
+          <div
+            className={styles.main__image__container}
+            style={{
+              opacity: animate ? '0' : '1',
+              transition: animate ? '1s cubic-bezier(.17,.67,.83,.67)' : '',
+              filter: animate ? 'blur(20px)' : '',
+              border: animate ? '20px solid #072542' : '',
+              transform: animate ? 'scale(0.2)' : '',
+            }}
+          >
             <img
               src={displayedImage.image}
               height={500}
               width={500}
               alt="main image"
               className={styles.main__image}
+              style={{
+                transform: zoomOut ? 'scale(0.4)' : '',
+                opacity: zoomOut ? '0.05' : '',
+              }}
             />
 
             <div className={styles.slider__buttons}>
@@ -126,13 +154,11 @@ export const MainLayout = () => {
           <span
             className={styles.left__dots}
             style={{
-              transition: 'all .15s',
+              transform: animate ? 'scale(1.6)' : '',
+              transition: animate ? '1s cubic-bezier(.17,.67,.83,.67)' : '',
             }}
           >
-            <BottomLeftDots
-              animate={animate}
-              fill={animate ? 'red' : 'black'}
-            />
+            <BottomLeftDots animate={animate} />
           </span>
         </div>
         <div className={styles.hero__title__section}>
