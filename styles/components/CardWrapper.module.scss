@@ -2,10 +2,12 @@
 .card__right__container {
   background: white;
   padding: 12px;
+ 
   cursor: pointer;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  
 
   .latest__work__title_card {
     display: flex;
@@ -17,6 +19,7 @@
     height: 100%;
     padding: 1rem;
     max-height: 600px;
+  
     .latest__work__text {
       h2 {
         font-size: 45px;
@@ -67,6 +70,7 @@
 
 @media (max-width: 450px) {
   .card__right__container {
+    
     .latest__work__title_card {
       .latest__work__text {
         h2 {

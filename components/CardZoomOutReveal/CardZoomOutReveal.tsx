@@ -21,8 +21,8 @@ export const CardZoomOutReveal: React.FunctionComponent<
         <figure>
           <img src={imageSrc} alt={alt} />
           <figcaption>
-            <h2>{title}</h2>
-            <p>{description}</p>
+            <h2 className={styles.figcaption__title}>{title}</h2>
+            <p className={styles.figcaption__paragraph}>{description}</p>
           </figcaption>
         </figure>
       </div>

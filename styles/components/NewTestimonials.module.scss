@@ -8,7 +8,7 @@
 // }
 
 .testimonials__container {
-  padding-bottom: 120px;
+  padding-bottom: 30px;
   max-width: 80vw;
 
   .clients__top__container {
@@ -155,6 +155,7 @@
 
 @media (max-width: 1366px) {
   .testimonials__container {
+    
     .testimonials__cards {
       display: flex;
 
@@ -170,7 +171,9 @@
 
 @media (max-width: 450px) {
   .testimonials__container {
+    max-width: 100vw;
     .clients__top__container {
+      max-width: 100%;
       .client__main {
         h1 {
           font-size: 50px;
@@ -178,6 +181,7 @@
       }
     }
     .testimonials__cards {
+
       .testimonials__second__card {
         .second__card__buttons {
         }
@@ -188,11 +192,11 @@
             }
             .testimonials__card_body__elements {
               .testimonials__body__text {
-                max-width: 250px;
+                max-width: 300px;
               }
             }
             .testimonials__body__paragraph {
-              max-width: 250px;
+              max-width: 300px;
             }
           }
           .testimonials__left__corner {
