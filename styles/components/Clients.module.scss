@@ -66,6 +66,9 @@
           //height: 570px;
           grid-template-columns: repeat(2, 1fr);
         }
+        .mobile__carousel {
+          display: none;
+        }
       }
     }
   }
@@ -83,6 +86,9 @@
           }
           .bottom__side__card {
             width: 100%;
+          }
+          .mobile__carousel {
+            display: none;
           }
         }
       }
@@ -103,7 +109,11 @@
       .client__bottom__container {
         .client__cards {
           .bottom__side__card {
+            display: none;
+          }
+          .mobile__carousel {
             display: block;
+            max-width: 335px;
           }
         }
       }
