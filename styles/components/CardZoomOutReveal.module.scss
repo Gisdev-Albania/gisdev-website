@@ -92,3 +92,17 @@
     }
   }
 }
+
+
+@media (max-width: 450px) {
+ 
+  .figcaption__title {
+      opacity: 1;
+      translate: 0;
+    }
+   .figcaption__paragraph {
+      opacity: 1;
+    }
+  
+  
+}
