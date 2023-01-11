@@ -72,6 +72,11 @@ $bp-lg: 800px;
           }
         }
       }
+      .project__modal{
+        position: relative;
+        z-index: 20;
+        top: 20%;
+      }
 
       .card__element:hover {
         color: white;
@@ -89,5 +94,6 @@ $bp-lg: 800px;
     .project__card__container > * {
       break-inside: avoid;
     }
+
   }
 }

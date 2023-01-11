@@ -36,6 +36,7 @@
     }
     .hero__main__image {
       position: relative;
+      
 
       .right__dots {
         position: absolute;
@@ -52,7 +53,7 @@
       .main__image__container {
         border: 20px solid #0e1a2a;
         position: relative;
-
+        max-width: 540px;
         .slider__buttons {
           position: absolute;
           display: flex;
@@ -125,9 +126,10 @@
           display: none;
         }
         .main__image__container {
+          max-width: 300px;
           .main__image {
-            height: 300px;
-            width: 300px;
+            height: 260px;
+            width: 260px;
           }
           .slider__buttons {
             transform: translate(25px, -50px);

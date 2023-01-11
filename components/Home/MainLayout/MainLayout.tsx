@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import styles from '../../../styles/components/MainLayout.module.scss';
 import Image from 'next/image';
@@ -7,6 +7,11 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import Layout from '../../Layout/Layout';
 import { BottomLeftDots, TopRightDots } from '../../Dots';
 import { useScrollPosition } from '../../Header/useScrollPosition';
+import { EffectCube, Pagination, Autoplay } from "swiper";
+import { Swiper, SwiperSlide, useSwiper} from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
 
 export const MainLayout = () => {
   const [count, setCount] = useState(0);
@@ -14,6 +19,8 @@ export const MainLayout = () => {
   const [animate, setAnimate] = useState(false);
   const [zoomOut, setZoomOut] = useState(false);
   const scrollPosition = useScrollPosition();
+  
+
 
   const imageObject = [
     {
@@ -32,65 +39,8 @@ export const MainLayout = () => {
       visible: false,
     },
   ];
-
-  const nextImage = () => {
-    setCount(count + 1);
-    if (count === 2) {
-      setCount(0);
-    }
-    setAnimate(true);
-  };
-
-  const backImage = () => {
-    setCount(count - 1);
-    if (count === 0) {
-      setCount(2);
-    }
-  };
-
-  const displayedImage = {
-    image: imageObject[count]?.image,
-  };
-
-  useEffect(() => {
-    if (scrollPosition > 100) {
-      setPauseSlider(false);
-    } else {
-      setPauseSlider(true);
-    }
-  }, [scrollPosition]);
-
-  const MINUTE_MS = 3000;
-
-  useEffect(() => {
-    if (pauseSlider === true) {
-      const interval = setInterval(() => {
-        setCount(count + 1);
-        setAnimate(true);
-        if (count === 2) {
-          setCount(0);
-        } else count === 2;
-      }, MINUTE_MS);
-      return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-      console.log('next');
-    }
-  });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setAnimate(false);
-      setZoomOut(false);
-    }, 500);
-  }, [count]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setZoomOut(true);
-    }, 3000);
-    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-  });
-
-  console.log(animate);
+const swiper = useSwiper();
+ 
 
   return (
     <div className={styles.main_background}>
@@ -115,41 +65,49 @@ export const MainLayout = () => {
 
           <div
             className={styles.main__image__container}
-            style={{
-              opacity: animate ? '0' : '1',
-              transition: animate ? '1s cubic-bezier(.17,.67,.83,.67)' : '',
-              filter: animate ? 'blur(20px)' : '',
-              border: animate ? '20px solid #072542' : '',
-              transform: animate ? 'scale(0.2)' : '',
-            }}
+            
           >
-            <img
-              src={displayedImage.image}
-              height={500}
-              width={500}
-              alt="main image"
-              className={styles.main__image}
-              style={{
-                transform: zoomOut ? 'scale(0.4)' : '',
-                opacity: zoomOut ? '0.05' : '',
-              }}
-            />
-
+            
+      <Swiper
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        
+        modules={[EffectCube, Pagination, Autoplay]}
+        className="mySwiper"
+      >
+        {imageObject.map((image, key) => {
+          return (
+            <SwiperSlide key={key}><img src={image.image} height={500}
+            width={500} className={styles.main__image}/></SwiperSlide>
+          )
+        })}
             <div className={styles.slider__buttons}>
               <div>
                 {' '}
                 <HiOutlineChevronLeft
-                  onClick={backImage}
+                 onClick={() => swiper.slidePrev()}
                   className={styles.left__chevron}
                 />
               </div>
-              <div>
+              <div onClick={() => swiper.slideNext()}>
                 <HiOutlineChevronRight
                   className={styles.right__chevron}
-                  onClick={nextImage}
+                  
                 />
               </div>
             </div>
+            </Swiper>
           </div>
           <span
             className={styles.left__dots}

@@ -305,14 +305,25 @@
       }
     }
     .form__container {
-      max-width: 400px;
+      max-width: 360px;
+      .contact__section__title{
+        font-size: 50px;
+      }
+
       .contact__section__body {
         display: flex;
         flex-direction: column;
-        .map {
-          height: 400px;
-          width: 500px;
+        .left__side{
+          .map{
+            max-width: 360px;
+          }
         }
+        .form__main{
+          form{
+            max-width: 360px;
+          }
+        }
+
       }
     }
   }

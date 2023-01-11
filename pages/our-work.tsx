@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout/Layout';
 import styles from '../styles/components/OurWork.module.scss';
 import MiniFooter from '../components/MiniFooter/MiniFooter';
+import Modal from '../components/Modal/Modal';
+
+
 
 const OurWork = () => {
+
+
+  const [showModal, setShowModal] = useState(false)
+  console.log(showModal)
   const projectCards = [
     {
       title: 'Project 1',
@@ -60,6 +67,10 @@ const OurWork = () => {
       size: 'medium',
     },
   ];
+
+  const closeModal = (argument: boolean) => {
+    setShowModal(argument)
+  }
   return (
     <Layout>
       <div className={styles.work__main__layout}>
@@ -75,9 +86,10 @@ const OurWork = () => {
               proud to partner with:
             </p>
           </div>
-          <div className={styles.project__card__container}>
+          <div className={styles.project__card__container} onClick={() => setShowModal(false)}>
             {projectCards.map((card, index) => {
               return (
+                <>
                 <div
                   key={index}
                   className={styles.card__element}
@@ -92,6 +104,8 @@ const OurWork = () => {
                         : '462px',
                     marginBottom: '20px',
                   }}
+
+                  
                 >
                   <div className={styles.info}>
                     <div className={styles.info__body}>
@@ -102,10 +116,17 @@ const OurWork = () => {
                       </p>
                     </div>
                   </div>
+
+                  
                 </div>
+                <div className={styles.project__modal}>
+<Modal showModal={showModal} closeModal={closeModal}/>
+          </div>
+                </>
               );
             })}
           </div>
+
 
           <MiniFooter />
         </div>
